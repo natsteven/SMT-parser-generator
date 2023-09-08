@@ -1,3 +1,4 @@
+package edu.boisestate.cs.antlrTools;
 // Generated from SMTLIBv2Strings.g4 by ANTLR 4.13.0
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
