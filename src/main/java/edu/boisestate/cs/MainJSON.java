@@ -1,3 +1,10 @@
+/**
+ * Main class for project which generates a .json file representing the data flow graph of the 
+ * input .smt2 queries. The intention being for the .json files to be used by EJSA to solve
+ * benchmark queries.
+ *
+ * @author Nathanael Steven
+ */
 package edu.boisestate.cs;
 
 import org.antlr.v4.runtime.*;
@@ -22,8 +29,12 @@ public class MainJSON {
 
     }
     
+    /*
+     * Outputs .json file for each given .smt2 file in a new output directory with same prefix filename
+     */
     private static void processQueries(File inputDir, File outputDir) {
         
+        //iterate recursively through input directory creating the same structure but with a output_ prefixfor directory names
         for (final File file : inputDir.listFiles()) {
 
             if (file.isDirectory()) {
@@ -38,8 +49,14 @@ public class MainJSON {
         }
     }
 
+    /*
+     * Initializes parser and walks tree with the custom listener class jsonBuilder to write a .json of the data flow graph of the query 
+     */
     private static void processFile(File file, File outputDir){
         try {
+
+            //initialize parser, walker, and listener(jsonBuilder)
+
             // System.out.println(file.getName());// if you want to debug 
             CharStream input = CharStreams.fromFileName(file.getAbsolutePath());
             SMTLIBv2StringsLexer lexer = new SMTLIBv2StringsLexer(input);
@@ -47,7 +64,8 @@ public class MainJSON {
             SMTLIBv2StringsParser parser = new SMTLIBv2StringsParser(tokens);
             ParseTreeWalker walker = new ParseTreeWalker();
             jsonBuilder jB = new jsonBuilder();
-            // error listener
+
+            // error listener if desired
             // parser.removeErrorListeners(); // remove ConsoleErrorListener
             // parser.addErrorListener(new BaseErrorListener(){ 
             //     @Override
@@ -57,15 +75,24 @@ public class MainJSON {
             //     }
             // });
             
+            //walk tree with json listener
             ParseTree tree = parser.script();
             walker.walk(jB, tree);
                 
             File jFile = new File(outputDir, file.getName() + ".json");
             
+            //write to new file
             try (PrintWriter j = new PrintWriter(jFile)) {
                 j.println(jB.getJSON());
             }
-            if (jB.createCopy){
+
+            /* 
+            * creates a copy of the .json file with certain predicate true false values flipped for logical equivalency
+            * i.e. an equals predicate with two boolean children could have the children be both true or both false
+            * this create a copy of the graph with the same semantics but assuming the children evaluate oppositely for
+            * comprehensive checking of solution options
+            */ 
+            if (jB.createCopy){ //jsonBuilder's createCopy checks for predicates with both boolean children
                 File jFile2 = new File(outputDir, file.getName() + ".copy.json");
                 try (PrintWriter j2 = new PrintWriter(jFile2)) {
                     j2.println(jB.getCopyJSON());
@@ -73,11 +100,10 @@ public class MainJSON {
             }
         }
 
-
-                catch (Exception e) {
-                    System.err.println("Problem with file " + file.getAbsolutePath());
-                    e.printStackTrace();
-                }
+        catch (Exception e) {
+            System.err.println("Problem with file " + file.getAbsolutePath());
+            e.printStackTrace();
+        }
     }
 }
 

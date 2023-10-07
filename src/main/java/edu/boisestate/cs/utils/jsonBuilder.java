@@ -1,3 +1,13 @@
+/**
+ * The jsonBuilder class is a customized listener for walking a parse tree which analyzes and extrapolates
+ * the semantics to generate a representative data flow graph of the syntax/parse tree
+ * 
+ * The terminals of the parse tree are the actual tokens from the query and based on the structure of the internal
+ * nodes the semantic relations between the various terminals can be derived
+ *
+ * @author Nathanael Steven
+ */
+
 package edu.boisestate.cs.utils;
 
 import java.util.ArrayList;
@@ -38,6 +48,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
     public boolean createCopy = false;
     private HashMap<String, Node> symbolics = new HashMap<>();
 
+    // set of terminals to ignore
     private static HashSet<String> exclude = new HashSet<String>(){{
         add("declare-fun");
         add("declare-const");
@@ -48,9 +59,12 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         // add("str.to_re");
     }};
         
-       
-
-    public class Node{
+    /* 
+    * Node class representing a node for the resulting data flow graph representation
+    * This is essentially analogous to a given terminal and the incoming edges of children
+    * and the parent are figured out based on the parse trees structure
+    */   
+    public class Node{ // arrtibutes could/should be private
         public Integer id;
         public String val;
         public Node parent;
@@ -58,6 +72,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         public String actualVal;
         public ArrayList<Node> children = new ArrayList<>();
 
+        //constructor
         public Node(Integer id, String val, String actualVal, Node parent){
             this.id = id;
             this.val = val;
@@ -65,6 +80,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
             this.actualVal = actualVal;
         }
 
+        //This is not used anymore, but it creates a deep copy of the node with an id offset for it and its children
         public Node(Node node, int offset){
             this.id = node.id + offset;
             this.val = node.val;
@@ -77,33 +93,45 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
             this.children = copyChildren;
         }
 
+        //adds a child node to the children array for a node
         public void addChild(Node node) {
             children.add(node);
         }
 
+        //setID, right now Node attributes are public but they probably shouldnt be 
         public void setID(int num){
             this.id = num;
         }
 
     }
 
+    /*
+     * Main method for processing a terminal in to a Node, uses information of from various flags set during the walk
+     * to know the semantic relations of that node. A stack is used to keep track of current relevant nodes and add edges
+     * from the current terminal to the parent on the stack
+     */
     @Override
     public void visitTerminal(TerminalNode node) {
 
+        //handles declarations of symbolic variables in the preamble of a query keeping a list of them
         if (declaration && !exclude.contains(node.getText()) && !symVars.contains(node.getText())) {
             symVars.add(node.getText());
             declaration = false;
             return;
         }
 
+        //flag for handling assignments within a query of concrete or symbolic variables
         if (node.getText().equals("let")){
             assignment = true;
             return;
         }
 
+        //Start of actual processing, that checks we are within an expression of the query that we want to process
         if (expr && !exclude.contains(node.getText())) {
-            exprArgCounter++;
+            exprArgCounter++; //tracks the number of arguments for the current level of the expression
             
+            //when further on in a query references are made to an assigment so the reference to that assignment is set as a child for the 
+            //node at the top of the stack (most recent terminal)
             if (lets.contains(node.getText())){
                 Node parent = stack.isEmpty() ? null: stack.pop();
                 if (parent != null){
@@ -114,26 +142,35 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 return;
             }
 
+            //if the assignmnet flag is set (i.e. the most recent terminal was "let") then the name of the variable is added to the lets set
             if (assignment) {
                 lets.add(node.getText());
                 assignment = false;
                 assigningLevel = exprLevel;
             }
 
+            //When the terminal is the first 'argument' of the expression that actually means it is the name of the predicate/operation for that expression
             if (exprArgCounter == 1){
 
+                //generate new ID and get 'name' of predicate to add to node
                 Integer nodeID = getNodeID();
                 String nodeVal = javaEncode(node.getText());
                 String actualVal = node.getText();
 
+                // boolean predicates are all initially set to true
                 actualVal = (actualVal.equals("=") || actualVal.equals("str.contains") || actualVal.equals("str.in_re")) ? "true" : actualVal ;
+                //parent is node at top of stack
                 Node parent = stack.isEmpty() ? null: stack.pop();
+                //create new node with attributes gathered so far
                 Node newNode = new Node(nodeID, nodeVal, actualVal, parent);
 
+                //add current node to children of parent
                 if (parent != null) {
                     parent.addChild(newNode);
                     stack.push(parent);
                 }
+
+                //push current node onto stack for future edges to be added if necessary
                 stack.push(newNode);
                
             } else {
@@ -308,25 +345,25 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                     char unicodeChar = (char) unicode;
 
                     // only add Basic Latin not including whitespace or @ (0020-007f) // 60 (x3c) is '<' (broke several slogs) @ (64 (x40) broke 4595 and 3786)
-                    // if (unicode > 31 && unicode < 127 && unicode != 60 &&unicode!=64 && unicode != 46 && unicode != 47  && unicode !=34) { // forwardslash (47 (2f) and " )
+                    if (unicode > 31 && unicode < 127 && unicode != 60 &&unicode!=64 && unicode != 46 && unicode != 47  && unicode !=34) { // forwardslash (47 (2f) and " )
                         String uni = Character.toString(unicodeChar);
                         alphabet.add(escaped(uni));
                         nodeString.append(escaped(uni));
-                    // } else { // add _ as placeholder for non basic characters (may prevent weird issues with empty string replacement)
-                        // alphabet.add("_");
-                        // nodeString.append("_");
-                    // }
+                    } else { // add _ as placeholder for non basic characters (may prevent weird issues with empty string replacement)
+                        alphabet.add("_");
+                        nodeString.append("_");
+                    }
 
                 } else {
                     // It's a regular character, so just add it normally (unless its an @)
                     String thisChar = Character.toString(alph.charAt(i));
-                    // if (!thisChar.equals("@") && !thisChar.equals(" ")){
+                    if (!thisChar.equals("@") && !thisChar.equals(" ")){
                         alphabet.add(escaped(thisChar));
                         nodeString.append(escaped(thisChar));
-                    // } else { 
-                    //     alphabet.add("_");
-                    //     nodeString.append("_");
-                    // }
+                    } else { 
+                        alphabet.add("_");
+                        nodeString.append("_");
+                    }
                 }
             }
             nodeVal = nodeString.toString();
@@ -382,7 +419,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
             case "str.contains":
                 return "contains!!Ljava/lang/CharSequence;!:!0";
             case "str.in_re":
-                return "contains!!Ljava/lang/CharSequence;!:!0";
+                return "equals!!Ljava/lang/Object;!:!0";
             case "str.replace_all":
                 return "replaceAll!!Ljava/lang/String;Ljava/lang/String;!:!0";
             case "str.replace":
@@ -442,35 +479,35 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         for (Node node : allNodes) {
             jBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
             if (node.children!=null){
-                if (node.children.size()==2){
+                // if (node.children.size()==2){ // checks is internal node
                     
-                    // setting parameters of children based off precedence/order
-                    Node child1 = node.children.get(0);
-                    Node child2 = node.children.get(1);
+                //     // setting parameters of children based off precedence/order
+                //     Node child1 = node.children.get(0);
+                //     Node child2 = node.children.get(1);
 
-                    if (child1.id < child2.id){
-                        child1.paramType = "t";
-                        child2.paramType = "s1";
-                    } else {
-                        child1.paramType = "s1";
-                        child2.paramType = "t";
-                    } 
-                    if (child1.val.startsWith("concat")){
-                        child1.paramType = "t";
-                        child2.paramType = "s1";
-                    } else if (child2.val.startsWith("concat")){
-                        child1.paramType = "s1";
-                        child2.paramType = "t";
-                    }
+                //     if (child1.id < child2.id){
+                //         child1.paramType = "t";
+                //         child2.paramType = "s1";
+                //     } else {
+                //         child1.paramType = "s1";
+                //         child2.paramType = "t";
+                //     } 
+                //     if (child1.val.startsWith("concat")){
+                //         child1.paramType = "t";
+                //         child2.paramType = "s1";
+                //     } else if (child2.val.startsWith("concat")){
+                //         child1.paramType = "s1";
+                //         child2.paramType = "t";
+                //     }
 
-                    for (Node childNode : node.children){
-                    // some tree has a null chilnode in its children array (possibly due to concat manip)
-                        // if (childNode!=null){
-                        jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                        ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
-                        // }
-                    }
-                } else {
+                //     for (Node childNode : node.children){
+                //     // some tree has a null chilnode in its children array (possibly due to concat manip)
+                //         // if (childNode!=null){
+                //         jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
+                //         ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
+                //         // }
+                //     }
+                // } else {
                     String paramType = "t";
                     int i = 0;
                     for (Node childNode : node.children){
@@ -482,7 +519,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                         i++;
                         paramType = "s" + i;
                     }                    
-                }
+                // }
             }
 
             jBuilder.deleteCharAt(jBuilder.length() - 1);
@@ -550,7 +587,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 }
 
                 ArrayList<Node> oldChildren = new ArrayList<>(node.children);
-                Collections.reverse(oldChildren);
+                // Collections.reverse(oldChildren); thought this needed to happen but it clearly shouldnt given testing
                 node.children.clear();
                 node.addChild(oldChildren.get(0));
                 stack.push(node);
@@ -621,6 +658,28 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         ArrayList<Node> visited = new ArrayList<>();
         // int prevID = 0;
         // Node prevLeaf = null;
+        for( Node node: nodes) {
+            if (node.children.size()==2){ // checks is internal node
+                
+                // setting parameters of children based off precedence/order
+                Node child1 = node.children.get(0);
+                Node child2 = node.children.get(1);
+                if (child1.id < child2.id){
+                    child1.paramType = "t";
+                    child2.paramType = "s1";
+                } else {
+                    child1.paramType = "s1";
+                    child2.paramType = "t";
+                } 
+                if (child1.val.startsWith("concat")){
+                    child1.paramType = "t";
+                    child2.paramType = "s1";
+                } else if (child2.val.startsWith("concat")){
+                    child1.paramType = "s1";
+                    child2.paramType = "t";
+                }
+            }
+        }
         for (Node node : nodes){
             if (node.children.isEmpty()){
                 
