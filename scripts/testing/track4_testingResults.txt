@@ -1,0 +1,1030 @@
+=================================================================
+04_track_60.smt2, 
+(unsat, None, 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_9.smt2, 
+(sat, [G = "bcacbbabb", C = "babccabb", A = "c"], 65)
+(unsat, 270)
+=================================================================
+04_track_141.smt2, 
+(sat, [A = "cbcb",
+ H = "fefa",
+ C = "dafb",
+ F = "fefafbbedafbdbcabcbcbaebbabfcfbcd"], 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_3.smt2, 
+(sat, [A = "a", C = "a", B = "a"], 22)
+(unsat, 259)
+=================================================================
+04_track_49.smt2, 
+(sat, [B = "",
+ F = "",
+ C = "b",
+ A = "aacbccbbcaaabdadbdcccaadbcaaadacbdddbdcb"], 34)
+( EJSA TIMEOUT )
+=================================================================
+04_track_187.smt2, 
+(unsat, None, 35)
+( EJSA TIMEOUT )
+=================================================================
+04_track_31.smt2, 
+(unsat, None, 36)
+( EJSA TIMEOUT )
+=================================================================
+04_track_75.smt2, 
+(sat, [G = "c",
+ B = "ca",
+ F = "cab",
+ C = "a",
+ H = "bcccbcc",
+ D = "aa"], 174)
+(unsat, 293)
+=================================================================
+04_track_115.smt2, 
+(sat, [B = "c",
+ E = "cc",
+ D = "b",
+ A = "bacbabcbbbabaacbaaabcaccabbbaccbccacc"], 191)
+(unsat, 302)
+=================================================================
+04_track_16.smt2, 
+(unsat, None, 84)
+(unsat, 351)
+=================================================================
+04_track_110.smt2, 
+(sat, [G = "baaab", F = "a", D = "bb"], 193)
+(unsat, 350)
+=================================================================
+04_track_93.smt2, 
+(sat, [A = "ac"], 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_78.smt2, 
+(unsat, None, 39)
+( EJSA TIMEOUT )
+=================================================================
+04_track_95.smt2, 
+(unsat, None, 50)
+( EJSA TIMEOUT )
+=================================================================
+04_track_182.smt2, 
+(sat, [B = "aaaaaaa",
+ F = "aaaa",
+ E = "aaaaa",
+ C = "a",
+ D = "aaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaa"], 241)
+(unsat, 257)
+=================================================================
+04_track_148.smt2, 
+(sat, [B = "a"], 23)
+(unsat, 256)
+=================================================================
+04_track_22.smt2, 
+(unsat, None, 78)
+(unsat, 330)
+=================================================================
+04_track_188.smt2, 
+(unsat, None, 29)
+( EJSA TIMEOUT )
+=================================================================
+04_track_52.smt2, 
+(unsat, None, 37)
+( EJSA TIMEOUT )
+=================================================================
+04_track_57.smt2, 
+(unsat, None, 28)
+( EJSA TIMEOUT )
+=================================================================
+04_track_72.smt2, 
+(unsat, None, 26)
+( EJSA TIMEOUT )
+=================================================================
+04_track_88.smt2, 
+(unsat, None, 51)
+( EJSA TIMEOUT )
+=================================================================
+04_track_55.smt2, 
+(sat, [C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaa",
+ G = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ F = "aaaa",
+ E = "aaaaaaaaa",
+ H = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 128)
+(unsat, 266)
+=================================================================
+04_track_183.smt2, 
+(unsat, None, 39)
+( EJSA TIMEOUT )
+=================================================================
+04_track_46.smt2, 
+(unsat, None, 69)
+( EJSA TIMEOUT )
+=================================================================
+04_track_80.smt2, 
+(unsat, None, 34)
+( EJSA TIMEOUT )
+=================================================================
+04_track_100.smt2, 
+(sat, [A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ E = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 28)
+( EJSA TIMEOUT )
+=================================================================
+04_track_83.smt2, 
+(unsat, None, 62)
+( EJSA TIMEOUT )
+=================================================================
+04_track_13.smt2, 
+(sat, [B = "abbbbabbababbbaaa", D = "b"], 55)
+(unsat, 384)
+=================================================================
+04_track_198.smt2, 
+(sat, [E = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ F = "aaaaaaaaaa",
+ I = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ H = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ G = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 38)
+( EJSA TIMEOUT )
+=================================================================
+04_track_82.smt2, 
+(unsat, None, 46)
+( EJSA TIMEOUT )
+=================================================================
+04_track_50.smt2, 
+(unsat, None, 31)
+(unsat, 294)
+=================================================================
+04_track_30.smt2, 
+(sat, [D = "aa", A = "aa", C = "aa", B = "a"], 24)
+(unsat, 298)
+=================================================================
+04_track_81.smt2, 
+(unsat, None, 41)
+( EJSA TIMEOUT )
+=================================================================
+04_track_99.smt2, 
+(sat, [I = "d",
+ B = "caaaacdcbcdbabdadccdabbaaabdbbdcadbbdadcbaaabdccddcdacdb",
+ C = ""], 413)
+(unsat, 375)
+=================================================================
+04_track_193.smt2, 
+(sat, [A = "aaaaaaa",
+ C = "aaaaaaaa",
+ B = "aaaaaaaaa",
+ G = "aaaaaaaaaaaaaa",
+ H = "aa",
+ E = "aa",
+ F = "aaaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaa"], 34)
+(unsat, 321)
+=================================================================
+04_track_156.smt2, 
+(sat, [A = "cea", B = "e"], 22)
+(unsat, 266)
+=================================================================
+04_track_127.smt2, 
+(sat, [E = "cba", H = "bcb", D = "b"], 166)
+(unsat, 326)
+=================================================================
+04_track_10.smt2, 
+(unsat, None, 63)
+( EJSA TIMEOUT )
+=================================================================
+04_track_116.smt2, 
+(unsat, None, 40)
+( EJSA TIMEOUT )
+=================================================================
+04_track_35.smt2, 
+(sat, [A = "ababbbbb", B = "bbababbbaba"], 35)
+( EJSA TIMEOUT )
+=================================================================
+04_track_74.smt2, 
+(unsat, None, 32)
+(unsat, 276)
+=================================================================
+04_track_108.smt2, 
+(unsat, None, 53)
+( EJSA TIMEOUT )
+=================================================================
+04_track_73.smt2, 
+(sat, [D = "bcbcacaaaaccbaabaaabb", A = "abbbaabb", B = "acccbca"], 49)
+( EJSA TIMEOUT )
+=================================================================
+04_track_185.smt2, 
+(sat, [D = "cbaba", A = "bacabbbcbabaaacbbbcccbcaacca", F = "a"], 45)
+(unsat, 300)
+=================================================================
+04_track_157.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_34.smt2, 
+(sat, [B = "a", F = "babbbabaa", H = "abaaabb", A = "a"], 39)
+(unsat, 340)
+=================================================================
+04_track_43.smt2, 
+(sat, [D = "", E = "bc", B = "aabbb"], 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_21.smt2, 
+(unsat, None, 29)
+( EJSA TIMEOUT )
+=================================================================
+04_track_176.smt2, 
+(unsat, None, 187)
+(unsat, 369)
+=================================================================
+04_track_102.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_130.smt2, 
+(sat, [A = "cdd", C = "d", E = "bacccddb"], 28)
+(unsat, 278)
+=================================================================
+04_track_7.smt2, 
+(sat, [A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 21)
+(unsat, 1857)
+=================================================================
+04_track_69.smt2, 
+(unsat, None, 38)
+(unsat, 305)
+=================================================================
+04_track_143.smt2, 
+(sat, [D = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_118.smt2, 
+(sat, [A = "", C = "eaba", B = "e"], 33)
+(unsat, 286)
+=================================================================
+04_track_37.smt2, 
+(unsat, None, 40)
+(unsat, 315)
+=================================================================
+04_track_4.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_40.smt2, 
+(sat, [G = "bbaababa",
+ B = "bababb",
+ F = "ababaabbbbbaaab",
+ C = "babbbbbbaabbbababbbaaab",
+ E = "bb",
+ D = "bbbbabbabaaab",
+ H = "babbabaaabbabbbbb"], 711)
+(unsat, 291)
+=================================================================
+04_track_79.smt2, 
+(unsat, None, 59)
+( EJSA TIMEOUT )
+=================================================================
+04_track_71.smt2, 
+(unsat, None, 55)
+( EJSA TIMEOUT )
+=================================================================
+04_track_122.smt2, 
+(sat, [A = "c", D = "b", C = "b", B = "b"], 22)
+(unsat, 232)
+=================================================================
+04_track_142.smt2, 
+(sat, [A = "aaaa",
+ B = "aa",
+ D = "aaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaa"], 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_177.smt2, 
+(sat, [A = "eebebadcdcedccadbcb", B = "b"], 35)
+(unsat, 296)
+=================================================================
+04_track_17.smt2, 
+(unsat, None, 28)
+( EJSA TIMEOUT )
+=================================================================
+04_track_136.smt2, 
+(sat, [B = "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ F = "aaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ E = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ D = "aaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaa"], 108)
+(unsat, 278)
+=================================================================
+04_track_145.smt2, 
+(sat, [A = "dc", D = "c"], 31)
+(unsat, 277)
+=================================================================
+04_track_94.smt2, 
+(sat, [C = "fdfeacdaefdfaaee",
+ E = "dfccafffaf",
+ H = "",
+ D = "deeedabdfcffb",
+ F = "caaf",
+ I = "bdfcf"], 85)
+( EJSA TIMEOUT )
+=================================================================
+04_track_66.smt2, 
+(sat, [B = "aaa", C = "aaaaaaaaa", A = "aaaaaaaaaaaaa"], 113)
+(unsat, 256)
+=================================================================
+04_track_32.smt2, 
+(sat, [G = "ecedacccaA",
+ C = "",
+ D = "Adbeacbaabedeaacaebeaaddce",
+ H = "acbd",
+ E = "bdab"], 58)
+( EJSA TIMEOUT )
+=================================================================
+04_track_6.smt2, 
+(sat, [A = "aaaaaa", C = "aaaaaaaaaaaaaa", B = "aaaaaaaaa"], 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_65.smt2, 
+(sat, [A = "a", C = "a", B = "aa"], 23)
+(unsat, 259)
+=================================================================
+04_track_151.smt2, 
+(sat, [A = "c"], 33)
+( EJSA TIMEOUT )
+=================================================================
+04_track_45.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_186.smt2, 
+(sat, [G = "aac",
+ F = "bac",
+ C = "ccbabaacababacA",
+ H = "a",
+ D = "Acababaabbccbaa"], 334)
+(unsat, 314)
+=================================================================
+04_track_76.smt2, 
+(unsat, None, 36)
+( EJSA TIMEOUT )
+=================================================================
+04_track_42.smt2, 
+(sat, [E = "eba", H = "bebabcf", C = "bab", I = "e"], 27)
+(unsat, 283)
+=================================================================
+04_track_87.smt2, 
+(sat, [A = "ccdac", C = "caacbbcaaadbdadcaccbdbbdad"], 24)
+( EJSA TIMEOUT )
+=================================================================
+04_track_67.smt2, 
+(sat, [A = "baaaaaa",
+ C = "bbabbabbbbabbabaaaba",
+ B = "aabaaaaaaaabbaaaaaabbabbbbabaaabbabb"], 34)
+( EJSA TIMEOUT )
+=================================================================
+04_track_64.smt2, 
+(unsat, None, 43)
+( EJSA TIMEOUT )
+=================================================================
+04_track_111.smt2, 
+(sat, [B = "IJbbaaaaba",
+ C = "aaaaaaaaababbababbbbababaabbaabIJ",
+ E = "aababb",
+ H = "ab"], 420)
+( EJSA TIMEOUT )
+=================================================================
+04_track_68.smt2, 
+(unsat, None, 32)
+(unsat, 324)
+=================================================================
+04_track_150.smt2, 
+(unsat, None, 43)
+( EJSA TIMEOUT )
+=================================================================
+04_track_84.smt2, 
+(unsat, None, 45)
+(unsat, 316)
+=================================================================
+04_track_197.smt2, 
+(sat, [D = "a",
+ A = "b",
+ H = "aba",
+ E = "a",
+ F = "aba",
+ B = "ba",
+ G = "a"], 26)
+(unsat, 267)
+=================================================================
+04_track_181.smt2, 
+(unsat, None, 38)
+(unsat, 315)
+=================================================================
+04_track_92.smt2, 
+(unsat, None, 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_19.smt2, 
+(unsat, None, 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_167.smt2, 
+(unsat, None, 30)
+(unsat, 292)
+=================================================================
+04_track_15.smt2, 
+(sat, [G = "aaaaaaaaa",
+ F = "aaa",
+ E = "aaaaaaaaaaa",
+ A = "aaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 82)
+(unsat, 286)
+=================================================================
+04_track_5.smt2, 
+(sat, [A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 26)
+( EJSA TIMEOUT )
+=================================================================
+04_track_195.smt2, 
+(sat, [B = "", A = "", E = "", C = "", F = "", G = ""], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 19,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 5,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 11,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 13,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 1516)
+=================================================================
+04_track_104.smt2, 
+(unsat, None, 80)
+( EJSA TIMEOUT )
+=================================================================
+04_track_2.smt2, 
+(sat, [A = "baab", B = "aab"], 24)
+( EJSA TIMEOUT )
+=================================================================
+04_track_184.smt2, 
+(sat, [D = "bab",
+ A = "b",
+ E = "bab",
+ C = "ab",
+ F = "b",
+ B = "a",
+ G = "ab"], 22)
+(unsat, 260)
+=================================================================
+04_track_121.smt2, 
+(unsat, None, 81)
+(unsat, 279)
+=================================================================
+04_track_129.smt2, 
+(unsat, None, 26)
+( EJSA TIMEOUT )
+=================================================================
+04_track_1.smt2, 
+(sat, [], 27)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 316)
+=================================================================
+04_track_140.smt2, 
+(unsat, None, 37)
+( EJSA TIMEOUT )
+=================================================================
+04_track_124.smt2, 
+(sat, [H = "abbaa",
+ E = "abbaaaa",
+ F = "ba",
+ B = "aab",
+ G = "b",
+ D = "babaa",
+ C = "bb",
+ I = "bbbab"], 25)
+(unsat, 269)
+=================================================================
+04_track_166.smt2, 
+(unsat, None, 36)
+(unsat, 298)
+=================================================================
+04_track_63.smt2, 
+(sat, [G = "ebaeeaacaeecdceeea",
+ F = "eaabbedbadaabbbdcadcabdaecdaeaa",
+ C = "bdd",
+ A = "aeacaeeaabbedbadaabbbdcadcabdaecdaeaaab",
+ D = "a"], 565)
+(unsat, 307)
+=================================================================
+04_track_117.smt2, 
+(sat, [B = "e"], 31)
+(unsat, 302)
+=================================================================
+04_track_189.smt2, 
+(sat, [B = "", D = "b", A = "edeffdaaccaebcbbbefeedb"], 207)
+(unsat, 306)
+=================================================================
+04_track_139.smt2, 
+(unsat, None, 67)
+(unsat, 308)
+=================================================================
+04_track_47.smt2, 
+(unsat, None, 30)
+(unsat, 281)
+=================================================================
+04_track_33.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_179.smt2, 
+( Z3 TIMEOUT )
+(unsat, 269)
+=================================================================
+04_track_107.smt2, 
+(sat, [A = "aaaaaaaaaa",
+ E = "aaaa",
+ B = "aaaaaa",
+ D = "aaaaaaaaa"], 24)
+(unsat, 254)
+=================================================================
+04_track_158.smt2, 
+(sat, [B = "",
+ E = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ D = "",
+ A = "a"], 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_160.smt2, 
+(unsat, None, 37)
+( EJSA TIMEOUT )
+=================================================================
+04_track_144.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_96.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_70.smt2, 
+(unsat, None, 33)
+( EJSA TIMEOUT )
+=================================================================
+04_track_38.smt2, 
+( Z3 TIMEOUT )
+(unsat, 346)
+=================================================================
+04_track_56.smt2, 
+(unsat, None, 36)
+( EJSA TIMEOUT )
+=================================================================
+04_track_24.smt2, 
+(unsat, None, 36)
+( EJSA TIMEOUT )
+=================================================================
+04_track_172.smt2, 
+(sat, [A = "ddc"], 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_112.smt2, 
+(sat, [B = "aaaaaa",
+ C = "a",
+ E = "aaaaaaaaa",
+ D = "aaaa",
+ H = "aaaaaaaaaaaaaaa",
+ G = "aaaaaaaaaaaa"], 43)
+(unsat, 256)
+=================================================================
+04_track_14.smt2, 
+( Z3 TIMEOUT )
+(unsat, 306)
+=================================================================
+04_track_114.smt2, 
+(sat, [A = "", J = "", F = "caaabcaaabaacbaa", I = "bcbab"], 21)
+( EJSA TIMEOUT )
+=================================================================
+04_track_132.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+04_track_54.smt2, 
+(sat, [A = "d", B = "d"], 24)
+(unsat, 272)
+=================================================================
+04_track_101.smt2, 
+(unsat, None, 46)
+( EJSA TIMEOUT )
+=================================================================
+04_track_137.smt2, 
+(sat, [E = "d",
+ D = "",
+ F = "daccdcbffacefbbfebfcfcddfdaaabcacaedefcaccdedfe"], 128)
+( EJSA TIMEOUT )
+=================================================================
+04_track_190.smt2, 
+(unsat, None, 37)
+( EJSA TIMEOUT )
+=================================================================
+04_track_26.smt2, 
+(sat, [J = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaa",
+ F = "a",
+ E = "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+ H = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 480)
+(unsat, 258)
+=================================================================
+04_track_168.smt2, 
+(sat, [A = "a", C = "bbacbcccdbbcb", B = "bcbf"], 38)
+(unsat, 286)
+=================================================================
+04_track_8.smt2, 
+(sat, [], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 355)
+=================================================================
+04_track_194.smt2, 
+(unsat, None, 38)
+( EJSA TIMEOUT )
+=================================================================
+04_track_48.smt2, 
+(sat, [E = "b", D = "baaaaabbbbbb"], 234)
+(unsat, 323)
+=================================================================
+04_track_178.smt2, 
+(unsat, None, 21)
+( EJSA TIMEOUT )
+=================================================================
+04_track_61.smt2, 
+(unsat, None, 39)
+( EJSA TIMEOUT )
+=================================================================
+04_track_89.smt2, 
+(unsat, None, 43)
+( EJSA TIMEOUT )
+=================================================================
+04_track_90.smt2, 
+(unsat, None, 50)
+( EJSA TIMEOUT )
+=================================================================
+04_track_91.smt2, 
+(unsat, None, 31)
+(unsat, 248)
+=================================================================
+04_track_175.smt2, 
+(sat, [G = "b", H = "fbcedcfbcfb", E = "d", F = "cf"], 28)
+(unsat, 253)
+=================================================================
+04_track_128.smt2, 
+(unsat, None, 71)
+(unsat, 308)
+=================================================================
+04_track_44.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_164.smt2, 
+(sat, [B = "eabe", D = "ffdff", C = "c"], 44)
+( EJSA TIMEOUT )
+=================================================================
+04_track_39.smt2, 
+(sat, [A = "aa", B = "a"], 22)
+(unsat, 254)
+=================================================================
+04_track_134.smt2, 
+(sat, [B = "caacbdaaababcbcbcbdbbbcdbcabacdbcdaacbadbbda",
+ D = "d",
+ A = "dbbdbccabbbdcbda"], 134)
+( EJSA TIMEOUT )
+=================================================================
+04_track_192.smt2, 
+(sat, [G = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ F = "aaaaaaaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ E = "aaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ H = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 37)
+(unsat, 265)
+=================================================================
+04_track_58.smt2, 
+(sat, [A = "c", D = "cbbc", C = "cbb", E = "bb", B = "bbc"], 25)
+(unsat, 274)
+=================================================================
+04_track_146.smt2, 
+(unsat, None, 35)
+( EJSA TIMEOUT )
+=================================================================
+04_track_23.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_174.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+04_track_12.smt2, 
+(sat, [A = "edbcadadddccbaceeecdbbcbbeebbdbeeabccbbabdddbadeded",
+ C = "ebbdb",
+ F = "ddcc",
+ I = "d"], 45)
+(unsat, 290)
+=================================================================
+04_track_152.smt2, 
+(unsat, None, 25)
+(unsat, 272)
+=================================================================
+04_track_36.smt2, 
+(sat, [A = "b"], 25)
+(unsat, 271)
+=================================================================
+04_track_199.smt2, 
+(sat, [G = "aabbbbb", I = "abaa", B = "b", H = "bbaaabbabab"], 194)
+(unsat, 344)
+=================================================================
+04_track_62.smt2, 
+(sat, [H = "aaaa",
+ B = "aaaaaaaa",
+ F = "aa",
+ C = "a",
+ E = "aaaaa",
+ A = "aaaa",
+ D = "aaa"], 26)
+(unsat, 253)
+=================================================================
+04_track_109.smt2, 
+(unsat, None, 33)
+( EJSA TIMEOUT )
+=================================================================
+04_track_98.smt2, 
+(unsat, None, 23)
+(unsat, 268)
+=================================================================
+04_track_147.smt2, 
+(unsat, None, 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_165.smt2, 
+(sat, [C = "aaaaaaaaaa",
+ D = "aaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ G = "aaaaaaaaaaaaaaaaa",
+ B = "aaaaaaaaaaaa",
+ F = "aaaaaaa",
+ E = "aaaaaa",
+ H = "aaaaaaaaaaaaaaaaaaaaaaa"], 31)
+(unsat, 269)
+=================================================================
+04_track_41.smt2, 
+(sat, [A = "c", B = "dcaabcadbcbdacbcbcbba"], 38)
+(unsat, 297)
+=================================================================
+04_track_86.smt2, 
+(unsat, None, 71)
+(unsat, 332)
+=================================================================
+04_track_28.smt2, 
+(sat, [H = "abb",
+ C = "bbbabb",
+ F = "babb",
+ I = "b",
+ G = "aaaaababaaab"], 36)
+(unsat, 311)
+=================================================================
+04_track_191.smt2, 
+(unsat, None, 28)
+( EJSA TIMEOUT )
+=================================================================
+04_track_180.smt2, 
+(unsat, None, 37)
+( EJSA TIMEOUT )
+=================================================================
+04_track_153.smt2, 
+(sat, [A = "dcd", C = "bcdabb", B = "dbc"], 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_59.smt2, 
+(unsat, None, 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_97.smt2, 
+(sat, [D = "a", E = "acb", F = "ba", B = "bac"], 24)
+(unsat, 267)
+=================================================================
+04_track_105.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_135.smt2, 
+(sat, [A = "b", B = "", D = "dadadc"], 31)
+(unsat, 282)
+=================================================================
+04_track_53.smt2, 
+(unsat, None, 136)
+(unsat, 417)
+=================================================================
+04_track_162.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+04_track_149.smt2, 
+(sat, [E = "bdadabb", B = "a"], 23)
+(unsat, 265)
+=================================================================
+04_track_163.smt2, 
+(sat, [F = "b", I = "", G = "cceeedbcceabcce"], 58)
+(unsat, 356)
+=================================================================
+04_track_106.smt2, 
+(sat, [G = "b",
+ I = "ccd",
+ B = "dacdbdcddaababccaddacbaabdababcacbcababcadddcaadcdcbbacdd",
+ F = "",
+ D = "acbaab"], 312)
+(unsat, 321)
+=================================================================
+04_track_27.smt2, 
+(unsat, None, 38)
+( EJSA TIMEOUT )
+=================================================================
+04_track_173.smt2, 
+(unsat, None, 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_155.smt2, 
+(sat, [D = "b", B = "dbbaabebbdbcdceade"], 53)
+(unsat, 346)
+=================================================================
+04_track_120.smt2, 
+(unsat, None, 46)
+( EJSA TIMEOUT )
+=================================================================
+04_track_169.smt2, 
+(sat, [B = "a",
+ F = "aaaaaaaaaaaaaa",
+ E = "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+ C = "aaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaa",
+ D = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 382)
+(unsat, 306)
+=================================================================
+04_track_29.smt2, 
+(sat, [A = "aaaaaaaaaa", B = "aaaaaaaa"], 22)
+( EJSA TIMEOUT )
+=================================================================
+04_track_18.smt2, 
+(sat, [B = "bba", A = "ba"], 33)
+( EJSA TIMEOUT )
+=================================================================
+04_track_161.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+04_track_119.smt2, 
+( Z3 TIMEOUT )
+(unsat, 255)
+=================================================================
+04_track_125.smt2, 
+(sat, [C = "",
+ B = "cabcccaccbccaabbacaacabacbacaccabbbbbccaccabbc"], 21)
+(unsat, 302)
+=================================================================
+04_track_11.smt2, 
+(unsat, None, 65)
+( EJSA TIMEOUT )
+=================================================================
+04_track_200.smt2, 
+( Z3 TIMEOUT )
+(unsat, 270)
+=================================================================
+04_track_77.smt2, 
+(unsat, None, 32)
+( EJSA TIMEOUT )
+=================================================================
+04_track_138.smt2, 
+(unsat, None, 66)
+( EJSA TIMEOUT )
+=================================================================
+04_track_20.smt2, 
+(sat, [A = "aadc", C = "aadcb", B = "dc"], 25)
+( EJSA TIMEOUT )
+=================================================================
+04_track_154.smt2, 
+(unsat, None, 32)
+( EJSA TIMEOUT )
+=================================================================
+04_track_171.smt2, 
+(sat, [E = "becdebd", H = "", A = "a", C = "acdb"], 153)
+( EJSA TIMEOUT )
+=================================================================
+04_track_113.smt2, 
+(unsat, None, 30)
+( EJSA TIMEOUT )
+=================================================================
+04_track_126.smt2, 
+(unsat, None, 54)
+( EJSA TIMEOUT )
+=================================================================
+04_track_103.smt2, 
+(unsat, None, 31)
+( EJSA TIMEOUT )
+=================================================================
+04_track_133.smt2, 
+(sat, [C = "bcddcc", D = "bbcbdabb", A = "abbbba"], 40)
+( EJSA TIMEOUT )
+=================================================================
+04_track_25.smt2, 
+(unsat, None, 40)
+( EJSA TIMEOUT )
+=================================================================
+04_track_51.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_131.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+04_track_170.smt2, 
+( Z3 TIMEOUT )
+(unsat, 289)
+=================================================================
+04_track_123.smt2, 
+(unsat, None, 42)
+( EJSA TIMEOUT )
+=================================================================
+04_track_196.smt2, 
+(sat, [G = "", B = "a", J = "", C = "aaaa"], 62)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 6,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 7,
+    "SPFsym" : "",
+    "input" : "aaaaa"
+  } ]
+}, 622)
+=================================================================
+04_track_85.smt2, 
+(unsat, None, 39)
+( EJSA TIMEOUT )
+=================================================================
+04_track_159.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )

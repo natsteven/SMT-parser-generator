@@ -1,0 +1,72 @@
+=================================================================
+slog_stranger_2423_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!"], 30)
+(unsat, 809)
+=================================================================
+slog_stranger_148_sink.smt2, 
+(sat, [sigmaStar_5 = "!0!/evil!1!"], 26)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : "_evil"
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 1490)
+=================================================================
+slog_stranger_2739_sink.smt2, 
+(unsat, None, 21)
+(unsat, 525)
+=================================================================
+slog_stranger_4185_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!/evil!1!"], 24)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : "_evil"
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 1395)
+=================================================================
+slog_stranger_248_sink.smt2, 
+(unsat, None, 22)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_255_sink.smt2, 
+(sat, [sigmaStar_1 = "!0!/evil!1!"], 25)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : "_evil"
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 1362)

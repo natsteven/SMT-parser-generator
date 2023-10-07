@@ -1,0 +1,200 @@
+01_track_197.smt2, sat, 21, 24, unsat, 348, 6, , 
+01_track_175.smt2, sat, 23, 79, unsat, 333, 6, , 
+01_track_179.smt2, sat, 22, 8, TO, , 6, ,
+01_track_163.smt2, sat, 25, 8, TO, , 6, ,
+01_track_193.smt2, sat, 22, 0,  sat, 307, 0, True , 0
+01_track_142.smt2, sat, 22, 15, unsat, 363, 6, , 
+01_track_169.smt2, sat, 26, 3,  sat, 817, 3, False , 0
+01_track_145.smt2, sat, 33, 1,  sat, 636, 1, True , 0
+01_track_17.smt2, sat, 32, 31, unsat, 433, 6, , 
+01_track_102.smt2, sat, 26, 3,  sat, 540, 3, False , 0
+01_track_161.smt2, sat, 45, 30, TO, , 6, ,
+01_track_30.smt2, sat, 24, 2,  sat, 860, 2, True , 0
+01_track_80.smt2, sat, 99, 4, unsat, 228, 4, , 
+01_track_18.smt2, sat, 23, 47, TO, , 6, ,
+01_track_101.smt2, sat, 42, 7, TO, , 6, ,
+01_track_87.smt2, sat, 184, 16, unsat, 340, 6, , 
+01_track_108.smt2, sat, 24, 30, unsat, 379, 6, , 
+01_track_157.smt2, sat, 26, 30, unsat, 3813, 6, , 
+01_track_148.smt2, sat, 26, 21, unsat, 230, 6, , 
+01_track_37.smt2, sat, 21, 53, unsat, 341, 6, , 
+01_track_66.smt2, sat, 23, 3,  sat, 424, 3, True , 0
+01_track_38.smt2, sat, 42, 33, unsat, 416, 6, , 
+01_track_34.smt2, sat, 38, 8, unsat, 331, 6, , 
+01_track_109.smt2, TO, , , TO, , 6, ,
+01_track_39.smt2, sat, 25, 14, unsat, 1741, 6, , 
+01_track_195.smt2, sat, 32, 5,  sat, 422, 5, True , 0
+01_track_116.smt2, sat, 107, 19, unsat, 386, 6, , 
+01_track_166.smt2, sat, 34, 57, unsat, 442, 6, , 
+01_track_42.smt2, sat, 50, 8, TO, , 6, ,
+01_track_105.smt2, sat, 22, 2, TO, , 2, ,
+01_track_173.smt2, sat, 26, 57, unsat, 366, 6, , 
+01_track_153.smt2, sat, 40, 17, unsat, 351, 6, , 
+01_track_84.smt2, sat, 39, 12, unsat, 330, 6, , 
+01_track_120.smt2, sat, 289, 51, TO, , 6, ,
+01_track_176.smt2, sat, 22, 2,  sat, 315, 2, True , 0
+01_track_158.smt2, sat, 30, 2, TO, , 2, ,
+01_track_156.smt2, sat, 29, 35, unsat, 463, 6, , 
+01_track_44.smt2, sat, 24, 0,  sat, 357, 0, True , 0
+01_track_180.smt2, sat, 24, 46, unsat, 413, 6, , 
+01_track_160.smt2, sat, 23, 14, unsat, 342, 6, , 
+01_track_12.smt2, sat, 22, 29, TO, , 6, ,
+01_track_149.smt2, sat, 24, 3,  sat, 360, 3, False , 0
+01_track_71.smt2, sat, 72, 6,  sat, 705, 6, True , 0
+01_track_50.smt2, TO, , , unsat, 243, 6, , 
+01_track_164.smt2, sat, 22, 2,  sat, 418, 2, True , 0
+01_track_188.smt2, sat, 46, 44, TO, , 6, ,
+01_track_177.smt2, TO, , , unsat, 4505, 6, , 
+01_track_152.smt2, sat, 23, 60, unsat, 419, 6, , 
+01_track_170.smt2, sat, 23, 12, unsat, 409, 6, , 
+01_track_86.smt2, sat, 22, 9, unsat, 304, 6, , 
+01_track_146.smt2, sat, 23, 3,  sat, 324, 3, True , 0
+01_track_82.smt2, sat, 117, 23, TO, , 6, ,
+01_track_172.smt2, sat, 32, 8, unsat, 512, 6, , 
+01_track_20.smt2, sat, 27, 2,  sat, 998, 2, True , 0
+01_track_110.smt2, sat, 45, 24, TO, , 6, ,
+01_track_119.smt2, sat, 21, 0,  sat, 342, 0, False , 0
+01_track_60.smt2, sat, 51, 13, TO, , 6, ,
+01_track_95.smt2, sat, 29, 3,  sat, 778, 3, True , 0
+01_track_104.smt2, sat, 33, 7,  sat, 884, 6, False , 2
+01_track_72.smt2, sat, 48, 11, unsat, 1164, 6, , 
+01_track_124.smt2, sat, 22, 52, unsat, 384, 6, , 
+01_track_57.smt2, sat, 23, 17, unsat, 457, 6, , 
+01_track_61.smt2, sat, 22, 5,  sat, 698, 5, False , 0
+01_track_49.smt2, sat, 22, 13, unsat, 298, 6, , 
+01_track_77.smt2, sat, 31, 62, TO, , 6, ,
+01_track_192.smt2, sat, 21, 5,  sat, 683, 5, False , 0
+01_track_27.smt2, sat, 21, 4,  sat, 359, 4, True , 0
+01_track_114.smt2, sat, 24, 15, unsat, 683, 6, , 
+01_track_135.smt2, sat, 476, 8, TO, , 6, ,
+01_track_76.smt2, sat, 22, 4,  sat, 401, 4, True , 0
+01_track_168.smt2, sat, 24, 5, TO, , 5, ,
+01_track_123.smt2, sat, 27, 33, TO, , 6, ,
+01_track_52.smt2, sat, 26, 21, unsat, 417, 6, , 
+01_track_191.smt2, sat, 36, 14, TO, , 6, ,
+01_track_47.smt2, sat, 28, 11, TO, , 6, ,
+01_track_117.smt2, sat, 47, 21, TO, , 6, ,
+01_track_199.smt2, sat, 37, 22,  sat, 859, 6, False , 13
+01_track_154.smt2, sat, 24, 4,  sat, 426, 4, False , 6
+01_track_174.smt2, TO, , , unsat, 468, 4, , 
+01_track_165.smt2, sat, 26, 41, unsat, 334, 6, , 
+01_track_162.smt2, sat, 29, 17, TO, , 6, ,
+01_track_139.smt2, sat, 112, 21, TO, , 6, ,
+01_track_112.smt2, sat, 22, 1,  sat, 315, 1, True , 0
+01_track_73.smt2, sat, 26, 39, TO, , 6, ,
+01_track_182.smt2, sat, 27, 2,  sat, 379, 2, True , 0
+01_track_43.smt2, TO, , , unsat, 2948, 2, , 
+01_track_79.smt2, sat, 26, 42, unsat, 1753, 6, , 
+01_track_198.smt2, sat, 48, 26, TO, , 6, ,
+01_track_194.smt2, sat, 40, 2, TO, , 2, ,
+01_track_22.smt2, sat, 24, 4,  sat, 537, 4, False , 0
+01_track_28.smt2, sat, 30, 32, TO, , 6, ,
+01_track_183.smt2, sat, 22, 19, unsat, 339, 6, , 
+01_track_134.smt2, sat, 24, 72, TO, , 6, ,
+01_track_147.smt2, sat, 86, 18, unsat, 2149, 6, , 
+01_track_138.smt2, sat, 52, 11, unsat, 292, 6, , 
+01_track_31.smt2, sat, 22, 11, TO, , 6, ,
+01_track_99.smt2, sat, 23, 21, unsat, 311, 6, , 
+01_track_9.smt2, sat, 24, 31, unsat, 300, 6, , 
+01_track_143.smt2, sat, 27, 31, unsat, 370, 6, , 
+01_track_78.smt2, sat, 23, 27, unsat, 281, 6, , 
+01_track_8.smt2, sat, 49, 10, TO, , 6, ,
+01_track_151.smt2, sat, 63, 22, unsat, 372, 6, , 
+01_track_25.smt2, sat, 24, 40, TO, , 6, ,
+01_track_19.smt2, sat, 23, 15, unsat, 333, 6, , 
+01_track_74.smt2, sat, 27, 63, unsat, 312, 6, , 
+01_track_140.smt2, sat, 26, 6, TO, , 6, ,
+01_track_41.smt2, sat, 23, 16, TO, , 6, ,
+01_track_200.smt2, sat, 23, 0,  sat, 301, 0, True , 0
+01_track_63.smt2, sat, 63, 65, unsat, 327, 6, , 
+01_track_184.smt2, sat, 209, 15, unsat, 407, 6, , 
+01_track_115.smt2, sat, 24, 12, TO, , 6, ,
+01_track_6.smt2, sat, 28, 27, TO, , 6, ,
+01_track_137.smt2, sat, 26, 26, TO, , 6, ,
+01_track_35.smt2, sat, 27, 33, unsat, 896, 6, , 
+01_track_128.smt2, sat, 23, 0,  sat, 307, 0, True , 0
+01_track_46.smt2, sat, 229, 8, TO, , 6, ,
+01_track_2.smt2, sat, 23, 2,  sat, 435, 2, True , 0
+01_track_113.smt2, sat, 30, 14, unsat, 809, 6, , 
+01_track_97.smt2, sat, 25, 15,  sat, 756, 6, False , 6
+01_track_89.smt2, sat, 23, 10, unsat, 301, 6, , 
+01_track_10.smt2, sat, 25, 29, unsat, 462, 6, , 
+01_track_98.smt2, sat, 23, 49, unsat, 434, 6, , 
+01_track_54.smt2, sat, 29, 43, unsat, 340, 6, , 
+01_track_107.smt2, sat, 23, 15, TO, , 6, ,
+01_track_16.smt2, sat, 31, 23, TO, , 6, ,
+01_track_21.smt2, sat, 21, 15, unsat, 331, 6, , 
+01_track_178.smt2, sat, 342, 54, TO, , 6, ,
+01_track_159.smt2, sat, 32, 12, TO, , 6, ,
+01_track_15.smt2, sat, 30, 6, TO, , 6, ,
+01_track_36.smt2, sat, 133, 16, TO, , 6, ,
+01_track_130.smt2, sat, 22, 4,  sat, 363, 4, True , 0
+01_track_14.smt2, sat, 29, 5,  sat, 423, 5, False , 6
+01_track_7.smt2, sat, 31, 55, unsat, 372, 6, , 
+01_track_167.smt2, sat, 29, 19, unsat, 295, 6, , 
+01_track_23.smt2, sat, 27, 2, TO, , 2, ,
+01_track_70.smt2, sat, 37, 6, TO, , 6, ,
+01_track_58.smt2, sat, 99, 38, unsat, 334, 6, , 
+01_track_11.smt2, sat, 70, 26, unsat, 298, 6, , 
+01_track_3.smt2, sat, 29, 83, unsat, 287, 6, , 
+01_track_69.smt2, sat, 37, 32, TO, , 6, ,
+01_track_5.smt2, sat, 22, 15, unsat, 324, 6, , 
+01_track_141.smt2, sat, 39, 28, unsat, 300, 6, , 
+01_track_190.smt2, sat, 23, 5, TO, , 5, ,
+01_track_125.smt2, sat, 44, 49, unsat, 340, 6, , 
+01_track_68.smt2, sat, 22, 44, unsat, 335, 6, , 
+01_track_29.smt2, sat, 26, 35, unsat, 353, 6, , 
+01_track_155.smt2, sat, 21, 10, TO, , 6, ,
+01_track_100.smt2, sat, 215, 13, TO, , 6, ,
+01_track_4.smt2, sat, 27, 1,  sat, 358, 1, True , 0
+01_track_144.smt2, sat, 26, 13, unsat, 387, 6, , 
+01_track_185.smt2, sat, 22, 19, unsat, 295, 6, , 
+01_track_186.smt2, sat, 40, 8, unsat, 509, 6, , 
+01_track_53.smt2, sat, 34, 21, TO, , 6, ,
+01_track_189.smt2, sat, 28, 2,  sat, 2007, 2, True , 0
+01_track_33.smt2, sat, 29, 19, TO, , 6, ,
+01_track_103.smt2, sat, 21, 26, unsat, 589, 6, , 
+01_track_64.smt2, sat, 229, 6, TO, , 6, ,
+01_track_122.smt2, sat, 26, 28, TO, , 6, ,
+01_track_75.smt2, sat, 21, 13, TO, , 6, ,
+01_track_131.smt2, sat, 578, 55, TO, , 6, ,
+01_track_133.smt2, TO, , , TO, , 6, ,
+01_track_67.smt2, sat, 202, 30, TO, , 6, ,
+01_track_40.smt2, sat, 41, 4,  sat, 859, 4, False , 0
+01_track_1.smt2, sat, 22, 0,  sat, 313, 0, True , 0
+01_track_150.smt2, sat, 38, 2,  sat, 421, 2, False , 2
+01_track_85.smt2, sat, 22, 8, TO, , 6, ,
+01_track_51.smt2, sat, 21, 53, unsat, 304, 6, , 
+01_track_126.smt2, sat, 41, 7, unsat, 360, 6, , 
+01_track_181.smt2, sat, 22, 13, unsat, 345, 6, , 
+01_track_65.smt2, sat, 102, 14, unsat, 333, 6, , 
+01_track_26.smt2, sat, 36, 5, TO, , 5, ,
+01_track_129.smt2, sat, 22, 0,  sat, 318, 0, True , 0
+01_track_55.smt2, sat, 228, 58, unsat, 478, 6, , 
+01_track_24.smt2, sat, 24, 23, unsat, 363, 6, , 
+01_track_62.smt2, sat, 22, 35, unsat, 349, 6, , 
+01_track_81.smt2, sat, 24, 21, unsat, 1588, 6, , 
+01_track_45.smt2, sat, 22, 39, unsat, 307, 6, , 
+01_track_94.smt2, sat, 22, 23, unsat, 336, 6, , 
+01_track_136.smt2, sat, 21, 6, TO, , 6, ,
+01_track_13.smt2, sat, 21, 12, unsat, 336, 6, , 
+01_track_171.smt2, sat, 22, 28, unsat, 352, 6, , 
+01_track_88.smt2, sat, 59, 10, TO, , 6, ,
+01_track_118.smt2, sat, 22, 45, TO, , 6, ,
+01_track_92.smt2, sat, 22, 2,  sat, 560, 2, True , 0
+01_track_196.smt2, sat, 23, 16, unsat, 373, 6, , 
+01_track_59.smt2, sat, 24, 27, unsat, 724, 6, , 
+01_track_106.smt2, sat, 26, 39, unsat, 630, 6, , 
+01_track_90.smt2, sat, 41, 60, unsat, 356, 6, , 
+01_track_127.smt2, sat, 26, 13, unsat, 800, 6, , 
+01_track_187.smt2, sat, 25, 10, TO, , 6, ,
+01_track_56.smt2, sat, 61, 11, unsat, 335, 6, , 
+01_track_132.smt2, sat, 122, 18, unsat, 336, 6, , 
+01_track_111.smt2, TO, , , TO, , 6, ,
+01_track_93.smt2, sat, 21, 3,  sat, 4713, 3, False , 0
+01_track_83.smt2, sat, 21, 2,  sat, 309, 2, True , 0
+01_track_32.smt2, sat, 28, 10, unsat, 347, 6, , 
+01_track_96.smt2, sat, 29, 31, unsat, 4225, 6, , 
+01_track_121.smt2, sat, 24, 24, unsat, 288, 6, , 
+01_track_48.smt2, sat, 21, 1,  sat, 342, 1, True , 0
+01_track_91.smt2, sat, 22, 7, TO, , 6, ,

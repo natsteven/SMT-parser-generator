@@ -1,0 +1,200 @@
+03_track_73.smt2, TO, , , TO, , 4, ,
+03_track_125.smt2, sat, 48, 2, TO, , 2, ,
+03_track_110.smt2, sat, 25, 2,  sat, 2479, 2, True , 0
+03_track_122.smt2, sat, 58, 5, TO, , 5, ,
+03_track_26.smt2, TO, , 5, ,
+03_track_124.smt2, sat, 98, 6, TO, , 6, ,
+03_track_89.smt2, sat, 33, 3,  sat, 471, 3, False , 3
+03_track_42.smt2, TO, , 3, ,
+03_track_76.smt2, sat, 301, 12, TO, , 6, ,
+03_track_119.smt2, sat, 115, 2,  sat, 696, 2, False , 3
+03_track_46.smt2, TO, , , TO, , 2, ,
+03_track_32.smt2, TO, , 2, ,
+03_track_81.smt2, sat, 169, 4, TO, , 4, ,
+03_track_29.smt2, TO, , 4, ,
+03_track_158.smt2, sat, 80, 2, TO, , 2, ,
+03_track_154.smt2, TO, , , TO, , 2, ,
+03_track_94.smt2, sat, 27, 1,  sat, 309, 1, True , 0
+03_track_49.smt2, sat, 54, 2, TO, , 2, ,
+03_track_67.smt2, TO, , , TO, , 2, ,
+03_track_16.smt2, TO, , 2, ,
+03_track_5.smt2, unsat, 2955, 2, , 
+03_track_195.smt2, sat, 473, 5, TO, , 5, ,
+03_track_88.smt2, sat, 166, 2, TO, , 2, ,
+03_track_74.smt2, TO, , , TO, , 2, ,
+03_track_103.smt2, sat, 24, 2,  sat, 626, 2, True , 0
+03_track_63.smt2, sat, 236, 3, TO, , 3, ,
+03_track_52.smt2, sat, 50, 2, TO, , 2, ,
+03_track_28.smt2, TO, , 2, ,
+03_track_197.smt2, sat, 26, 2,  sat, 700, 2, True , 0
+03_track_166.smt2, sat, 250, 12, TO, , 6, ,
+03_track_51.smt2, sat, 742, 5, TO, , 5, ,
+03_track_190.smt2, TO, , , TO, , 5, ,
+03_track_177.smt2, sat, 25, 4,  sat, 803, 4, True , 0
+03_track_106.smt2, sat, 28, 1,  sat, 361, 1, True , 0
+03_track_4.smt2, TO, , 1, ,
+03_track_92.smt2, sat, 28, 2,  sat, 376, 2, True , 0
+03_track_123.smt2, sat, 137, 2, TO, , 2, ,
+03_track_22.smt2, unsat, 583, 2, , 
+03_track_90.smt2, sat, 34, 2,  sat, 1301, 2, True , 0
+03_track_146.smt2, sat, 107, 3, TO, , 3, ,
+03_track_112.smt2, sat, 27, 2,  sat, 1372, 2, True , 0
+03_track_167.smt2, sat, 323, 2, TO, , 2, ,
+03_track_2.smt2, TO, , 2, ,
+03_track_182.smt2, TO, , , TO, , 2, ,
+03_track_6.smt2, TO, , 2, ,
+03_track_111.smt2, sat, 37, 2,  sat, 848, 2, False , 0
+03_track_80.smt2, sat, 24, 0,  sat, 344, 0, True , 0
+03_track_71.smt2, sat, 77, 2, TO, , 2, ,
+03_track_109.smt2, sat, 28, 8, TO, , 6, ,
+03_track_134.smt2, sat, 103, 5, TO, , 5, ,
+03_track_192.smt2, sat, 172, 5, TO, , 5, ,
+03_track_13.smt2, unsat, 358, 5, , 
+03_track_30.smt2, TO, , 5, ,
+03_track_127.smt2, sat, 26, 1,  sat, 310, 1, True , 0
+03_track_132.smt2, sat, 150, 4, TO, , 4, ,
+03_track_14.smt2, unsat, 352, 4, , 
+03_track_170.smt2, TO, , , TO, , 4, ,
+03_track_169.smt2, TO, , , TO, , 4, ,
+03_track_100.smt2, sat, 31, 2,  sat, 370, 2, True , 0
+03_track_189.smt2, sat, 815, 3, TO, , 3, ,
+03_track_174.smt2, TO, , , TO, , 3, ,
+03_track_68.smt2, TO, , , TO, , 3, ,
+03_track_145.smt2, TO, , , TO, , 3, ,
+03_track_17.smt2, unsat, 308, 3, , 
+03_track_187.smt2, TO, , , TO, , 3, ,
+03_track_165.smt2, TO, , , TO, , 3, ,
+03_track_139.smt2, sat, 390, 4, TO, , 4, ,
+03_track_98.smt2, sat, 40, 3,  sat, 593, 3, False , 2
+03_track_138.smt2, TO, , , TO, , 3, ,
+03_track_131.smt2, sat, 91, 2, TO, , 2, ,
+03_track_114.smt2, sat, 45, 2,  sat, 356, 2, False , 3
+03_track_116.smt2, sat, 104, 3, TO, , 3, ,
+03_track_21.smt2, TO, , 3, ,
+03_track_130.smt2, TO, , , TO, , 3, ,
+03_track_44.smt2, TO, , 3, ,
+03_track_87.smt2, sat, 51, 2, TO, , 2, ,
+03_track_69.smt2, sat, 354, 4, TO, , 4, ,
+03_track_108.smt2, sat, 43, 2,  sat, 373, 2, True , 0
+03_track_199.smt2, TO, , , TO, , 2, ,
+03_track_178.smt2, sat, 668, 3, TO, , 3, ,
+03_track_168.smt2, sat, 226, 2, TO, , 2, ,
+03_track_48.smt2, TO, , , TO, , 2, ,
+03_track_55.smt2, sat, 42, 2, TO, , 2, ,
+03_track_118.smt2, sat, 69, 2, TO, , 2, ,
+03_track_151.smt2, TO, , , TO, , 2, ,
+03_track_41.smt2, unsat, 619, 2, , 
+03_track_191.smt2, TO, , , TO, , 2, ,
+03_track_78.smt2, TO, , , TO, , 2, ,
+03_track_83.smt2, sat, 219, 5, TO, , 5, ,
+03_track_1.smt2, TO, , 5, ,
+03_track_147.smt2, sat, 31, 5, TO, , 5, ,
+03_track_56.smt2, sat, 77, 3, TO, , 3, ,
+03_track_135.smt2, sat, 49, 7, TO, , 6, ,
+03_track_23.smt2, TO, , 6, ,
+03_track_24.smt2, TO, , 6, ,
+03_track_137.smt2, sat, 114, 2, TO, , 2, ,
+03_track_179.smt2, sat, 182, 4, TO, , 4, ,
+03_track_133.smt2, sat, 35, 2,  sat, 971, 2, True , 0
+03_track_129.smt2, sat, 49, 2,  sat, 424, 2, True , 0
+03_track_157.smt2, sat, 150, 4, TO, , 4, ,
+03_track_91.smt2, sat, 27, 1,  sat, 312, 1, True , 0
+03_track_163.smt2, TO, , , unsat, 480, 1, , 
+03_track_58.smt2, TO, , , unsat, 383, 1, , 
+03_track_61.smt2, TO, , , unsat, 884, 1, , 
+03_track_50.smt2, TO, , , unsat, 764, 1, , 
+03_track_142.smt2, sat, 292, 3, TO, , 3, ,
+03_track_54.smt2, TO, , , TO, , 3, ,
+03_track_11.smt2, unsat, 305, 3, , 
+03_track_9.smt2, unsat, 1143, 3, , 
+03_track_36.smt2, TO, , 3, ,
+03_track_39.smt2, TO, , 3, ,
+03_track_34.smt2, TO, , 3, ,
+03_track_185.smt2, sat, 48, 2,  sat, 362, 2, True , 0
+03_track_196.smt2, TO, , , TO, , 2, ,
+03_track_70.smt2, sat, 71, 2, TO, , 2, ,
+03_track_38.smt2, unsat, 1337, 2, , 
+03_track_160.smt2, sat, 112, 2,  sat, 4937, 2, False , 1
+03_track_149.smt2, sat, 117, 4, TO, , 4, ,
+03_track_97.smt2, sat, 29, 2,  sat, 571, 2, False , 2
+03_track_59.smt2, sat, 253, 5, TO, , 5, ,
+03_track_148.smt2, sat, 56, 2, TO, , 2, ,
+03_track_7.smt2, unsat, 289, 2, , 
+03_track_82.smt2, sat, 243, 6, TO, , 6, ,
+03_track_104.smt2, sat, 27, 1,  sat, 311, 1, True , 0
+03_track_85.smt2, sat, 198, 3, TO, , 3, ,
+03_track_153.smt2, sat, 288, 7, TO, , 6, ,
+03_track_8.smt2, unsat, 346, 6, , 
+03_track_40.smt2, TO, , 6, ,
+03_track_143.smt2, sat, 292, 2, TO, , 2, ,
+03_track_161.smt2, sat, 36, 4, TO, , 4, ,
+03_track_19.smt2, TO, , 4, ,
+03_track_99.smt2, sat, 31, 2,  sat, 1073, 2, True , 0
+03_track_45.smt2, TO, , , TO, , 2, ,
+03_track_120.smt2, sat, 30, 2,  sat, 629, 2, False , 2
+03_track_159.smt2, sat, 58, 2,  sat, 1117, 2, False , 4
+03_track_35.smt2, TO, , 2, ,
+03_track_20.smt2, unsat, 857, 2, , 
+03_track_64.smt2, sat, 59, 2, TO, , 2, ,
+03_track_200.smt2, TO, , , TO, , 2, ,
+03_track_84.smt2, sat, 346, 3, TO, , 3, ,
+03_track_47.smt2, sat, 76, 4, TO, , 4, ,
+03_track_18.smt2, unsat, 536, 4, , 
+03_track_188.smt2, sat, 46, 2,  sat, 374, 2, False , 3
+03_track_152.smt2, TO, , , TO, , 2, ,
+03_track_140.smt2, TO, , , TO, , 2, ,
+03_track_175.smt2, sat, 541, 3, TO, , 3, ,
+03_track_93.smt2, sat, 29, 2,  sat, 421, 2, True , 0
+03_track_77.smt2, TO, , , TO, , 2, ,
+03_track_10.smt2, unsat, 564, 2, , 
+03_track_12.smt2, unsat, 331, 2, , 
+03_track_62.smt2, sat, 358, 3, TO, , 3, ,
+03_track_173.smt2, sat, 256, 42, TO, , 6, ,
+03_track_171.smt2, TO, , , TO, , 6, ,
+03_track_156.smt2, TO, , , TO, , 6, ,
+03_track_183.smt2, sat, 231, 5, TO, , 5, ,
+03_track_95.smt2, sat, 27, 1,  sat, 312, 1, True , 0
+03_track_162.smt2, sat, 86, 2, TO, , 2, ,
+03_track_3.smt2, TO, , 2, ,
+03_track_113.smt2, sat, 106, 2, TO, , 2, ,
+03_track_101.smt2, sat, 28, 2,  sat, 650, 2, True , 0
+03_track_37.smt2, unsat, 2496, 2, , 
+03_track_150.smt2, TO, , , TO, , 2, ,
+03_track_75.smt2, TO, , , TO, , 2, ,
+03_track_96.smt2, sat, 31, 6, TO, , 6, ,
+03_track_86.smt2, sat, 55, 2, TO, , 2, ,
+03_track_117.smt2, sat, 126, 3, TO, , 3, ,
+03_track_121.smt2, sat, 39, 2, TO, , 2, ,
+03_track_141.smt2, sat, 48, 2,  sat, 2421, 2, False , 1
+03_track_57.smt2, sat, 86, 2, TO, , 2, ,
+03_track_126.smt2, sat, 29, 1,  sat, 313, 1, True , 0
+03_track_176.smt2, sat, 328, 3, TO, , 3, ,
+03_track_33.smt2, TO, , 3, ,
+03_track_186.smt2, sat, 131, 2, TO, , 2, ,
+03_track_144.smt2, sat, 29, 1,  sat, 309, 1, True , 0
+03_track_105.smt2, sat, 28, 1,  sat, 310, 1, True , 0
+03_track_72.smt2, sat, 60, 2, TO, , 2, ,
+03_track_194.smt2, sat, 40, 2,  sat, 382, 2, True , 0
+03_track_79.smt2, sat, 237, 2, TO, , 2, ,
+03_track_184.smt2, sat, 54, 4, TO, , 4, ,
+03_track_172.smt2, sat, 329, 11, TO, , 6, ,
+03_track_198.smt2, sat, 33, 6, TO, , 6, ,
+03_track_31.smt2, TO, , 6, ,
+03_track_155.smt2, sat, 176, 3, TO, , 3, ,
+03_track_15.smt2, unsat, 339, 3, , 
+03_track_193.smt2, sat, 102, 3, TO, , 3, ,
+03_track_25.smt2, TO, , 3, ,
+03_track_115.smt2, sat, 154, 3, TO, , 3, ,
+03_track_65.smt2, TO, , , TO, , 3, ,
+03_track_43.smt2, unsat, 353, 3, , 
+03_track_60.smt2, TO, , , TO, , 3, ,
+03_track_53.smt2, TO, , , TO, , 3, ,
+03_track_128.smt2, sat, 43, 2,  sat, 1739, 2, False , 1
+03_track_136.smt2, sat, 669, 3, TO, , 3, ,
+03_track_107.smt2, sat, 37, 2,  sat, 359, 2, True , 0
+03_track_164.smt2, sat, 62, 2, TO, , 2, ,
+03_track_27.smt2, TO, , 2, ,
+03_track_181.smt2, sat, 33, 3, TO, , 3, ,
+03_track_180.smt2, sat, 46, 2,  sat, 2150, 2, False , 3
+03_track_102.smt2, sat, 34, 5, TO, , 5, ,
+03_track_66.smt2, TO, , , TO, , 5, ,

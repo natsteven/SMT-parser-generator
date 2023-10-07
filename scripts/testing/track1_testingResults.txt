@@ -1,0 +1,1316 @@
+=================================================================
+01_track_197.smt2, 
+(sat, [C = "", F = "jabjdjaigidegjjajgedciad"], 22)
+(unsat, 317)
+=================================================================
+01_track_175.smt2, 
+(sat, [A = "chiacdchcghfcaafbfgaghcgedddaaghchgdhgghibegagghaiciacdgbcadhbcgfifefgcbfcagdde"], 22)
+(unsat, 293)
+=================================================================
+01_track_179.smt2, 
+(sat, [E = "", C = "dggebdeh"], 22)
+( EJSA TIMEOUT )
+=================================================================
+01_track_163.smt2, 
+(sat, [O = "", E = "ccddgcgh", N = "", K = ""], 23)
+( EJSA TIMEOUT )
+=================================================================
+01_track_193.smt2, 
+(sat, [M = "", J = ""], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 307)
+=================================================================
+01_track_142.smt2, 
+(sat, [C = "ddcbdffbedffcfd"], 21)
+(unsat, 332)
+=================================================================
+01_track_169.smt2, 
+(sat, [F = "", E = "egh", D = "hg", A = ""], 25)
+( EJSA TIMEOUT )
+=================================================================
+01_track_145.smt2, 
+(sat, [G = "a", E = "", H = "a", A = ""], 34)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "a"
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "a"
+  } ]
+}, 1362)
+=================================================================
+01_track_17.smt2, 
+(sat, [F = "ab", L = "bac", H = "baabcaabacabbcacbccaaccbabbbccb"], 32)
+(unsat, 365)
+=================================================================
+01_track_102.smt2, 
+(sat, [G = "aaa", F = "", C = ""], 30)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : "aaa"
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 619)
+=================================================================
+01_track_161.smt2, 
+(sat, [C = "Afabfafbefgbdcaffcaagbccbagdbf",
+ L = "bfeeedefeA",
+ H = ""], 47)
+(unsat, 1637)
+=================================================================
+01_track_30.smt2, 
+(sat, [F = "ee", H = "", A = "b"], 28)
+( EJSA TIMEOUT )
+=================================================================
+01_track_80.smt2, 
+(sat, [G = "aaaa", E = "", C = "", A = ""], 97)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ ]
+}, 230)
+=================================================================
+01_track_18.smt2, 
+(sat, [E = "",
+ H = "",
+ G = "accccccabbcccacbcacaaaacbacccacbcbccaaaabccccac"], 21)
+( EJSA TIMEOUT )
+=================================================================
+01_track_101.smt2, 
+(sat, [J = "", B = "fdhi", M = "cbah", A = "efhahcc"], 44)
+( EJSA TIMEOUT )
+=================================================================
+01_track_87.smt2, 
+(sat, [J = "bbbabb", I = "bbbbabcacabcbc", M = "ccccbacccaccacca"], 197)
+(unsat, 338)
+=================================================================
+01_track_108.smt2, 
+(sat, [B = "ebceedebceeeeaebcdbceaacdbcbbd"], 32)
+(unsat, 481)
+=================================================================
+01_track_157.smt2, 
+(sat, [L = "",
+ O = "",
+ A = "",
+ E = "babdddgfffggbccgfdfbfcddgafccf"], 25)
+(unsat, 1140)
+=================================================================
+01_track_148.smt2, 
+(sat, [I = "c", F = "", C = "bgefhgaejjgadebdgcdab"], 31)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ ]
+}, 249)
+=================================================================
+01_track_37.smt2, 
+(sat, [G = "",
+ C = "deddfbeebcfbbafabdcdbfdbcbbedceeecefaeabdffbfbeafecfb"], 23)
+(unsat, 344)
+=================================================================
+01_track_66.smt2, 
+(sat, [E = "b", D = "ccb"], 25)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "b"
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "ccb"
+  } ]
+}, 473)
+=================================================================
+01_track_38.smt2, 
+(sat, [F = "ddedeeb",
+ E = "ebaebbcbbbaccfacdcdaccbfcbaa",
+ D = "dbcaedadcabceffcffecfbcbfabccbedf"], 56)
+(unsat, 473)
+=================================================================
+01_track_34.smt2, 
+(sat, [B = "c", A = "edddcfae"], 45)
+(unsat, 364)
+=================================================================
+01_track_109.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+01_track_39.smt2, 
+(sat, [B = "bcdecbadcdbeaa", F = "dbaeae", D = ""], 32)
+(unsat, 632)
+=================================================================
+01_track_195.smt2, 
+(sat, [D = "ieecg", A = "cj"], 38)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "ieecg"
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "cj"
+  } ]
+}, 685)
+=================================================================
+01_track_116.smt2, 
+(sat, [A = "hhafcdaeefdbcdaegea", D = "bg"], 114)
+(unsat, 484)
+=================================================================
+01_track_166.smt2, 
+(sat, [I = "eaii",
+ E = "bjgfbeadhbehdifeijieadddjaidjhgjjajjjhebcedeifhiaiejfdcdf",
+ M = ""], 45)
+(unsat, 464)
+=================================================================
+01_track_42.smt2, 
+(sat, [G = "c", J = "b", I = "babaacaa", L = "c"], 65)
+( EJSA TIMEOUT )
+=================================================================
+01_track_105.smt2, 
+(sat, [I = "dd"], 25)
+( EJSA TIMEOUT )
+=================================================================
+01_track_173.smt2, 
+(sat, [E = "iacbdjddcdcbibcaabejbghcegibigbceaaefghbdehhfcbbecjhfgigf",
+ D = "ajfdjb"], 25)
+(unsat, 301)
+=================================================================
+01_track_153.smt2, 
+(sat, [G = "ebebcadc", B = "cbeafceaaefdaeefe"], 37)
+(unsat, 428)
+=================================================================
+01_track_84.smt2, 
+(sat, [C = "Aabbbcbcabab", E = "abacbbcA"], 41)
+(unsat, 350)
+=================================================================
+01_track_120.smt2, 
+(sat, [G = "cfbeddecfcgegddagccbbbeebcdegadcddbcbcfbadeeadafcDC",
+ B = "DCaccfafcdgdefffacfecdfedbagacfgefgea",
+ K = "cddcf"], 336)
+( EJSA TIMEOUT )
+=================================================================
+01_track_176.smt2, 
+(sat, [B = "", A = "gj"], 31)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : "gj"
+  } ]
+}, 383)
+=================================================================
+01_track_158.smt2, 
+(sat, [A = "eg"], 38)
+( EJSA TIMEOUT )
+=================================================================
+01_track_156.smt2, 
+(sat, [C = "cbgcdbgbfbgfeacegbcddgagbebgea",
+ A = "bbfbgegffgedegdfcgebgecgccadgdaefbf"], 28)
+(unsat, 482)
+=================================================================
+01_track_44.smt2, 
+(sat, [G = "", B = ""], 26)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 337)
+=================================================================
+01_track_180.smt2, 
+(sat, [B = "hjjfbfeijebfjabciadjchegiiedjdiihifdbfebiechbe"], 21)
+(unsat, 342)
+=================================================================
+01_track_160.smt2, 
+(sat, [A = "gefiaidbgcafig"], 22)
+(unsat, 294)
+=================================================================
+01_track_12.smt2, 
+(sat, [A = "", E = "", D = "beecfabcfbcbefcceeaadbadcfacd"], 23)
+( EJSA TIMEOUT )
+=================================================================
+01_track_149.smt2, 
+(sat, [J = "f", E = "jch", A = "", G = ""], 26)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "f"
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 6,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 7,
+    "SPFsym" : "",
+    "input" : "jch"
+  } ]
+}, 1753)
+=================================================================
+01_track_71.smt2, 
+(sat, [B = "", F = "aaaaaa", D = "", A = ""], 76)
+(unsat, 356)
+=================================================================
+01_track_50.smt2, 
+( Z3 TIMEOUT )
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ ]
+}, 263)
+=================================================================
+01_track_164.smt2, 
+(sat, [B = "", D = "ga"], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "ga"
+  } ]
+}, 432)
+=================================================================
+01_track_188.smt2, 
+(sat, [J = "c",
+ F = "fbhdibeaghgcgaafcbebgfbegdfbfcffaahbdeegciif",
+ E = "",
+ L = ""], 44)
+( EJSA TIMEOUT )
+=================================================================
+01_track_177.smt2, 
+( Z3 TIMEOUT )
+(unsat, 883)
+=================================================================
+01_track_152.smt2, 
+(sat, [A = "cffbcdabhgahehfdecfaffdedafgicdacdcgebecagchdccgfacadbahgiag"], 27)
+(unsat, 339)
+=================================================================
+01_track_170.smt2, 
+(sat, [A = "dccffccddcff"], 22)
+(unsat, 332)
+=================================================================
+01_track_86.smt2, 
+(sat, [E = "", F = "accccbbba"], 22)
+(unsat, 291)
+=================================================================
+01_track_146.smt2, 
+(sat, [A = "haj"], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : "haj"
+  } ]
+}, 338)
+=================================================================
+01_track_82.smt2, 
+(sat, [G = "ccb", B = "f", A = "cfabeacbccedbcdbbdddbed"], 116)
+( EJSA TIMEOUT )
+=================================================================
+01_track_172.smt2, 
+(sat, [B = "Agdbdccb", E = "ddeA"], 30)
+(unsat, 356)
+=================================================================
+01_track_20.smt2, 
+(sat, [A = "ab"], 28)
+( EJSA TIMEOUT )
+=================================================================
+01_track_110.smt2, 
+(sat, [G = "",
+ J = "dadbcceecbbebbA",
+ I = "",
+ C = "Aedbbedaaaecdeaabedeabab"], 45)
+( EJSA TIMEOUT )
+=================================================================
+01_track_119.smt2, 
+(sat, [A = "", B = ""], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 5,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 554)
+=================================================================
+01_track_60.smt2, 
+(sat, [C = "aaaccbabbbcca", A = "c"], 51)
+( EJSA TIMEOUT )
+=================================================================
+01_track_95.smt2, 
+(sat, [C = "", A = "cbd"], 30)
+( EJSA TIMEOUT )
+=================================================================
+01_track_104.smt2, 
+(sat, [B = "bicdjA", A = "Agdcabf"], 34)
+(unsat, 345)
+=================================================================
+01_track_72.smt2, 
+(sat, [I = "cbb", E = "bbdaaaaacbd", A = "a"], 47)
+(unsat, 503)
+=================================================================
+01_track_124.smt2, 
+(sat, [D = "",
+ E = "bddcaddgfgadacdgfgbdbccffcecbaefcfegebadbfagecfbdbfa"], 21)
+(unsat, 353)
+=================================================================
+01_track_57.smt2, 
+(sat, [B = "", C = "baabaaaaababbbbab"], 25)
+(unsat, 423)
+=================================================================
+01_track_61.smt2, 
+(sat, [F = "bbcbc"], 23)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "bbcbc"
+  } ]
+}, 954)
+=================================================================
+01_track_49.smt2, 
+(sat, [E = "adddcaabaccac"], 26)
+(unsat, 345)
+=================================================================
+01_track_77.smt2, 
+(sat, [F = "aaaababbaabbbaaabbabbabbababbbaaabaaaabaaaabbaabbbbabbbabaaabb",
+ C = "baa"], 32)
+( EJSA TIMEOUT )
+=================================================================
+01_track_192.smt2, 
+(sat, [I = "gbhff"], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : "gbhff"
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 678)
+=================================================================
+01_track_27.smt2, 
+(sat, [D = "", C = "jccj"], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "jccj"
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 342)
+=================================================================
+01_track_114.smt2, 
+(sat, [M = "", G = "", N = "cbaedeecaebedea"], 23)
+(unsat, 408)
+=================================================================
+01_track_135.smt2, 
+(sat, [J = "e",
+ O = "ebfA",
+ M = "cjacijhh",
+ E = "Ajafi",
+ D = "j",
+ H = "aha"], 479)
+( EJSA TIMEOUT )
+=================================================================
+01_track_76.smt2, 
+(sat, [J = "", E = "", D = "bdfd"], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 6,
+    "SPFsym" : "",
+    "input" : "bdfd"
+  } ]
+}, 559)
+=================================================================
+01_track_168.smt2, 
+(sat, [F = "agdhf"], 21)
+( EJSA TIMEOUT )
+=================================================================
+01_track_123.smt2, 
+(sat, [F = "b", E = "bababcaaddbdabacadabbabaaabdabcda"], 25)
+( EJSA TIMEOUT )
+=================================================================
+01_track_52.smt2, 
+(sat, [A = "cdccbebdabceecacceaea"], 21)
+(unsat, 324)
+=================================================================
+01_track_191.smt2, 
+(sat, [F = "efjhhfehbggefb", C = "g"], 24)
+( EJSA TIMEOUT )
+=================================================================
+01_track_47.smt2, 
+(sat, [G = "", B = "aa", C = "baabaabaaba"], 25)
+( EJSA TIMEOUT )
+=================================================================
+01_track_117.smt2, 
+(sat, [G = "Agiicjegjjbeiidhebbgi", J = "bfcgecjfaA", H = ""], 44)
+( EJSA TIMEOUT )
+=================================================================
+01_track_199.smt2, 
+(sat, [I = "a", M = "a", K = "", N = "aaaaaaaaaaaaaaaaaaaaaa"], 32)
+( EJSA TIMEOUT )
+=================================================================
+01_track_154.smt2, 
+(sat, [D = "f!0!", C = "!0!", E = "", G = ""], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "f"
+  } ]
+}, 308)
+=================================================================
+01_track_174.smt2, 
+( Z3 TIMEOUT )
+(unsat, 889)
+=================================================================
+01_track_165.smt2, 
+(sat, [C = "aaacbdgcefbbgeegfdcdcdacfaddeegdegcccaedc",
+ A = "gcefaecb"], 24)
+(unsat, 302)
+=================================================================
+01_track_162.smt2, 
+(sat, [F = "f", E = "cbfhhcbfcffeedhhe"], 28)
+( EJSA TIMEOUT )
+=================================================================
+01_track_139.smt2, 
+(sat, [J = "ffbbdebbcbcbcacedebab",
+ G = "dgbfaedcfecdb",
+ A = "cgec"], 102)
+( EJSA TIMEOUT )
+=================================================================
+01_track_112.smt2, 
+(sat, [B = "", A = "a"], 26)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : "a"
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 318)
+=================================================================
+01_track_73.smt2, 
+(sat, [B = "gccchcbdcehedcehaeachghehhededaddhcehgb"], 23)
+( EJSA TIMEOUT )
+=================================================================
+01_track_182.smt2, 
+(sat, [J = "c", I = "gj", C = "", D = "j"], 40)
+( EJSA TIMEOUT )
+=================================================================
+01_track_43.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+01_track_79.smt2, 
+(sat, [E = "", G = "cabcababcaaaabaacccccabbbabccacabccaacbbab"], 26)
+(unsat, 682)
+=================================================================
+01_track_198.smt2, 
+(sat, [J = "caaaaaabaacbcaabaaabaabaca",
+ M = "",
+ K = "",
+ D = "",
+ N = "aa"], 48)
+( EJSA TIMEOUT )
+=================================================================
+01_track_194.smt2, 
+(sat, [G = "aa", B = "a", J = ""], 43)
+( EJSA TIMEOUT )
+=================================================================
+01_track_22.smt2, 
+(sat, [C = "", M = "e", D = "heec", H = ""], 24)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : "heec"
+  }, {
+    "ID" : 5,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 6,
+    "SPFsym" : "",
+    "input" : "e"
+  } ]
+}, 1677)
+=================================================================
+01_track_28.smt2, 
+(sat, [J = "b", D = "ehfhccbbbjaecdfcdchciicdiedjbgea", A = ""], 30)
+( EJSA TIMEOUT )
+=================================================================
+01_track_183.smt2, 
+(sat, [M = "", L = "", J = "edaeccdahhahcceiibh"], 24)
+(unsat, 337)
+=================================================================
+01_track_134.smt2, 
+(sat, [E = "",
+ G = "ebdccdebcdcecbeceeccebdddecbeebbbbdbaebdcbbcdecbdaeeacbbcadcceedbeddcacd"], 22)
+( EJSA TIMEOUT )
+=================================================================
+01_track_147.smt2, 
+(sat, [M = "bfhaffcgchhdbeffga", E = "dedee", F = ""], 87)
+(unsat, 587)
+=================================================================
+01_track_138.smt2, 
+(sat, [J = "dbggbfea", M = "gdfggaffadc"], 53)
+(unsat, 319)
+=================================================================
+01_track_31.smt2, 
+(sat, [A = "", D = "ijjahaafgie"], 23)
+( EJSA TIMEOUT )
+=================================================================
+01_track_99.smt2, 
+(sat, [C = "", A = "gahehbbdgbaebcechcdab"], 24)
+(unsat, 305)
+=================================================================
+01_track_9.smt2, 
+(sat, [B = "aaabbbcacbbcccbcbbcaabbabcacccb", A = "aabcacccaaa"], 27)
+(unsat, 325)
+=================================================================
+01_track_143.smt2, 
+(sat, [B = "haidgbajjigfjbaffeidgji",
+ F = "gigcbaicejjchhihghgdbgihegecaid",
+ E = ""], 25)
+(unsat, 361)
+=================================================================
+01_track_78.smt2, 
+(sat, [A = "bbcacacabcbbbabababbaaabaab"], 25)
+(unsat, 327)
+=================================================================
+01_track_8.smt2, 
+(sat, [G = "", C = "f", E = "egebfbbche"], 48)
+( EJSA TIMEOUT )
+=================================================================
+01_track_151.smt2, 
+(sat, [B = "Aecfdecdcfaagfaeeaccba", C = "gaaecdbddcfdA"], 58)
+(unsat, 345)
+=================================================================
+01_track_25.smt2, 
+(sat, [F = "c", E = "aabcbcabcabbccccbaacccabbcababbaaaccacab"], 28)
+( EJSA TIMEOUT )
+=================================================================
+01_track_19.smt2, 
+(sat, [G = "", E = "abcacbbbaaaacbb"], 26)
+(unsat, 333)
+=================================================================
+01_track_74.smt2, 
+(sat, [E = "afbeegcfafgbfbceadaeecaegfadgebbfdcddafcaeadaafdeabgeccceagaecd",
+ M = "eaceaefefeababacedfcafdb"], 24)
+(unsat, 329)
+=================================================================
+01_track_140.smt2, 
+(sat, [F = "", E = "a", D = "aaaaaa"], 25)
+( EJSA TIMEOUT )
+=================================================================
+01_track_41.smt2, 
+(sat, [F = "cffjjfdbciciaefi"], 27)
+( EJSA TIMEOUT )
+=================================================================
+01_track_200.smt2, 
+(sat, [G = "", M = "", N = ""], 25)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 338)
+=================================================================
+01_track_63.smt2, 
+(sat, [B = "cabcabcbbcacbbccccbcabaaabbabbbaacccbbaaacbaaaccacbacccabcacabcba",
+ A = "caabbabbcbcb"], 65)
+(unsat, 375)
+=================================================================
+01_track_184.smt2, 
+(sat, [B = "idcficcdhgaiega", F = "JLeeb", E = "gfhechbfJL"], 219)
+(unsat, 384)
+=================================================================
+01_track_115.smt2, 
+(sat, [E = "!1!", H = "!0!", C = "fh!0!cfeb!1!", D = ""], 23)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 6,
+    "SPFsym" : "",
+    "input" : "f"
+  }, {
+    "ID" : 7,
+    "SPFsym" : "",
+    "input" : "hcfeb"
+  } ]
+}, 1387)
+=================================================================
+01_track_6.smt2, 
+(sat, [C = "bfedfafccaacffaaffeafacdcca", A = "f"], 29)
+( EJSA TIMEOUT )
+=================================================================
+01_track_137.smt2, 
+(sat, [B = "hf", C = "", D = "fdaebdaebcdheefccbbadiihhi"], 29)
+( EJSA TIMEOUT )
+=================================================================
+01_track_35.smt2, 
+(sat, [E = "b",
+ C = "caccbccaabaccbbbcbbaabccbccbbabcb",
+ A = "",
+ G = ""], 24)
+(unsat, 478)
+=================================================================
+01_track_128.smt2, 
+(sat, [G = "", E = ""], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 312)
+=================================================================
+01_track_46.smt2, 
+(sat, [J = "aaaaaaaa",
+ B = "aaaaaaaa",
+ G = "",
+ F = "",
+ I = "",
+ A = ""], 227)
+( EJSA TIMEOUT )
+=================================================================
+01_track_2.smt2, 
+(sat, [C = "aa", A = ""], 24)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "aa"
+  } ]
+}, 466)
+=================================================================
+01_track_113.smt2, 
+(sat, [J = "b",
+ B = "gdfebffacg",
+ I = "gcedace",
+ E = "fbffgbegacfdbd"], 31)
+(unsat, 514)
+=================================================================
+01_track_97.smt2, 
+(sat, [F = "!0!", E = "eifece!0!cifibi", A = ""], 24)
+(unsat, 380)
+=================================================================
+01_track_89.smt2, 
+(sat, [A = "cbbbcbbcab"], 23)
+(unsat, 294)
+=================================================================
+01_track_10.smt2, 
+(sat, [J = "cbcaaacabbacccbbbbaabccacbbaa",
+ N = "",
+ L = "",
+ M = "",
+ H = "",
+ D = ""], 29)
+(unsat, 361)
+=================================================================
+01_track_98.smt2, 
+(sat, [A = "",
+ C = "aecefgdecbaadbaghchcfcgdbhchfbcfehbefgehgfadhdfhe"], 21)
+(unsat, 335)
+=================================================================
+01_track_54.smt2, 
+(sat, [B = "aaaA",
+ E = "Abbbbaaaababbbaaabbbabbaaabaababaaabbbaaaab",
+ C = ""], 28)
+(unsat, 328)
+=================================================================
+01_track_107.smt2, 
+(sat, [B = "", C = "", I = "ccdbbcbeddebcee"], 21)
+( EJSA TIMEOUT )
+=================================================================
+01_track_16.smt2, 
+(sat, [B = "abbabababaaabaabaabbaab", F = "aba"], 30)
+( EJSA TIMEOUT )
+=================================================================
+01_track_21.smt2, 
+(sat, [H = "", F = "accdcdaaaccddbc"], 21)
+(unsat, 320)
+=================================================================
+01_track_178.smt2, 
+(sat, [G = "",
+ I = "cddcaebbaacabecdbbcecceacbacbcecbcdbabedceaaeeadebaded",
+ F = "bbaacabe",
+ H = "db"], 344)
+( EJSA TIMEOUT )
+=================================================================
+01_track_159.smt2, 
+(sat, [E = "", A = "c", D = "bfgefecedafb"], 30)
+( EJSA TIMEOUT )
+=================================================================
+01_track_15.smt2, 
+(sat, [F = "Aeeeee", C = "abbA"], 31)
+( EJSA TIMEOUT )
+=================================================================
+01_track_36.smt2, 
+(sat, [J = "bcdcbdddfabcecfa",
+ G = "afca",
+ D = "",
+ A = "fdbdaeeafe"], 128)
+( EJSA TIMEOUT )
+=================================================================
+01_track_130.smt2, 
+(sat, [A = "feeb"], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : "feeb"
+  } ]
+}, 366)
+=================================================================
+01_track_14.smt2, 
+(sat, [B = "aaaa", C = "Aaaaa", A = "A"], 24)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : "aaaa"
+  } ]
+}, 386)
+=================================================================
+01_track_7.smt2, 
+(sat, [B = "abbaabbaaaabbbabaaabbbbbabbbaabbbbabb",
+ A = "abbaaaabbbaabbababbaaabbaababababaabbaabababbabaaabbabb"], 24)
+(unsat, 304)
+=================================================================
+01_track_167.smt2, 
+(sat, [A = "fhffhhgccgcddhegfhb", D = "g"], 24)
+(unsat, 284)
+=================================================================
+01_track_23.smt2, 
+(sat, [J = "bb", C = "d", K = ""], 26)
+( EJSA TIMEOUT )
+=================================================================
+01_track_70.smt2, 
+(sat, [C = "bcbda", A = "abdacd"], 39)
+(unsat, 512)
+=================================================================
+01_track_58.smt2, 
+(sat, [B = "Afgecacffbbgggebcgfgcfgbaddcdbbfggdegd",
+ A = "bcfhefhgehgggfdgcahbA"], 96)
+(unsat, 314)
+=================================================================
+01_track_11.smt2, 
+(sat, [G = "ddcaccbccaacaadbccababbacc", C = "cadcacdabddadbd"], 70)
+(unsat, 289)
+=================================================================
+01_track_3.smt2, 
+(sat, [B = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], 28)
+(unsat, 292)
+=================================================================
+01_track_69.smt2, 
+(sat, [D = "aab", A = "bbbbbababaabaababbaaabbbaabbbbaa"], 34)
+( EJSA TIMEOUT )
+=================================================================
+01_track_5.smt2, 
+(sat, [B = "", F = "babaaccccaabbac"], 23)
+(unsat, 297)
+=================================================================
+01_track_141.smt2, 
+(sat, [G = "",
+ I = "H",
+ F = "Haaaaaaaaaaaaaaaaaaaaaaaaaaa",
+ E = "Haaaaaaaaaaaaaaaaaaaaaaaaaaa"], 39)
+(unsat, 309)
+=================================================================
+01_track_190.smt2, 
+(sat, [F = "", A = "", J = "", M = "gfbbh"], 21)
+( EJSA TIMEOUT )
+=================================================================
+01_track_125.smt2, 
+(sat, [C = "dgbgcbi",
+ A = "cbicchihaddbfficdbdhdbibifceaceifbifadcfeacdfhefh"], 45)
+(unsat, 330)
+=================================================================
+01_track_68.smt2, 
+(sat, [C = "acaababdcdadcebbbbdcbbebbdceedebcceedacdadbb"], 21)
+(unsat, 322)
+=================================================================
+01_track_29.smt2, 
+(sat, [B = "ehbfbddbhcfahehcfggcegabdddcgacdfge",
+ F = "hdfhcdibhihe"], 24)
+(unsat, 333)
+=================================================================
+01_track_155.smt2, 
+(sat, [C = "ghehahcaaa"], 22)
+(unsat, 987)
+=================================================================
+01_track_100.smt2, 
+(sat, [G = "c", I = "cdfF", B = "Fdcbbfcfcb", F = "cdfedbcfgafbc"], 215)
+( EJSA TIMEOUT )
+=================================================================
+01_track_4.smt2, 
+(sat, [C = "", A = "a"], 24)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 3,
+    "SPFsym" : "",
+    "input" : "a"
+  } ]
+}, 357)
+=================================================================
+01_track_144.smt2, 
+(sat, [C = "", B = "", A = "aebcecfdddacf"], 23)
+(unsat, 332)
+=================================================================
+01_track_185.smt2, 
+(sat, [B = "chggiciiggdficiehhi"], 22)
+(unsat, 292)
+=================================================================
+01_track_186.smt2, 
+(sat, [O = "", E = "bi", H = "ifibehed", N = "gd"], 39)
+(unsat, 372)
+=================================================================
+01_track_53.smt2, 
+(sat, [B = "bab", F = "a", E = "aabbbabbabaabaaaababb"], 33)
+( EJSA TIMEOUT )
+=================================================================
+01_track_189.smt2, 
+(sat, [F = "ad", E = "f", C = "e"], 29)
+( EJSA TIMEOUT )
+=================================================================
+01_track_33.smt2, 
+(sat, [G = "hfagaggadaeacecgdbc",
+ C = "dfcfbdfgcfcbcb",
+ H = "",
+ D = "fe"], 27)
+( EJSA TIMEOUT )
+=================================================================
+01_track_103.smt2, 
+(sat, [E = "", G = "", J = "eecggbabgdfdbdcdcgdcegbceg"], 22)
+(unsat, 418)
+=================================================================
+01_track_64.smt2, 
+(sat, [G = "bcbcbc", O = "", E = "c", K = "", C = "bc"], 233)
+( EJSA TIMEOUT )
+=================================================================
+01_track_122.smt2, 
+(sat, [G = "gfibgidfchjgbjhgafiagegfcije",
+ J = "",
+ E = "",
+ H = "i"], 26)
+( EJSA TIMEOUT )
+=================================================================
+01_track_75.smt2, 
+(sat, [C = "agbjiigfgecfd"], 28)
+(unsat, 993)
+=================================================================
+01_track_131.smt2, 
+(sat, [B = "bgieagfdcahedjjjdc",
+ C = "bafedhbebghehgfehibbjdejbdafiidcbbeciahceaggigheiebjecf",
+ D = ""], 590)
+(unsat, 1023)
+=================================================================
+01_track_133.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+01_track_67.smt2, 
+(sat, [F = "Acagdjdaeb",
+ H = "ecijbbifhciibcfaaebecagdjdaebA",
+ D = "jaachbbbcbi"], 206)
+(unsat, 1739)
+=================================================================
+01_track_40.smt2, 
+(sat, [B = "bih", E = "fe", D = "jfbj"], 42)
+( EJSA TIMEOUT )
+=================================================================
+01_track_1.smt2, 
+(sat, [C = "", A = ""], 23)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 311)
+=================================================================
+01_track_150.smt2, 
+(sat, [G = "", B = "A", F = "A", E = "aa"], 38)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "aa"
+  }, {
+    "ID" : 7,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 455)
+=================================================================
+01_track_85.smt2, 
+(sat, [B = "", C = "abbababb"], 21)
+( EJSA TIMEOUT )
+=================================================================
+01_track_51.smt2, 
+(sat, [G = "",
+ E = "babababaaabababbaaababbbabbaaababaaaabbabbbbbabbbbbaa"], 23)
+(unsat, 295)
+=================================================================
+01_track_126.smt2, 
+(sat, [B = "chbfad", C = "abgdecd", E = ""], 41)
+(unsat, 332)
+=================================================================
+01_track_181.smt2, 
+(sat, [F = "", J = "acidagihgdcaf"], 22)
+(unsat, 328)
+=================================================================
+01_track_65.smt2, 
+(sat, [C = "aacacbbaccabab", A = "cacbbcbbaca"], 105)
+(unsat, 302)
+=================================================================
+01_track_26.smt2, 
+(sat, [B = "bcAcA", C = "A", A = "A", D = "cc"], 37)
+( EJSA TIMEOUT )
+=================================================================
+01_track_129.smt2, 
+(sat, [M = "", E = ""], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 0,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : ""
+  } ]
+}, 308)
+=================================================================
+01_track_55.smt2, 
+(sat, [J = "bbbbcbcbcacbbabcaaabaaabaccabbcbbcacccbbcaaccabbaabcccccaa",
+ D = "ca"], 225)
+(unsat, 410)
+=================================================================
+01_track_24.smt2, 
+(sat, [A = "ccbacbbbbbcbbcccbbaacab", D = "ccbccabacbcccbabbbbaa"], 24)
+(unsat, 336)
+=================================================================
+01_track_62.smt2, 
+(sat, [A = "abcefffgdeaccfcegaaacdacedafccfddef"], 23)
+(unsat, 351)
+=================================================================
+01_track_81.smt2, 
+(sat, [B = "!1!", C = "!0!", G = "acc!0!caaccbc!1!bacab", J = ""], 24)
+(unsat, 586)
+=================================================================
+01_track_45.smt2, 
+(sat, [G = "", B = "abbbbbbabbbabbabbbaabbaaaababbabbbabbaa"], 22)
+(unsat, 300)
+=================================================================
+01_track_94.smt2, 
+(sat, [A = "cecbaedbacacdebecedcabc"], 22)
+(unsat, 306)
+=================================================================
+01_track_136.smt2, 
+(sat, [I = "aaieig"], 21)
+(unsat, 1947)
+=================================================================
+01_track_13.smt2, 
+(sat, [A = "", B = "jaediebbjgja"], 22)
+(unsat, 320)
+=================================================================
+01_track_171.smt2, 
+(sat, [F = "", E = "feeaegbbdecahdfdefdcdbaahafe"], 22)
+(unsat, 328)
+=================================================================
+01_track_88.smt2, 
+(sat, [B = "eeecbcbbce", E = "bbbee", M = "c"], 58)
+(unsat, 1134)
+=================================================================
+01_track_118.smt2, 
+(sat, [F = "",
+ A = "ebcaeccedbedefbfdgbagebcbfacgadbefcffcgceeedd"], 23)
+( EJSA TIMEOUT )
+=================================================================
+01_track_92.smt2, 
+(sat, [G = "", A = "ca"], 22)
+( EJSA TIMEOUT )
+=================================================================
+01_track_196.smt2, 
+(sat, [A = "", B = "gffeiddigihfjfeg"], 22)
+(unsat, 323)
+=================================================================
+01_track_59.smt2, 
+(sat, [J = "efedfdcbccfccadacbaaffcffbc", G = "b", D = ""], 24)
+(unsat, 355)
+=================================================================
+01_track_106.smt2, 
+(sat, [A = "cacabababbccbaacccabcaaabccabcbbcbcbbaa", D = "c"], 24)
+(unsat, 421)
+=================================================================
+01_track_90.smt2, 
+(sat, [F = "",
+ B = "baaacbabcccbcbbbccabccbcbcbabbcaccbbaaccacacccaabcccaaaaaabc"], 21)
+(unsat, 298)
+=================================================================
+01_track_127.smt2, 
+(sat, [F = "", H = "baeaabbecabcb"], 21)
+(unsat, 450)
+=================================================================
+01_track_187.smt2, 
+(sat, [F = "f", C = "fcdcififbc", H = "i"], 24)
+(unsat, 485)
+=================================================================
+01_track_56.smt2, 
+(sat, [F = "abbbabbaaba", C = "aabaabbaab"], 61)
+(unsat, 331)
+=================================================================
+01_track_132.smt2, 
+(sat, [O = "bbdbcdddbbdbdabacc", E = "cabbcacAcdaddbbac", N = "A"], 123)
+(unsat, 322)
+=================================================================
+01_track_111.smt2, 
+( Z3 TIMEOUT )
+( EJSA TIMEOUT )
+=================================================================
+01_track_93.smt2, 
+(sat, [H = "fac"], 22)
+( EJSA TIMEOUT )
+=================================================================
+01_track_83.smt2, 
+(sat, [A = "ac"], 21)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 2,
+    "SPFsym" : "",
+    "input" : "ac"
+  } ]
+}, 302)
+=================================================================
+01_track_32.smt2, 
+(sat, [A = "ggebcgdcbb", D = "ba"], 26)
+(unsat, 322)
+=================================================================
+01_track_96.smt2, 
+(sat, [A = "ceebddbbadbebdcdeebadabaaacdebc", D = "ebdc"], 28)
+(unsat, 880)
+=================================================================
+01_track_121.smt2, 
+(sat, [A = "bbbdcfeaeadabfaaeeadddde"], 28)
+(unsat, 293)
+=================================================================
+01_track_48.smt2, 
+(sat, [A = "", F = "c"], 22)
+(sat, 
+{
+  "SAT" : true,
+  "inputs" : [ {
+    "ID" : 1,
+    "SPFsym" : "",
+    "input" : ""
+  }, {
+    "ID" : 4,
+    "SPFsym" : "",
+    "input" : "c"
+  } ]
+}, 461)
+=================================================================
+01_track_91.smt2, 
+(sat, [E = "cbfbdef"], 22)
+( EJSA TIMEOUT )
