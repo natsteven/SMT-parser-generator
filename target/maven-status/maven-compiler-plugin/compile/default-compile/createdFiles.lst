@@ -3,6 +3,7 @@ edu/boisestate/cs/antlrTools/SMTLIBv2StringsLexer.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsListener.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$ScriptContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser.class
+edu/boisestate/cs/utils/test.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$Cmd_checkSatContext.class
 edu/boisestate/cs/utils/MainDot.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$Cmd_exitContext.class

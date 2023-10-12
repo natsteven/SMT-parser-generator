@@ -1,0 +1,4 @@
+03_track_51.smt2, sat, 717, 5, unsat, 499, 1, , 
+slog_stranger_4185_sink.smt2, sat, 24, 11,  sat, 421, 6, False , 6
+02_track_8.smt2, sat, 31, 4, unsat, 1423, 2, , 
+no-ree-query10684.smt2, sat, 44, 8,  sat, 65, 6, 

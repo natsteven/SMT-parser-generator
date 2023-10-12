@@ -1,0 +1,6 @@
+slog_stranger_2423_sink.smt2, sat, 23, 14, unsat, 340, 6, , 
+slog_stranger_148_sink.smt2, sat, 28, 11,  sat, 454, 6, False , 6
+slog_stranger_2739_sink.smt2, unsat, 22, ,unsat, 359, 4, , 
+slog_stranger_4185_sink.smt2, sat, 25, 11,  sat, 490, 6, False , 6
+slog_stranger_248_sink.smt2, unsat, 29, ,unsat, 411, 4, , 
+slog_stranger_255_sink.smt2, sat, 25, 11,  sat, 457, 6, False , 6

@@ -619,7 +619,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 removals.add(node);
             }
             // remove equals nodes when they are roots and their children are predicates? (defintely an issue here but no 'unknown string operation')
-            else if (node.val.startsWith("equals") && node.children.get(0).val.startsWith("contains")){
+            else if (node.val.startsWith("equals") && node.children.get(0).val.startsWith("equals")){
                 createCopy = true;
                 if (node.actualVal.equals("false")){
                     if (childrenEquals(node)){

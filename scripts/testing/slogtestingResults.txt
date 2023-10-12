@@ -1,0 +1,2776 @@
+=================================================================
+slog_stranger_3283_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "' class='button'></td>
+</tr>
+</table>
+</form>\n",
+ x_2 = "</tr>
+<tr>
+<td align='center' colspan='2' class='tbl'>
+<input type='submit' name='save_cat' value='!0!\<SCRIPT!1!",
+ literal_1 = "</tr>
+<tr>
+<td align='center' colspan='2' class='tbl'>
+<input type='submit' name='save_cat' value='",
+ x_4 = "</tr>
+<tr>
+<td align='center' colspan='2' class='tbl'>
+<input type='submit' name='save_cat' value='!0!\<SCRIPT!1!' class='button'></td>
+</tr>
+</table>
+</form>\n"], 28)
+(unsat, 830)
+=================================================================
+slog_stranger_5030_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_642_sink.smt2, 
+(unsat, None, 22)
+(unsat, 469)
+=================================================================
+slog_stranger_57_sink.smt2, 
+(sat, [sigmaStar_0 = "",
+ sigmaStar_1 = "\<SCRIPT",
+ x_4 = "ri\<SCRIPT",
+ literal_2 = "ri",
+ x_3 = "ri"], 30)
+(unsat, 698)
+=================================================================
+slog_stranger_531_sink.smt2, 
+(sat, [sigmaStar_10 = "!0!\<SCRIPT!1!",
+ literal_13 = ".score.max = '';\n",
+ x_14 = "    !0!\<SCRIPT!1!.score.max = '';\n",
+ x_12 = "    !0!\<SCRIPT!1!",
+ sigmaStar_1 = "",
+ x_7 = "",
+ literal_11 = "    "], 23)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1008_sink.smt2, 
+(unsat, None, 21)
+(unsat, 467)
+=================================================================
+slog_stranger_1296_sink.smt2, 
+(unsat, None, 21)
+(unsat, 661)
+=================================================================
+slog_stranger_1270_sink.smt2, 
+(unsat, None, 22)
+(unsat, 771)
+=================================================================
+slog_stranger_3908_sink.smt2, 
+(sat, [x_13 = "tbl1",
+ sigmaStar_2 = "\<SCRIPT",
+ x_20 = "",
+ sigmaStar_1 = "",
+ x_19 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php",
+ x_23 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php'>",
+ literal_12 = "tbl2",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php",
+ x_16 = "<td class='tbl1",
+ literal_15 = "?aid=",
+ literal_11 = "tbl1",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_forum.php'>\<SCRIPT</a></span></td>\n"], 32)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_210_sink.smt2, 
+(unsat, None, 27)
+(unsat, 457)
+=================================================================
+slog_stranger_3779_sink.smt2, 
+(sat, [x_50 = "",
+ sigmaStar_8 = "!1!",
+ sigmaStar_2 = "",
+ sigmaStar_7 = "\<SCRIPT",
+ x_39 = "",
+ x_73 = "",
+ sigmaStar_12 = "!0!",
+ sigmaStar_0 = "!3!",
+ x_33 = "",
+ x_66 = "",
+ sigmaStar_6 = "!4!",
+ sigmaStar_5 = "",
+ sigmaStar_10 = "!2!",
+ sigmaStar_11 = "!5!",
+ x_30 = "",
+ x_26 = "",
+ sigmaStar_1 = "!6!",
+ sigmaStar_9 = "",
+ sigmaStar_4 = "",
+ x_19 = "!3!<br>\n",
+ sigmaStar_63 = "",
+ x_65 = "?aid=",
+ x_76 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT</a><br><br>
+<a href='index.php'>",
+ literal_75 = "'>",
+ x_40 = "!5!<br>\n",
+ x_70 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT",
+ x_67 = "<center><br>
+<br><br>
+<br>
+<a href='members.php",
+ x_23 = "!4!<br>\n",
+ literal_18 = "",
+ x_20 = "!0!<br>\n",
+ x_55 = "<center><br>
+",
+ x_69 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>",
+ x_27 = "!1!<br>\n",
+ literal_16 = "<br>\n",
+ x_77 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT</a><br><br>
+<a href='index.php'>",
+ literal_64 = "?aid=",
+ literal_53 = "<center><br>
+",
+ x_51 = "<br><br>
+",
+ literal_14 = "<br>\n",
+ literal_17 = "<br>\n",
+ literal_22 = "<br>\n",
+ x_25 = "!1!<br>\n",
+ x_21 = "!0!<br>\n",
+ literal_68 = "'>",
+ literal_71 = "</a><br><br>
+<a href='index.php",
+ x_79 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT</a><br><br>
+<a href='index.php'></a><br><br>
+</center>\n",
+ literal_24 = "<br>\n",
+ x_28 = "!2!<br>\n",
+ x_35 = "!6!<br>\n",
+ x_56 = "<center><br>
+<br><br>
+<br>
+<a href='members.php",
+ x_54 = "<br><br>
+<br>
+<a href='members.php",
+ x_42 = "!4!<br>\n",
+ literal_13 = "<br>\n",
+ x_31 = "!2!<br>\n",
+ literal_15 = "<br>\n",
+ x_74 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT</a><br><br>
+<a href='index.php",
+ x_72 = "<center><br>
+<br><br>
+<br>
+<a href='members.php'>\<SCRIPT</a><br><br>
+<a href='index.php",
+ x_34 = "!3!<br>\n",
+ literal_43 = "<br><br>
+",
+ literal_78 = "</a><br><br>
+</center>\n",
+ literal_52 = "<br>
+<a href='members.php"], 65)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3312_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_8 = "<hr class='side-hr'>
+<img src='images/bullet.gif' alt=''> <a href='index.php' class='side'>!0!\<SCRIPT!1!</a>\n",
+ literal_5 = "<hr class='side-hr'>
+<img src='images/bullet.gif' alt=''> <a href='index.php' class='side'>",
+ literal_7 = "</a>\n",
+ x_6 = "<hr class='side-hr'>
+<img src='images/bullet.gif' alt=''> <a href='index.php' class='side'>!0!\<SCRIPT!1!"], 25)
+(unsat, 880)
+=================================================================
+slog_stranger_2426_sink.smt2, 
+(unsat, None, 22)
+(unsat, 665)
+=================================================================
+slog_stranger_2780_sink.smt2, 
+(sat, [sigmaStar_3 = "!0!\<SCRIPT!1!",
+ x_8 = " <b>!0!\<SCRIPT!1!</b> ",
+ literal_5 = " <b>",
+ literal_7 = "</b> ",
+ x_6 = " <b>!0!\<SCRIPT!1!"], 26)
+(unsat, 549)
+=================================================================
+slog_stranger_690_sink.smt2, 
+(sat, [sigmaStar_3 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ x_25 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30"><input type="submit" value="",
+ x_10 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">",
+ x_28 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30"><input type="submit" value="importgroups">",
+ literal_24 = "<input type="submit" value="",
+ literal_21 = "<input type="file" name="userfile" size="30">",
+ x_11 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose",
+ literal_6 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=",
+ x_23 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30">",
+ literal_12 = ":<input type="hidden" name="MAX_FILE_SIZE" value="",
+ x_20 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value="">",
+ literal_7 = "choose",
+ x_16 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value="">",
+ x_8 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT",
+ literal_15 = "">",
+ literal_19 = "">",
+ x_18 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value="",
+ x_13 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value="",
+ literal_17 = "<input type="hidden" name="sesskey" value="",
+ literal_27 = "">",
+ literal_22 = "importgroups",
+ literal_9 = "">",
+ x_14 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value="",
+ x_30 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30"><input type="submit" value="importgroups"></form></br>",
+ literal_29 = "</form></br>",
+ x_26 = "<form method="post" enctype="multipart/form-data" action="/course/import/groups/index.php?id=\<SCRIPT">choose:<input type="hidden" name="MAX_FILE_SIZE" value=""><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30"><input type="submit" value="importgroups"], 31)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_4551_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "<td valign='top' width='100%'><div class='tbl2' style='font-weight:bold;vertical-align:top'>",
+ x_4 = "<td valign='top' width='100%'><div class='tbl2' style='font-weight:bold;vertical-align:top'>!0!\<SCRIPT!1!",
+ epsilon = "",
+ x_7 = "<td valign='top' width='100%'><div class='tbl2' style='font-weight:bold;vertical-align:top'>!0!\<SCRIPT!1!</div>\n",
+ x_5 = "<td valign='top' width='100%'><div class='tbl2' style='font-weight:bold;vertical-align:top'>!0!\<SCRIPT!1!",
+ literal_6 = "</div>\n",
+ x_2 = ""], 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_5294_sink.smt2, 
+(sat, [sigmaStar_0 = "",
+ sigmaStar_2 = "",
+ x_29 = "\<SCRIPT",
+ sigmaStar_1 = "",
+ sigmaStar_3 = "\<SCRIPT",
+ x_32 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value=' />
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='date'>
+  <input type='hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT>
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ x_10 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value=' />
+  <input type=hidden' name='page2' value='",
+ x_30 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value=' />
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='date'>
+  <input type='hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT",
+ x_21 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value=' />
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='date'>
+  <input type='hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ x_11 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value=' />
+  <input type=hidden' name='page2' value='",
+ x_5 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value='",
+ literal_6 = " />
+  <input type=hidden' name='student' value='",
+ literal_18 = "0",
+ literal_12 = ">
+  <input type=hidden' name='date'>
+  <input type='hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ literal_4 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value='",
+ literal_16 = "5",
+ literal_31 = ">
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ literal_13 = "2",
+ x_8 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value='",
+ literal_15 = "0",
+ literal_14 = "4",
+ literal_19 = "2",
+ literal_17 = "1",
+ literal_20 = "0",
+ literal_9 = " />
+  <input type=hidden' name='page2' value='",
+ x_7 = "<h1>Add New Attendance Record</h1>
+
+  <form name='addattendance' action='./index.php' method='POST'>
+  <br><br><br>
+  <table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='300'>
+   <tr class='header'>
+	<th>Date</th>
+	<th>Type</th>
+   </tr>
+   <tr class='even' valign='top'>
+	<td><input type='text' name='attdate' maxlength='10' size='15' /></td>
+	<td>
+	 <select name='type'>
+	  <option value='tardy'>Tardy</option>
+	  <option value='absent'>Absent</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='300'>
+   <tr>
+   <td><input type='button' value='Add Attendance' onClick='document.addattendance.addattendance.value=1;document.addattendance.page2.value=30;document.addattendance.submit();'> <input type='button' value='Cancel' onClick='document.addattendance.page2.value=30;document.addattendance.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addattendance' value='' />
+  <input type='hidden' name='semester' value=' />
+  <input type=hidden' name='student' value='"], 76)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1423_sink.smt2, 
+(unsat, None, 21)
+(unsat, 374)
+=================================================================
+slog_stranger_5337_sink.smt2, 
+(sat, [sigmaStar_0 = "",
+ sigmaStar_2 = "",
+ sigmaStar_1 = "\<SCRIPT",
+ literal_3 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value='",
+ x_4 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value='",
+ x_9 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value=' />
+  <input type=hidden' name='page2' value=' />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='",
+ literal_8 = " />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='",
+ x_12 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value=' />
+  <input type=hidden' name='page2' value=' />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='\<SCRIPT />
+ </form>
+ </td>
+ </tr>
+ </table>
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+   <empty>
+   </td>
+  </tr>
+ </table>
+ ",
+ literal_11 = " />
+ </form>
+ </td>
+ </tr>
+ </table>
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+   <empty>
+   </td>
+  </tr>
+ </table>
+ ",
+ x_6 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value=' />
+  <input type=hidden' name='page2' value='",
+ literal_5 = " />
+  <input type=hidden' name='page2' value='",
+ x_7 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value=' />
+  <input type=hidden' name='page2' value='",
+ x_10 = "  </table>
+  <br />
+  <input type='button' value=' Back ' onClick='document.classes.page2.value=2;document.classes.submit();'>
+  <input type='hidden' name='selectclass' value=' />
+  <input type=hidden' name='page2' value=' />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='\<SCRIPT"], 36)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1629_sink.smt2, 
+(sat, [sigmaStar_12 = "!0!\<SCRIPT!1!",
+ x_4 = "",
+ sigmaStar_2 = "",
+ literal_15 = " = new Object();\n",
+ literal_13 = "    ",
+ x_9 = "",
+ epsilon = "",
+ x_14 = "    !0!\<SCRIPT!1!",
+ x_16 = "    !0!\<SCRIPT!1! = new Object();\n"], 25)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2577_sink.smt2, 
+(unsat, None, 21)
+(unsat, 463)
+=================================================================
+slog_stranger_1685_sink.smt2, 
+(unsat, None, 25)
+(unsat, 610)
+=================================================================
+slog_stranger_1577_sink.smt2, 
+(unsat, None, 23)
+(unsat, 597)
+=================================================================
+slog_stranger_1571_sink.smt2, 
+(unsat, None, 20)
+(unsat, 576)
+=================================================================
+slog_stranger_2497_sink.smt2, 
+(unsat, None, 21)
+(unsat, 522)
+=================================================================
+slog_stranger_2758_sink.smt2, 
+(unsat, None, 21)
+(unsat, 455)
+=================================================================
+slog_stranger_2121_sink.smt2, 
+(unsat, None, 21)
+(unsat, 456)
+=================================================================
+slog_stranger_624_sink.smt2, 
+(unsat, None, 21)
+(unsat, 527)
+=================================================================
+slog_stranger_164_sink.smt2, 
+(sat, [sigmaStar_0 = "\<SCRIPTA",
+ x_19 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"/s/",
+ x_17 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"/s/",
+ literal_21 = ".gif\" ",
+ literal_8 = "\" border=\"0\" hspace=\"10\" src=\"",
+ x_11 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"",
+ x_5 = "<td><img alt=\"\<SCRIPTA",
+ x_23 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"/s/.gif\" ",
+ literal_7 = "",
+ literal_16 = " onclick=\"insert('/s/.gif','",
+ literal_15 = "/",
+ literal_2 = "/s",
+ x_24 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"/s/.gif\"  onclick=\"insert('/s/.gif','\<SCRIPTA')\" width=\"15\" height=\"15\" /></td>",
+ x_13 = "<td><img alt=\"\<SCRIPTA\" border=\"0\" hspace=\"10\" src=\"/s",
+ x_18 = " onclick=\"insert('/s/.gif','\<SCRIPTA",
+ x_22 = " onclick=\"insert('/s/.gif','\<SCRIPTA')\" width=\"15\" height=\"15\" /></td>",
+ literal_20 = "')\" width=\"15\" height=\"15\" /></td>",
+ literal_3 = "<td><img alt=\""], 32)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2793_sink.smt2, 
+(unsat, None, 21)
+(unsat, 606)
+=================================================================
+slog_stranger_1509_sink.smt2, 
+(unsat, None, 21)
+(unsat, 604)
+=================================================================
+slog_stranger_4236_sink.smt2, 
+(sat, [x_8 = "A",
+ sigmaStar_1 = "\<SCRIPT",
+ sigmaStar_0 = "A",
+ literal_3 = "",
+ x_12 = "<br>\n<input type='checkbox' name='notify_me' value='1'A>\<SCRIPT",
+ x_9 = "<br>\n<input type='checkbox' name='notify_me' value='1'A",
+ x_11 = "<br>\n<input type='checkbox' name='notify_me' value='1'A>",
+ literal_2 = " checked",
+ literal_10 = ">",
+ literal_6 = "<br>\n<input type='checkbox' name='notify_me' value='1'",
+ literal_5 = ""], 26)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_904_sink.smt2, 
+(unsat, None, 20)
+(unsat, 373)
+=================================================================
+slog_stranger_1449_sink.smt2, 
+(unsat, None, 24)
+(unsat, 602)
+=================================================================
+slog_stranger_4368_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "</option>\n",
+ x_2 = "<option value='lock'>!0!\<SCRIPT!1!",
+ literal_1 = "<option value='lock'>",
+ x_4 = "<option value='lock'>!0!\<SCRIPT!1!</option>\n"], 25)
+(unsat, 951)
+=================================================================
+slog_stranger_2090_sink.smt2, 
+(unsat, None, 21)
+(unsat, 597)
+=================================================================
+slog_stranger_626_sink.smt2, 
+(unsat, None, 21)
+(unsat, 531)
+=================================================================
+slog_stranger_4753_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "' class='button'>\n",
+ x_2 = "<input type='submit' name='read_msg' value='!0!\<SCRIPT!1!",
+ literal_1 = "<input type='submit' name='read_msg' value='",
+ x_4 = "<input type='submit' name='read_msg' value='!0!\<SCRIPT!1!' class='button'>\n"], 24)
+(unsat, 812)
+=================================================================
+slog_stranger_2834_sink.smt2, 
+(unsat, None, 20)
+(unsat, 650)
+=================================================================
+slog_stranger_2794_sink.smt2, 
+(unsat, None, 24)
+(unsat, 519)
+=================================================================
+slog_stranger_698_sink.smt2, 
+(unsat, None, 21)
+(unsat, 456)
+=================================================================
+slog_stranger_1217_sink.smt2, 
+(unsat, None, 21)
+(unsat, 429)
+=================================================================
+slog_stranger_747_sink.smt2, 
+(unsat, None, 21)
+(unsat, 395)
+=================================================================
+slog_stranger_1148_sink.smt2, 
+(unsat, None, 22)
+(unsat, 593)
+=================================================================
+slog_stranger_4508_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_1258_sink.smt2, 
+(unsat, None, 23)
+(unsat, 620)
+=================================================================
+slog_stranger_385_sink.smt2, 
+(unsat, None, 21)
+(unsat, 607)
+=================================================================
+slog_stranger_212_sink.smt2, 
+(unsat, None, 21)
+(unsat, 326)
+=================================================================
+slog_stranger_1656_sink.smt2, 
+(unsat, None, 23)
+(unsat, 668)
+=================================================================
+slog_stranger_5033_sink.smt2, 
+(sat, [sigmaStar_1 = "A",
+ sigmaStar_0 = "L\<SCRIPTK",
+ x_8 = "</select>
+	</td>
+	<td><input type='text' name='startdate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='middate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='enddate' maxlength='10' size='10' /></td>
+	<td>
+	 <select name='half'>
+	  <option value='1'>First</option>
+	  <option value='2'>Second</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='600'>
+   <tr>
+   <td><input type='button' value='Add Semester' onClick='document.addsemester.addsemester.value=1;document.addsemester.page2.value=5;document.addsemester.submit();'> <input type='button' value='Cancel' onClick='document.addsemester.page2.value=5;document.addsemester.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addsemester' value=''>
+  <input type='hidden' name='page2' value='A>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='L\<SCRIPTK>
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ literal_7 = ">
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ x_6 = "</select>
+	</td>
+	<td><input type='text' name='startdate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='middate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='enddate' maxlength='10' size='10' /></td>
+	<td>
+	 <select name='half'>
+	  <option value='1'>First</option>
+	  <option value='2'>Second</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='600'>
+   <tr>
+   <td><input type='button' value='Add Semester' onClick='document.addsemester.addsemester.value=1;document.addsemester.page2.value=5;document.addsemester.submit();'> <input type='button' value='Cancel' onClick='document.addsemester.page2.value=5;document.addsemester.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addsemester' value=''>
+  <input type='hidden' name='page2' value='A>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='L\<SCRIPTK",
+ x_5 = "</select>
+	</td>
+	<td><input type='text' name='startdate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='middate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='enddate' maxlength='10' size='10' /></td>
+	<td>
+	 <select name='half'>
+	  <option value='1'>First</option>
+	  <option value='2'>Second</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='600'>
+   <tr>
+   <td><input type='button' value='Add Semester' onClick='document.addsemester.addsemester.value=1;document.addsemester.page2.value=5;document.addsemester.submit();'> <input type='button' value='Cancel' onClick='document.addsemester.page2.value=5;document.addsemester.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addsemester' value=''>
+  <input type='hidden' name='page2' value='A>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ literal_2 = "</select>
+	</td>
+	<td><input type='text' name='startdate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='middate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='enddate' maxlength='10' size='10' /></td>
+	<td>
+	 <select name='half'>
+	  <option value='1'>First</option>
+	  <option value='2'>Second</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='600'>
+   <tr>
+   <td><input type='button' value='Add Semester' onClick='document.addsemester.addsemester.value=1;document.addsemester.page2.value=5;document.addsemester.submit();'> <input type='button' value='Cancel' onClick='document.addsemester.page2.value=5;document.addsemester.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addsemester' value=''>
+  <input type='hidden' name='page2' value='",
+ literal_4 = ">
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ x_3 = "</select>
+	</td>
+	<td><input type='text' name='startdate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='middate' maxlength='10' size='10' /></td>
+	<td><input type='text' name='enddate' maxlength='10' size='10' /></td>
+	<td>
+	 <select name='half'>
+	  <option value='1'>First</option>
+	  <option value='2'>Second</option>
+	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='600'>
+   <tr>
+   <td><input type='button' value='Add Semester' onClick='document.addsemester.addsemester.value=1;document.addsemester.page2.value=5;document.addsemester.submit();'> <input type='button' value='Cancel' onClick='document.addsemester.page2.value=5;document.addsemester.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addsemester' value=''>
+  <input type='hidden' name='page2' value='A"], 60)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_4101_sink.smt2, 
+(sat, [sigmaStar_0 = "\<SCRIPT",
+ sigmaStar_1 = "",
+ x_8 = "<script type='text/javascript'>
+function DeleteArticle() {
+	return confirm('\<SCRIPT');
+}
+function ValidateForm(frm) {
+	if(frm.subject.value=='') {
+		alert('');
+		return false;
+	}
+}
+</script>\n",
+ literal_7 = "');
+		return false;
+	}
+}
+</script>\n",
+ x_6 = "<script type='text/javascript'>
+function DeleteArticle() {
+	return confirm('\<SCRIPT');
+}
+function ValidateForm(frm) {
+	if(frm.subject.value=='') {
+		alert('",
+ x_5 = "<script type='text/javascript'>
+function DeleteArticle() {
+	return confirm('\<SCRIPT');
+}
+function ValidateForm(frm) {
+	if(frm.subject.value=='') {
+		alert('",
+ literal_2 = "<script type='text/javascript'>
+function DeleteArticle() {
+	return confirm('",
+ literal_4 = "');
+}
+function ValidateForm(frm) {
+	if(frm.subject.value=='') {
+		alert('",
+ x_3 = "<script type='text/javascript'>
+function DeleteArticle() {
+	return confirm('\<SCRIPT"], 31)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_4068_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_2 = "<br>\n<input type='checkbox' name='make_super' value='1'> !0!\<SCRIPT!1!",
+ literal_1 = "<br>\n<input type='checkbox' name='make_super' value='1'> "], 26)
+(unsat, 699)
+=================================================================
+slog_stranger_1338_sink.smt2, 
+(unsat, None, 21)
+(unsat, 776)
+=================================================================
+slog_stranger_2592_sink.smt2, 
+(unsat, None, 21)
+(unsat, 655)
+=================================================================
+slog_stranger_2790_sink.smt2, 
+(unsat, None, 20)
+(unsat, 451)
+=================================================================
+slog_stranger_2250_sink.smt2, 
+(unsat, None, 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1261_sink.smt2, 
+(unsat, None, 21)
+(unsat, 470)
+=================================================================
+slog_stranger_405_sink.smt2, 
+(unsat, None, 22)
+(unsat, 596)
+=================================================================
+slog_stranger_2490_sink.smt2, 
+(unsat, None, 24)
+(unsat, 710)
+=================================================================
+slog_stranger_2556_sink.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_894_sink.smt2, 
+(unsat, None, 21)
+(unsat, 432)
+=================================================================
+slog_stranger_2540_sink.smt2, 
+(unsat, None, 21)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1236_sink.smt2, 
+(unsat, None, 23)
+(unsat, 524)
+=================================================================
+slog_stranger_347_sink.smt2, 
+(unsat, None, 21)
+(unsat, 406)
+=================================================================
+slog_stranger_2789_sink.smt2, 
+(unsat, None, 21)
+(unsat, 600)
+=================================================================
+slog_stranger_2204_sink.smt2, 
+(unsat, None, 21)
+(unsat, 771)
+=================================================================
+slog_stranger_1142_sink.smt2, 
+(unsat, None, 21)
+(unsat, 794)
+=================================================================
+slog_stranger_4308_sink.smt2, 
+(sat, [sigmaStar_3 = "\<SCRIPT",
+ sigmaStar_28 = "",
+ literal_31 = "</span></td>
+</tr>\n",
+ x_26 = "<tr>
+<td width='145' class='tbl2'>\<SCRIPT",
+ x_30 = "<tr>
+<td width='145' class='tbl2'>\<SCRIPT</td>
+<td class='tbl1'><input type='file' name='attach' enctype='multipart/form-data' class='textbox' style='width:200px;'><br>
+<span class='small2'>",
+ x_32 = "<tr>
+<td width='145' class='tbl2'>\<SCRIPT</td>
+<td class='tbl1'><input type='file' name='attach' enctype='multipart/form-data' class='textbox' style='width:200px;'><br>
+<span class='small2'></span></td>
+</tr>\n",
+ literal_11 = "Bytes",
+ literal_18 = "<tr>
+<td width='145' class='tbl2'>",
+ sigmaStar_2 = "",
+ x_20 = "",
+ literal_27 = "</td>
+<td class='tbl1'><input type='file' name='attach' enctype='multipart/form-data' class='textbox' style='width:200px;'><br>
+<span class='small2'>",
+ x_29 = "<tr>
+<td width='145' class='tbl2'>\<SCRIPT</td>
+<td class='tbl1'><input type='file' name='attach' enctype='multipart/form-data' class='textbox' style='width:200px;'><br>
+<span class='small2'>",
+ sigmaStar_1 = "",
+ x_14 = "Bytes"], 32)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3300_sink.smt2, 
+(sat, [sigmaStar_0 = "",
+ x_4 = "tbl1",
+ sigmaStar_1 = "\<SCRIPT",
+ literal_3 = "tbl2",
+ x_9 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ x_8 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ x_11 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>",
+ literal_2 = "tbl1",
+ literal_10 = "'>",
+ x_6 = "<td class='tbl1",
+ literal_5 = "<td class='",
+ literal_7 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ x_14 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>\<SCRIPT</a></span></td>\n",
+ literal_13 = "</a></span></td>\n",
+ x_12 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>\<SCRIPT"], 33)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_4686_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "</b> ",
+ x_4 = "</b> ",
+ x_8 = "<b>!0!\<SCRIPT!1!",
+ epsilon = "",
+ literal_6 = "<b>",
+ x_2 = "",
+ literal_5 = "</td>\n<td class='tbl1' style='vertical-align:top'>\n",
+ x_7 = "</b> </td>\n<td class='tbl1' style='vertical-align:top'>\n",
+ x_9 = "<b>!0!\<SCRIPT!1!</b> </td>\n<td class='tbl1' style='vertical-align:top'>\n"], 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1596_sink.smt2, 
+(unsat, None, 21)
+(unsat, 522)
+=================================================================
+slog_stranger_4845_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_2844_sink.smt2, 
+(unsat, None, 23)
+(unsat, 595)
+=================================================================
+slog_stranger_3977_sink.smt2, 
+(sat, [x_2 = "!0!\<SCRIPT!1!",
+ sigmaStar_1 = "!0!\<SCRIPT!1!",
+ sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "<td align='center' width='1%' class='tbl1' style='white-space:nowrap'>",
+ x_4 = "<td align='center' width='1%' class='tbl1' style='white-space:nowrap'>!0!\<SCRIPT!1!",
+ x_6 = "<td align='center' width='1%' class='tbl1' style='white-space:nowrap'>!0!\<SCRIPT!1!</td>\n",
+ literal_5 = "</td>\n"], 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2764_sink.smt2, 
+(unsat, None, 21)
+(unsat, 426)
+=================================================================
+slog_stranger_2891_sink.smt2, 
+(sat, [sigmaStar_18 = "!0!/evil!1!",
+ sigmaStar_0 = "",
+ x_4 = "",
+ literal_13 = "",
+ sigmaStar_8 = "",
+ x_11 = "plugins/",
+ literal_10 = "plugins/",
+ literal_12 = "/editor_plugin",
+ x_15 = "plugins//editor_plugin",
+ x_14 = "plugins//editor_plugin",
+ x_17 = "plugins//editor_plugin.js",
+ literal_16 = ".js"], 23)
+(unsat, 419)
+=================================================================
+slog_stranger_5412_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_7 = "<p>!0!\<SCRIPT!1! - <a href=\"mod_plugins.php?action=uninstall&plugin_file=" onclick="return confirmSubmit()">Uninstall</a> \n",
+ literal_6 = "" onclick="return confirmSubmit()">Uninstall</a> \n",
+ x_5 = "<p>!0!\<SCRIPT!1! - <a href=\"mod_plugins.php?action=uninstall&plugin_file=",
+ literal_2 = "<p>",
+ literal_4 = " - <a href=\"mod_plugins.php?action=uninstall&plugin_file=",
+ x_3 = "<p>!0!\<SCRIPT!1!"], 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2578_sink.smt2, 
+(unsat, None, 20)
+(unsat, 411)
+=================================================================
+slog_stranger_1448_sink.smt2, 
+(unsat, None, 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3797_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_9 = "<tr>
+<td valign='top' class='tbl'>!0!\<SCRIPT!1!</td>
+<td class='tbl'><textarea name='user_sig' rows='5' cols='53' class='textbox'></textarea><br>
+<input type='button' value='b' class='button' style='font-weight:bold;width:25px;' onClick="addText('user_sig', '[b]', '[/b]');">
+<input type='button' value='i' class='button' style='font-style:italic;width:25px;' onClick="addText('user_sig', '[i]', '[/i]');">
+<input type='button' value='u' class='button' style='text-decoration:underline;width:25px;' onClick="addText('user_sig', '[u]', '[/u]');">
+<input type='button' value='url' class='button' style='width:30px;' onClick="addText('user_sig', '[url]', '[/url]');">
+<input type='button' value='mail' class='button' style='width:35px;' onClick="addText('user_sig', '[mail]', '[/mail]');">
+<input type='button' value='img' class='button' style='width:30px;' onClick="addText('user_sig', '[img]', '[/img]');">
+<input type='button' value='center' class='button' style='width:45px;' onClick="addText('user_sig', '[center]', '[/center]');">
+<input type='button' value='small' class='button' style='width:40px;' onClick="addText('user_sig', '[small]', '[/small]');">
+</tr>
+<tr>
+<td colspan='2' class='tbl'><br><div align='center'>\n",
+ x_4 = "",
+ literal_8 = "</textarea><br>
+<input type='button' value='b' class='button' style='font-weight:bold;width:25px;' onClick="addText('user_sig', '[b]', '[/b]');">
+<input type='button' value='i' class='button' style='font-style:italic;width:25px;' onClick="addText('user_sig', '[i]', '[/i]');">
+<input type='button' value='u' class='button' style='text-decoration:underline;width:25px;' onClick="addText('user_sig', '[u]', '[/u]');">
+<input type='button' value='url' class='button' style='width:30px;' onClick="addText('user_sig', '[url]', '[/url]');">
+<input type='button' value='mail' class='button' style='width:35px;' onClick="addText('user_sig', '[mail]', '[/mail]');">
+<input type='button' value='img' class='button' style='width:30px;' onClick="addText('user_sig', '[img]', '[/img]');">
+<input type='button' value='center' class='button' style='width:45px;' onClick="addText('user_sig', '[center]', '[/center]');">
+<input type='button' value='small' class='button' style='width:40px;' onClick="addText('user_sig', '[small]', '[/small]');">
+</tr>
+<tr>
+<td colspan='2' class='tbl'><br><div align='center'>\n",
+ epsilon = "",
+ literal_2 = "<tr>
+<td valign='top' class='tbl'>",
+ x_6 = "<tr>
+<td valign='top' class='tbl'>!0!\<SCRIPT!1!</td>
+<td class='tbl'><textarea name='user_sig' rows='5' cols='53' class='textbox'>",
+ literal_5 = "</td>
+<td class='tbl'><textarea name='user_sig' rows='5' cols='53' class='textbox'>",
+ x_7 = "<tr>
+<td valign='top' class='tbl'>!0!\<SCRIPT!1!</td>
+<td class='tbl'><textarea name='user_sig' rows='5' cols='53' class='textbox'>",
+ x_3 = "<tr>
+<td valign='top' class='tbl'>!0!\<SCRIPT!1!"], 46)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2738_sink.smt2, 
+(unsat, None, 20)
+(unsat, 315)
+=================================================================
+slog_stranger_1718_sink.smt2, 
+(sat, [sigmaStar_5 = "!0!\<SCRIPT!1!",
+ x_13 = "",
+ x_19 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!\">
+                  <img src=\"/t/edit.gif\" border=\"0\" alt=\"",
+ x_17 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!\">
+                  <img src=\"",
+ literal_21 = "\" /></a>",
+ literal_8 = "&amp;contextquiz=",
+ literal_2 = "edit",
+ x_22 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!\">
+                  <img src=\"/t/edit.gif\" border=\"0\" alt=\"edit\" /></a>",
+ literal_11 = "<a title=\"edit\" href=\"/question/question.php?id=",
+ literal_18 = "/t/edit.gif\" border=\"0\" alt=\"",
+ literal_12 = "",
+ x_20 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!\">
+                  <img src=\"/t/edit.gif\" border=\"0\" alt=\"edit",
+ x_15 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!",
+ x_14 = "<a title=\"edit\" href=\"/question/question.php?id=!0!\<SCRIPT!1!",
+ literal_16 = "\">
+                  <img src=\""], 26)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2622_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_14 = "<input type="file" name="userfile" size="30">",
+ x_13 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="!0!\<SCRIPT!1!"><input type="hidden" name="sesskey" value="">",
+ x_9 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="!0!\<SCRIPT!1!">",
+ literal_8 = "">",
+ x_11 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="!0!\<SCRIPT!1!"><input type="hidden" name="sesskey" value="",
+ literal_10 = "<input type="hidden" name="sesskey" value="",
+ literal_6 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="",
+ literal_12 = "">",
+ x_15 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="!0!\<SCRIPT!1!"><input type="hidden" name="sesskey" value=""><input type="file" name="userfile" size="30">",
+ x_7 = "<form method="post" enctype="multipart/form-data" action="uploaduser.php">file&nbsp;<input type="hidden" name="MAX_FILE_SIZE" value="!0!\<SCRIPT!1!"], 25)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_4594_sink.smt2, 
+(sat, [x_16 = "\<SCRIPT",
+ sigmaStar_8 = "",
+ x_32 = "",
+ sigmaStar_7 = "",
+ x_24 = "",
+ sigmaStar_1 = "",
+ sigmaStar_0 = "",
+ sigmaStar_4 = "",
+ sigmaStar_3 = "",
+ sigmaStar_2 = "",
+ sigmaStar_6 = "\<SCRIPT",
+ sigmaStar_5 = "\<SCRIPT",
+ x_19 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b>",
+ literal_26 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b>",
+ literal_34 = "</td>
+</tr>
+<tr>
+<td align='center' class='tbl1'>\n",
+ x_33 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'></td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>",
+ literal_21 = "</b></td>
+<td class='tbl2'>",
+ literal_29 = "</b></td>
+<td class='tbl1'>",
+ x_28 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'></td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b>",
+ x_23 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'>",
+ literal_18 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b>",
+ x_20 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b>",
+ x_15 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>",
+ x_27 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'></td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b>",
+ x_31 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'></td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>",
+ epsilon = "",
+ literal_11 = "</b></td>
+<td class='tbl1'>",
+ literal_9 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b>",
+ x_35 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'></td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'></td>
+</tr>
+<tr>
+<td align='center' class='tbl1'>\n",
+ x_10 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b>",
+ x_17 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT",
+ x_25 = "</td>
+</tr>
+<tr>
+<td width='1%' class='tbl1' style='white-space:nowrap'><b></b></td>
+<td class='tbl1'>\<SCRIPT</td>
+</tr>
+<tr>
+<td width='1%' class='tbl2' style='white-space:nowrap'><b></b></td>
+<td class='tbl2'>"], 51)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1137_sink.smt2, 
+(unsat, None, 22)
+(unsat, 544)
+=================================================================
+slog_stranger_3211_sink.smt2, 
+(sat, [x_13 = "tbl1",
+ sigmaStar_2 = "\<SCRIPT",
+ x_20 = "",
+ sigmaStar_1 = "",
+ x_19 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php",
+ x_23 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php'>",
+ literal_12 = "tbl2",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php",
+ x_16 = "<td class='tbl1",
+ literal_15 = "?aid=",
+ literal_11 = "tbl1",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_messages.php'>\<SCRIPT</a></span></td>\n"], 34)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1524_sink.smt2, 
+(unsat, None, 21)
+(unsat, 671)
+=================================================================
+slog_stranger_1866_sink.smt2, 
+(unsat, None, 21)
+(unsat, 347)
+=================================================================
+slog_stranger_151_sink.smt2, 
+(sat, [x_6 = "",
+ sigmaStar_11 = "!0!/evil!1!",
+ sigmaStar_0 = "",
+ literal_5 = "",
+ x_4 = "",
+ literal_7 = "langs/",
+ literal_9 = ".js",
+ x_10 = "langs/.js",
+ x_8 = "langs/"], 32)
+(unsat, 463)
+=================================================================
+slog_stranger_337_sink.smt2, 
+(sat, [sigmaStar_3 = "!0!/evil!1!",
+ x_7 = "!0!/evil!1!/horde/lib/Secret.php",
+ x_5 = "!0!/evil!1!/horde",
+ literal_4 = "/horde",
+ literal_6 = "/lib/Secret.php"], 23)
+(unsat, 423)
+=================================================================
+slog_stranger_3205_sink.smt2, 
+(sat, [x_13 = "tbl2",
+ x_20 = "",
+ sigmaStar_0 = "\<SCRIPT",
+ sigmaStar_1 = "",
+ x_19 = "<td class='tbl2' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl2' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php",
+ x_23 = "<td class='tbl2' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php'>",
+ literal_12 = "tbl1",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php",
+ x_16 = "<td class='tbl2",
+ literal_15 = "?aid=",
+ literal_11 = "tbl2",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl2' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl2' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_time.php'>\<SCRIPT</a></span></td>\n"], 32)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2760_sink.smt2, 
+(unsat, None, 21)
+(unsat, 413)
+=================================================================
+slog_stranger_5029_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_1856_sink.smt2, 
+(sat, [x_77 = "//mimetex.exe ++ -e  \"\<SCRIPT\" -- A",
+ sigmaStar_60 = "A",
+ x_50 = "!0!",
+ x_42 = "\<SCRIPT",
+ x_47 = "!1!",
+ x_46 = "!2!",
+ sigmaStar_0 = "\<SCRIPT",
+ sigmaStar_2 = "!0!",
+ sigmaStar_1 = "!1!",
+ sigmaStar_4 = "!2!",
+ x_19 = "",
+ x_65 = "//mimetex.exe",
+ x_9 = "",
+ x_32 = "",
+ x_70 = "//mimetex -e !0! -- A",
+ literal_41 = "\"//mimetex.linux\" -e \"",
+ x_67 = " ++ -e  \"\<SCRIPT\" -- A",
+ x_66 = "//mimetex -e !0! -- ",
+ literal_56 = "\" -- ",
+ x_62 = "\"//mimetex.darwin\" -e \"!2!\" -- ",
+ x_57 = " ++ -e  \"\<SCRIPT\" -- ",
+ literal_37 = "\Large ",
+ literal_40 = "\"//mimetex.darwin\" -e \"",
+ x_69 = "\"//mimetex.linux\" -e \"!1!\" -- A",
+ literal_73 = "The shell command<br />",
+ x_82 = "The shell command<br />//mimetex.exe ++ -e  \"\<SCRIPT\" -- A<br />returned status = ",
+ x_68 = "\"//mimetex.darwin\" -e \"!2!\" -- A",
+ literal_61 = " -- ",
+ epsilon = "",
+ x_48 = " ++ -e  \"\<SCRIPT",
+ literal_53 = "\" -- ",
+ x_51 = "\"//mimetex.darwin\" -e \"!2!",
+ x_78 = "The shell command<br />//mimetex.exe ++ -e  \"\<SCRIPT\" -- A",
+ x_84 = "The shell command<br />//mimetex.exe ++ -e  \"\<SCRIPT\" -- A<br />returned status = <br />\n",
+ literal_36 = " ++ -e  \"",
+ literal_71 = "",
+ x_54 = "//mimetex -e !0!",
+ literal_49 = "//mimetex.exe",
+ literal_80 = "",
+ literal_55 = "\" -- ",
+ literal_45 = "//mimetex -e ",
+ x_44 = "\Large ",
+ x_63 = "\"//mimetex.linux\" -e \"!1!\" -- ",
+ sigmaStar_23 = "",
+ x_38 = "//",
+ literal_33 = "//",
+ x_72 = "//mimetex.exe ++ -e  \"\<SCRIPT\" -- A",
+ literal_83 = "<br />\n",
+ x_81 = "The shell command<br />//mimetex.exe ++ -e  \"\<SCRIPT\" -- A<br />returned status = ",
+ literal_79 = "<br />returned status = ",
+ x_52 = "\"//mimetex.linux\" -e \"!1!"], 33)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_817_sink.smt2, 
+(unsat, None, 21)
+(unsat, 431)
+=================================================================
+slog_stranger_1717_sink.smt2, 
+(sat, [x_12 = "",
+ sigmaStar_2 = "!0!\<SCRIPT!1!",
+ x_19 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!,'questionpreview',scrollbars=yes,resizable=yes,width=700,height=480', false)\">
+              <img src=\"/t/preview.gif\" border=\"0\" alt=\"preview",
+ x_21 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!,'questionpreview',scrollbars=yes,resizable=yes,width=700,height=480', false)\">
+              <img src=\"/t/preview.gif\" border=\"0\" alt=\"preview\" /></a>",
+ x_18 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!,'questionpreview',scrollbars=yes,resizable=yes,width=700,height=480', false)\">
+              <img src=\"/t/preview.gif\" border=\"0\" alt=\"",
+ literal_15 = ",'questionpreview',scrollbars=yes,resizable=yes,width=700,height=480', false)\">
+              <img src=\"",
+ literal_11 = "",
+ literal_10 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=",
+ x_13 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!",
+ literal_17 = "/t/preview.gif\" border=\"0\" alt=\"",
+ literal_20 = "\" /></a>",
+ literal_5 = "preview",
+ literal_7 = "&amp;quizid=",
+ x_14 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!",
+ x_16 = "<a title=\"preview\" href=\"javascript:void(0)\" onClick=\"openpopup('/question/preview.php?id=!0!\<SCRIPT!1!,'questionpreview',scrollbars=yes,resizable=yes,width=700,height=480', false)\">
+              <img src=\""], 26)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1447_sink.smt2, 
+(unsat, None, 21)
+(unsat, 534)
+=================================================================
+slog_stranger_1470_sink.smt2, 
+(sat, [sigmaStar_26 = "!0!\<SCRIPT!1!",
+ literal_36 = "=",
+ literal_41 = "openlearner",
+ literal_30 = "&",
+ literal_34 = "&",
+ x_33 = "?=&=&=&=&=!0!\<SCRIPT!1!&=",
+ x_35 = "?=&=&=&=&=!0!\<SCRIPT!1!&=&",
+ literal_28 = "?=&=&=&=&=",
+ x_37 = "?=&=&=&=&=!0!\<SCRIPT!1!&=&=",
+ literal_45 = "</a>",
+ x_44 = "<a target="LAMS Learner" title="LAMS Learner" href="?=&=&=&=&=!0!\<SCRIPT!1!&=&=">openlearner",
+ literal_42 = "">",
+ x_31 = "?=&=&=&=&=!0!\<SCRIPT!1!&",
+ literal_32 = "=",
+ x_39 = "<a target="LAMS Learner" title="LAMS Learner" href="?=&=&=&=&=!0!\<SCRIPT!1!&=&=",
+ x_29 = "?=&=&=&=&=!0!\<SCRIPT!1!",
+ literal_38 = "<a target="LAMS Learner" title="LAMS Learner" href="",
+ x_46 = "<a target="LAMS Learner" title="LAMS Learner" href="?=&=&=&=&=!0!\<SCRIPT!1!&=&=">openlearner</a>",
+ x_43 = "<a target="LAMS Learner" title="LAMS Learner" href="?=&=&=&=&=!0!\<SCRIPT!1!&=&=">"], 25)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2509_sink.smt2, 
+(unsat, None, 25)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2188_sink.smt2, 
+(unsat, None, 21)
+(unsat, 571)
+=================================================================
+slog_stranger_1466_sink.smt2, 
+(unsat, None, 22)
+(unsat, 337)
+=================================================================
+slog_stranger_5306_sink.smt2, 
+(sat, [sigmaStar_2 = "\<SCRIPT",
+ x_22 = "",
+ sigmaStar_1 = "",
+ sigmaStar_0 = "",
+ literal_3 = "</table>
+   <input type='hidden' name='page2' value='",
+ x_26 = "</table>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='\<SCRIPT",
+ literal_8 = "0",
+ x_28 = "</table>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='\<SCRIPT />
+   <input type=hidden' name='update' />
+   </form>
+ </td>
+ </tr>
+ </table>
+",
+ literal_24 = " />
+   <input type=hidden' name='selectclass' value='",
+ literal_6 = "2",
+ x_23 = "</table>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ literal_12 = "2",
+ literal_7 = "4",
+ x_4 = "</table>
+   <input type='hidden' name='page2' value='",
+ literal_13 = "0",
+ literal_10 = "1",
+ literal_11 = "0",
+ literal_27 = " />
+   <input type=hidden' name='update' />
+   </form>
+ </td>
+ </tr>
+ </table>
+",
+ literal_5 = " />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ literal_9 = "5",
+ x_14 = "</table>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ x_25 = "</table>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='"], 39)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2207_sink.smt2, 
+(unsat, None, 23)
+(unsat, 471)
+=================================================================
+slog_stranger_1438_sink.smt2, 
+(unsat, None, 21)
+(unsat, 447)
+=================================================================
+slog_stranger_2173_sink.smt2, 
+(unsat, None, 22)
+(unsat, 371)
+=================================================================
+slog_stranger_750_sink.smt2, 
+(unsat, None, 23)
+(unsat, 461)
+=================================================================
+slog_stranger_5230_sink.smt2, 
+(sat, [sigmaStar_1 = "",
+ sigmaStar_2 = "",
+ sigmaStar_0 = "\<SCRIPT",
+ literal_3 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value='",
+ x_4 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value='",
+ x_9 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='",
+ literal_8 = " />
+   <input type=hidden' name='selectclass' value='",
+ x_12 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='\<SCRIPT />
+   <input type=hidden' name='update' />
+   </form>
+ </td>
+ </tr>
+ </table>
+",
+ literal_11 = " />
+   <input type=hidden' name='update' />
+   </form>
+ </td>
+ </tr>
+ </table>
+",
+ x_6 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ literal_5 = " />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ x_7 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value='",
+ x_10 = "</table>
+  <br>
+  <input type='button' value='Update' onClick='document.classes.update.value=1;document.classes.submit();'>
+   <input type='hidden' name='page2' value=' />
+   <input type=hidden' name='logout' />
+   <input type='hidden' name='page' value=' />
+   <input type=hidden' name='selectclass' value='\<SCRIPT"], 38)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2821_sink.smt2, 
+(sat, [x_23 = "!0!\<SCRIPT!1!",
+ sigmaStar_20 = "!0!\<SCRIPT!1!",
+ literal_12 = "/index.html",
+ sigmaStar_9 = "",
+ x_15 = "/index.htm",
+ literal_14 = "/index.htm",
+ sigmaStar_7 = "",
+ x_11 = "/Default.htm",
+ literal_10 = "/Default.htm",
+ sigmaStar_8 = "",
+ x_13 = "/index.html",
+ literal_3 = "file.php"], 23)
+(unsat, 857)
+=================================================================
+slog_stranger_757_sink.smt2, 
+(unsat, None, 21)
+(unsat, 452)
+=================================================================
+slog_stranger_2667_sink.smt2, 
+(unsat, None, 21)
+(unsat, 351)
+=================================================================
+slog_stranger_32_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_1348_sink.smt2, 
+(unsat, None, 21)
+(unsat, 548)
+=================================================================
+slog_stranger_3203_sink.smt2, 
+(sat, [x_13 = "tbl1",
+ x_20 = "",
+ sigmaStar_0 = "\<SCRIPT",
+ sigmaStar_1 = "",
+ x_19 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ x_23 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>",
+ literal_12 = "tbl2",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php",
+ x_16 = "<td class='tbl1",
+ literal_15 = "?aid=",
+ literal_11 = "tbl1",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_main.php'>\<SCRIPT</a></span></td>\n"], 32)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2107_sink.smt2, 
+(unsat, None, 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2152_sink.smt2, 
+(sat, [x_6 = "!0!\<SCRIPT!1!",
+ sigmaStar_4 = "!0!\<SCRIPT!1!",
+ literal_2 = "wait",
+ literal_1 = "5"], 25)
+(unsat, 614)
+=================================================================
+slog_stranger_5041_sink.smt2, 
+(sat, [sigmaStar_1 = "",
+ sigmaStar_2 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ literal_3 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='",
+ x_4 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='",
+ x_9 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='>
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ literal_8 = ">
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ x_12 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='>
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT>
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ literal_11 = ">
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ x_6 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='>
+  <input type=hidden' name='page2' value='",
+ literal_5 = ">
+  <input type=hidden' name='page2' value='",
+ x_7 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='>
+  <input type=hidden' name='page2' value='",
+ x_10 = "</select>
+	</td>
+   </tr>
+   </table>
+
+   <br>
+
+   <table cellpadding='0' border='0' align='center' width='550'>
+   <tr>
+   <td>
+	<input type='button' value='Edit user' onClick='document.edituser.edituser.value=1;document.edituser.page2.value=10;validate();'>
+	<input type='button' value='Cancel' onClick='document.edituser.page2.value=10;document.edituser.submit();'>
+   </td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='edituser'>
+  <input type='hidden' name='userid' value='>
+  <input type=hidden' name='page2' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT"], 48)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_833_sink.smt2, 
+(unsat, None, 21)
+(unsat, 382)
+=================================================================
+slog_stranger_2733_sink.smt2, 
+(unsat, None, 22)
+(unsat, 503)
+=================================================================
+slog_stranger_534_sink.smt2, 
+(sat, [sigmaStar_10 = "!0!\<SCRIPT!1!",
+ literal_13 = " = new Object();\n",
+ x_14 = "    !0!\<SCRIPT!1! = new Object();\n",
+ x_12 = "    !0!\<SCRIPT!1!",
+ sigmaStar_1 = "",
+ x_7 = "",
+ literal_11 = "    "], 25)
+(unsat, 980)
+=================================================================
+slog_stranger_1073_sink.smt2, 
+(unsat, None, 20)
+(unsat, 332)
+=================================================================
+slog_stranger_5144_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_4716_sink.smt2, 
+(sat, [sigmaStar_1 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ x_8 = "<tr>
+<td class='tbl'>\<SCRIPT</td>
+<td class='tbl'><input type='text' name='user_location' maxlength='50' class='textbox' style='width:200px;'></td>
+</tr>
+<tr>
+<td class='tbl'> <span class='small2'>(mm/dd/yyyy)</span></td>
+<td class='tbl'><select name='user_month' class='textbox'>\n<option> </option>\n",
+ literal_7 = " <span class='small2'>(mm/dd/yyyy)</span></td>
+<td class='tbl'><select name='user_month' class='textbox'>\n<option> </option>\n",
+ x_6 = "<tr>
+<td class='tbl'>\<SCRIPT</td>
+<td class='tbl'><input type='text' name='user_location' maxlength='50' class='textbox' style='width:200px;'></td>
+</tr>
+<tr>
+<td class='tbl'>",
+ x_5 = "<tr>
+<td class='tbl'>\<SCRIPT</td>
+<td class='tbl'><input type='text' name='user_location' maxlength='50' class='textbox' style='width:200px;'></td>
+</tr>
+<tr>
+<td class='tbl'>",
+ literal_2 = "<tr>
+<td class='tbl'>",
+ literal_4 = "</td>
+<td class='tbl'><input type='text' name='user_location' maxlength='50' class='textbox' style='width:200px;'></td>
+</tr>
+<tr>
+<td class='tbl'>",
+ x_3 = "<tr>
+<td class='tbl'>\<SCRIPT"], 38)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2012_sink.smt2, 
+(unsat, None, 21)
+(unsat, 568)
+=================================================================
+slog_stranger_5392_sink.smt2, 
+(sat, [sigmaStar_2 = "\<SCRIPT",
+ x_8 = "",
+ sigmaStar_1 = "",
+ sigmaStar_0 = "",
+ literal_3 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='",
+ x_4 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='",
+ x_9 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='>
+  <input type=hidden' name='onpage' value='",
+ x_12 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='>
+  <input type=hidden' name='onpage' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT",
+ x_11 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='>
+  <input type=hidden' name='onpage' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ literal_10 = ">
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='",
+ literal_6 = "1",
+ literal_5 = ">
+  <input type=hidden' name='onpage' value='",
+ x_14 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='>
+  <input type=hidden' name='onpage' value='>
+  <input type=hidden' name='logout'>
+  <input type='hidden' name='page' value='\<SCRIPT>
+ </form>
+ </td>
+ </tr>
+ </table>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+   <empty>
+   </td>
+  </tr>
+ </table>
+ ",
+ x_7 = "\n</center>
+  <input type='hidden' name='deletesemester'>
+  <input type='hidden' name='selectsemester'>
+  <input type='hidden' name='page2' value='>
+  <input type=hidden' name='onpage' value='",
+ literal_13 = ">
+ </form>
+ </td>
+ </tr>
+ </table>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+   <empty>
+   </td>
+  </tr>
+ </table>
+ "], 39)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3800_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "<br><br></center>\n",
+ x_2 = "<center>!0!\<SCRIPT!1!",
+ literal_1 = "<center>",
+ x_4 = "<center>!0!\<SCRIPT!1!<br><br></center>\n"], 24)
+(unsat, 615)
+=================================================================
+slog_stranger_1843_sink.smt2, 
+(unsat, None, 21)
+(unsat, 359)
+=================================================================
+slog_stranger_4719_sink.smt2, 
+(sat, [sigmaStar_1 = "",
+ sigmaStar_2 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ literal_3 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("",
+ x_4 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("",
+ x_9 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.email.value=="") {
+		alert("",
+ literal_8 = "");
+		return false;
+	}
+	if (frm.email.value=="") {
+		alert("",
+ x_12 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.email.value=="") {
+		alert("\<SCRIPT");
+		return false;
+	}
+}
+</script>\n",
+ literal_11 = "");
+		return false;
+	}
+}
+</script>\n",
+ x_6 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("",
+ literal_5 = "");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("",
+ x_7 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("",
+ x_10 = "<script language='JavaScript'>
+function ValidateForm(frm) {
+	if (frm.username.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.password1.value=="") {
+		alert("");
+		return false;
+	}
+	if (frm.email.value=="") {
+		alert("\<SCRIPT"], 37)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_830_sink.smt2, 
+(unsat, None, 23)
+(unsat, 581)
+=================================================================
+slog_stranger_939_sink.smt2, 
+(unsat, None, 22)
+(unsat, 555)
+=================================================================
+slog_stranger_4372_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ literal_3 = "</option>\n",
+ x_2 = "<option value='move'>!0!\<SCRIPT!1!",
+ literal_1 = "<option value='move'>",
+ x_4 = "<option value='move'>!0!\<SCRIPT!1!</option>\n"], 24)
+(unsat, 760)
+=================================================================
+slog_stranger_1895_sink.smt2, 
+(unsat, None, 24)
+(unsat, 654)
+=================================================================
+slog_stranger_779_sink.smt2, 
+(unsat, None, 23)
+(unsat, 532)
+=================================================================
+slog_stranger_64_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_4394_sink.smt2, 
+(sat, [sigmaStar_1 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ x_8 = "<div align='center'><br>
+\<SCRIPT<br><br>
+<a href='index.php'></a><br><br>\n</div>\n",
+ literal_7 = "</a><br><br>\n</div>\n",
+ x_6 = "<div align='center'><br>
+\<SCRIPT<br><br>
+<a href='index.php'>",
+ x_5 = "<div align='center'><br>
+\<SCRIPT<br><br>
+<a href='index.php'>",
+ literal_2 = "<div align='center'><br>
+",
+ literal_4 = "<br><br>
+<a href='index.php'>",
+ x_3 = "<div align='center'><br>
+\<SCRIPT"], 27)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3191_sink.smt2, 
+(sat, [sigmaStar_1 = "",
+ sigmaStar_2 = "\<SCRIPT",
+ sigmaStar_0 = "",
+ literal_3 = "<tr>
+<td class='tbl2'>",
+ x_4 = "<tr>
+<td class='tbl2'>",
+ x_9 = "<tr>
+<td class='tbl2'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>",
+ literal_8 = "</td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>",
+ x_12 = "<tr>
+<td class='tbl2'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>\<SCRIPT</td>
+</tr>\n",
+ literal_11 = "</td>
+</tr>\n",
+ x_6 = "<tr>
+<td class='tbl2'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>",
+ literal_5 = "</td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>",
+ x_7 = "<tr>
+<td class='tbl2'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>",
+ x_10 = "<tr>
+<td class='tbl2'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'></td>
+<td align='center' width='1%' class='tbl2' style='white-space:nowrap'>\<SCRIPT"], 34)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2014_sink.smt2, 
+(unsat, None, 24)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1653_sink.smt2, 
+(unsat, None, 27)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_995_sink.smt2, 
+(unsat, None, 23)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_502_sink.smt2, 
+(unsat, None, 22)
+(unsat, 656)
+=================================================================
+slog_stranger_801_sink.smt2, 
+(unsat, None, 22)
+(unsat, 469)
+=================================================================
+slog_stranger_521_sink.smt2, 
+(sat, [sigmaStar_10 = "!0!\<SCRIPT!1!",
+ literal_13 = ".score.raw = '';\n",
+ x_14 = "    !0!\<SCRIPT!1!.score.raw = '';\n",
+ x_12 = "    !0!\<SCRIPT!1!",
+ sigmaStar_0 = "",
+ x_7 = "",
+ literal_11 = "    "], 29)
+(unsat, 960)
+=================================================================
+slog_stranger_315_sink.smt2, 
+(unsat, None, 26)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_244_sink.smt2, 
+(sat, [x_2 = "!0!\<SCRIPT!1!",
+ sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_5 = "/theme/!0!\<SCRIPT!1!/ui/sarissa.js",
+ epsilon = "",
+ literal_4 = "/ui/sarissa.js",
+ literal_1 = "/theme/",
+ x_3 = "/theme/!0!\<SCRIPT!1!"], 23)
+(unsat, 627)
+=================================================================
+slog_stranger_1253_sink.smt2, 
+(unsat, None, 21)
+(unsat, 629)
+=================================================================
+slog_stranger_3701_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_2129_sink.smt2, 
+(unsat, None, 22)
+(unsat, 578)
+=================================================================
+slog_stranger_3289_sink.smt2, 
+(sat, [x_9 = "\<SCRIPT",
+ x_4 = "A",
+ sigmaStar_0 = "A",
+ sigmaStar_1 = "\<SCRIPT",
+ x_10 = "<option value='A'>\<SCRIPT",
+ x_8 = "<option value='A'>",
+ epsilon = "",
+ x_12 = "<option value='A'>\<SCRIPT</option>\n",
+ literal_11 = "</option>\n",
+ x_6 = "<option value='A",
+ literal_5 = "<option value='",
+ literal_7 = "'>"], 27)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_5516_sink.smt2, 
+(unsat, None, 33)
+(unsat, 457)
+=================================================================
+slog_stranger_5309_sink.smt2, 
+(sat, [sigmaStar_0 = "\<SCRIPT",
+ sigmaStar_1 = "",
+ x_8 = "	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br />
+
+   <table cellpadding='0' border='0' align='center' width='800'>
+   <tr>
+   <td>
+   <b>Days of the Week:</b>
+   <br />
+   <input type='checkbox' value='M' name='Days[]' /> Monday<br />
+   <input type='checkbox' value='T' name='Days[]' /> Tuesday<br />
+   <input type='checkbox' value='W' name='Days[]' /> Wednesday<br />
+   <input type='checkbox' value='H' name='Days[]' /> Thursday<br />
+   <input type='checkbox' value='F' name='Days[]' /> Friday
+   <br /><br />
+   <input type='button' value='Add Class' onClick='document.addclass.addclass.value=1;document.addclass.page2.value=0;document.addclass.submit();'>
+   <input type='button' value='Full Year' onClick='document.addclass.fullyear.value=1;document.addclass.page2.value=9;document.addclass.submit();'>
+   <input type='button' value='Cancel' onClick='document.addclass.page2.value=0;document.addclass.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addclass' value='' />
+  <input type='hidden' name='fullyear' />
+  <input type='hidden' name='page2' value='\<SCRIPT />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value=' />
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ literal_7 = " />
+
+ </form>
+
+ <table width=520' border=0 cellspacing=0 cellpadding=0 height=1>
+  <tr>
+   <td valign='top'>
+	&nbsp;
+   </td>
+  </tr>
+ </table>
+ ",
+ x_6 = "	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br />
+
+   <table cellpadding='0' border='0' align='center' width='800'>
+   <tr>
+   <td>
+   <b>Days of the Week:</b>
+   <br />
+   <input type='checkbox' value='M' name='Days[]' /> Monday<br />
+   <input type='checkbox' value='T' name='Days[]' /> Tuesday<br />
+   <input type='checkbox' value='W' name='Days[]' /> Wednesday<br />
+   <input type='checkbox' value='H' name='Days[]' /> Thursday<br />
+   <input type='checkbox' value='F' name='Days[]' /> Friday
+   <br /><br />
+   <input type='button' value='Add Class' onClick='document.addclass.addclass.value=1;document.addclass.page2.value=0;document.addclass.submit();'>
+   <input type='button' value='Full Year' onClick='document.addclass.fullyear.value=1;document.addclass.page2.value=9;document.addclass.submit();'>
+   <input type='button' value='Cancel' onClick='document.addclass.page2.value=0;document.addclass.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addclass' value='' />
+  <input type='hidden' name='fullyear' />
+  <input type='hidden' name='page2' value='\<SCRIPT />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='",
+ x_5 = "	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br />
+
+   <table cellpadding='0' border='0' align='center' width='800'>
+   <tr>
+   <td>
+   <b>Days of the Week:</b>
+   <br />
+   <input type='checkbox' value='M' name='Days[]' /> Monday<br />
+   <input type='checkbox' value='T' name='Days[]' /> Tuesday<br />
+   <input type='checkbox' value='W' name='Days[]' /> Wednesday<br />
+   <input type='checkbox' value='H' name='Days[]' /> Thursday<br />
+   <input type='checkbox' value='F' name='Days[]' /> Friday
+   <br /><br />
+   <input type='button' value='Add Class' onClick='document.addclass.addclass.value=1;document.addclass.page2.value=0;document.addclass.submit();'>
+   <input type='button' value='Full Year' onClick='document.addclass.fullyear.value=1;document.addclass.page2.value=9;document.addclass.submit();'>
+   <input type='button' value='Cancel' onClick='document.addclass.page2.value=0;document.addclass.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addclass' value='' />
+  <input type='hidden' name='fullyear' />
+  <input type='hidden' name='page2' value='\<SCRIPT />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='",
+ literal_2 = "	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br />
+
+   <table cellpadding='0' border='0' align='center' width='800'>
+   <tr>
+   <td>
+   <b>Days of the Week:</b>
+   <br />
+   <input type='checkbox' value='M' name='Days[]' /> Monday<br />
+   <input type='checkbox' value='T' name='Days[]' /> Tuesday<br />
+   <input type='checkbox' value='W' name='Days[]' /> Wednesday<br />
+   <input type='checkbox' value='H' name='Days[]' /> Thursday<br />
+   <input type='checkbox' value='F' name='Days[]' /> Friday
+   <br /><br />
+   <input type='button' value='Add Class' onClick='document.addclass.addclass.value=1;document.addclass.page2.value=0;document.addclass.submit();'>
+   <input type='button' value='Full Year' onClick='document.addclass.fullyear.value=1;document.addclass.page2.value=9;document.addclass.submit();'>
+   <input type='button' value='Cancel' onClick='document.addclass.page2.value=0;document.addclass.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addclass' value='' />
+  <input type='hidden' name='fullyear' />
+  <input type='hidden' name='page2' value='",
+ literal_4 = " />
+  <input type=hidden' name='logout' />
+  <input type='hidden' name='page' value='",
+ x_3 = "	 </select>
+	</td>
+   </tr>
+   </table>
+
+   <br />
+
+   <table cellpadding='0' border='0' align='center' width='800'>
+   <tr>
+   <td>
+   <b>Days of the Week:</b>
+   <br />
+   <input type='checkbox' value='M' name='Days[]' /> Monday<br />
+   <input type='checkbox' value='T' name='Days[]' /> Tuesday<br />
+   <input type='checkbox' value='W' name='Days[]' /> Wednesday<br />
+   <input type='checkbox' value='H' name='Days[]' /> Thursday<br />
+   <input type='checkbox' value='F' name='Days[]' /> Friday
+   <br /><br />
+   <input type='button' value='Add Class' onClick='document.addclass.addclass.value=1;document.addclass.page2.value=0;document.addclass.submit();'>
+   <input type='button' value='Full Year' onClick='document.addclass.fullyear.value=1;document.addclass.page2.value=9;document.addclass.submit();'>
+   <input type='button' value='Cancel' onClick='document.addclass.page2.value=0;document.addclass.submit();'></td>
+   </tr>
+   </table>
+
+  <input type='hidden' name='addclass' value='' />
+  <input type='hidden' name='fullyear' />
+  <input type='hidden' name='page2' value='\<SCRIPT"], 51)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1926_sink.smt2, 
+(unsat, None, 21)
+(unsat, 346)
+=================================================================
+slog_stranger_3947_sink.smt2, 
+( Z3 TIMEOUT )
+=================================================================
+slog_stranger_2928_sink.smt2, 
+(sat, [sigmaStar_1 = "",
+ sigmaStar_2 = "",
+ sigmaStar_0 = "\<SCRIPT",
+ x_10 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'>",
+ x_11 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'>",
+ literal_12 = "</a> |
+<a href='",
+ x_15 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'></a> |
+<a href='forum_threads_list_panel/new_posts.php'>",
+ literal_7 = "</a> |
+<a href='",
+ x_16 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'></a> |
+<a href='forum_threads_list_panel/new_posts.php'>\<SCRIPT",
+ x_8 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='",
+ x_18 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'></a> |
+<a href='forum_threads_list_panel/new_posts.php'>\<SCRIPT</a></span></td>\n</tr>\n",
+ literal_14 = "forum_threads_list_panel/new_posts.php'>",
+ x_13 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'></a> |
+<a href='forum_threads_list_panel/my_posts.php'></a> |
+<a href='",
+ x_6 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'>",
+ literal_17 = "</a></span></td>\n</tr>\n",
+ literal_5 = "<tr>\n<td align='center' colspan='5' class='tbl1'><span class='small'><a href='forum_threads_list_panel/my_threads.php'>",
+ literal_9 = "forum_threads_list_panel/my_posts.php'>"], 34)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_739_sink.smt2, 
+(unsat, None, 22)
+(unsat, 587)
+=================================================================
+slog_stranger_3406_sink.smt2, 
+(sat, [x_13 = "tbl1",
+ x_20 = "",
+ sigmaStar_1 = "\<SCRIPT",
+ sigmaStar_2 = "",
+ x_19 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php",
+ x_23 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php'>",
+ literal_12 = "tbl2",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php",
+ x_16 = "<td class='tbl1",
+ literal_15 = "?aid=",
+ literal_11 = "tbl1",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_photo.php'>\<SCRIPT</a></span></td>\n"], 34)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_3912_sink.smt2, 
+(sat, [x_13 = "tbl1",
+ x_20 = "",
+ sigmaStar_1 = "\<SCRIPT",
+ sigmaStar_2 = "",
+ x_19 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php",
+ sigmaStar_10 = "",
+ x_17 = "?aid=",
+ x_21 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php",
+ x_23 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php'>",
+ literal_12 = "tbl2",
+ literal_18 = "' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php",
+ x_16 = "<td class='tbl1",
+ literal_15 = "?aid=",
+ literal_11 = "tbl1",
+ literal_25 = "</a></span></td>\n",
+ literal_14 = "<td class='",
+ x_24 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php'>\<SCRIPT",
+ literal_22 = "'>",
+ x_26 = "<td class='tbl1' style='padding-left:10px;padding-right:10px;'><span class='small'><a href='settings_misc.php'>\<SCRIPT</a></span></td>\n"], 33)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_1892_sink.smt2, 
+(unsat, None, 26)
+(unsat, 722)
+=================================================================
+slog_stranger_1369_sink.smt2, 
+(unsat, None, 21)
+(unsat, 720)
+=================================================================
+slog_stranger_147_sink.smt2, 
+(sat, [x_10 = "",
+ x_7 = "",
+ x_15 = "en",
+ sigmaStar_21 = "A",
+ sigmaStar_24 = "G/evil",
+ x_31 = "A/tinymce_G/evil.gz",
+ x_8 = "",
+ sigmaStar_0 = "/[^0-9a-z\-_,]+/i",
+ x_17 = "",
+ sigmaStar_14 = "",
+ x_26 = "A/tinymce_",
+ literal_30 = "",
+ x_11 = "",
+ literal_6 = "",
+ x_23 = "A/",
+ literal_28 = ".gz",
+ x_20 = "en",
+ x_27 = "A/tinymce_G/evil",
+ x_16 = "",
+ x_4 = "",
+ literal_13 = "en",
+ literal_25 = "tinymce_",
+ x_18 = "en",
+ x_29 = "A/tinymce_G/evil.gz",
+ literal_5 = "",
+ literal_22 = "/",
+ literal_9 = ""], 57)
+(unsat, 509)
+=================================================================
+slog_stranger_1611_sink.smt2, 
+(unsat, None, 21)
+(unsat, 354)
+=================================================================
+slog_stranger_3054_sink.smt2, 
+(unsat, None, 21)
+(unsat, 323)
+=================================================================
+slog_stranger_768_sink.smt2, 
+(unsat, None, 24)
+(unsat, 570)
+=================================================================
+slog_stranger_630_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_8 = "<form action="index.php" method="post">\n<input type="hidden" name="mode" value="!0!\<SCRIPT!1!" />",
+ literal_5 = "<form action="index.php" method="post">\n<input type="hidden" name="mode" value="",
+ literal_7 = "" />",
+ literal_9 = "\n",
+ x_6 = "<form action="index.php" method="post">\n<input type="hidden" name="mode" value="!0!\<SCRIPT!1!",
+ x_10 = "<form action="index.php" method="post">\n<input type="hidden" name="mode" value="!0!\<SCRIPT!1!" />\n"], 24)
+(unsat, 890)
+=================================================================
+slog_stranger_3156_sink.smt2, 
+(sat, [sigmaStar_0 = "!0!\<SCRIPT!1!",
+ x_10 = "\n#\n# Table Data for `!0!\<SCRIPT!1!`",
+ x_8 = "\n#\n# Table Data for `!0!\<SCRIPT!1!",
+ x_11 = "\n#\n# Table Data for `!0!\<SCRIPT!1!`\n",
+ literal_1 = "\n",
+ x_13 = "\n#\n# Table Data for `!0!\<SCRIPT!1!`\n#",
+ literal_12 = "#",
+ literal_7 = "\n#\n# Table Data for `",
+ literal_9 = "`",
+ x_14 = "\n#\n# Table Data for `!0!\<SCRIPT!1!`\n#\n"], 23)
+( EJSA TIMEOUT )
+=================================================================
+slog_stranger_2322_sink.smt2, 
+(unsat, None, 22)
+(unsat, 697)
+=================================================================
+slog_stranger_1241_sink.smt2, 
+(unsat, None, 24)
