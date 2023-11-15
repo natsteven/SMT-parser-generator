@@ -1,89 +1,89 @@
-noree-query3252.smt2, sat, 38, 8, unknown, 1044, 5
-noree-query9747.smt2, sat, 54, 8, unknown, 1088, 5
-noree-query3465.smt2, sat, 46, 8, unknown, 1753, 5
-noree-query6917.smt2, sat, 38, 8, unknown, 1403, 5
-noree-query4860.smt2, sat, 45, 8, unknown, 822, 5
-noree-query3712.smt2, sat, 69, 8, unknown, 1860, 5
-noree-query9050.smt2, sat, 54, 8, unknown, 2531, 6
-noree-query3332.smt2, sat, 37, 8, unknown, 1392, 5
-noree-query5700.smt2, sat, 135, 13, unknown, 1503, 6
-noree-query10684.smt2, sat, 39, 8, unknown, 1546, 6
-noree-query8867.smt2, sat, 40, 8, unknown, 2137, 5
-noree-query3591.smt2, sat, 57, 8, unknown, 2884, 6
-noree-query6203.smt2, sat, 31, 8, unknown, 3740, 6
-noree-query8045.smt2, sat, 40, 8, unknown, 4519, 6
-noree-query3516.smt2, sat, 54, 8, unknown, 4664, 6
-noree-query5281.smt2, sat, 32, 8, unknown, 4445, 6
-noree-query10584.smt2, sat, 32, 8, unknown, 1491, 6
-noree-query4443.smt2, sat, 43, 8, unknown, 1152, 5
-noree-query5519.smt2, sat, 40, 8, unknown, 3368, 6
-noree-query3549.smt2, sat, 50, 8, unknown, 1790, 5
-noree-query4685.smt2, sat, 32, 8, unknown, 1462, 5
-noree-query10041.smt2, sat, 143, 9, unknown, 1050, 5
-noree-query9416.smt2, sat, 39, 8, unknown, 1260, 6
-noree-query3444.smt2, sat, 57, 8, unknown, 4866, 6
-noree-query5852.smt2, sat, 108, 11, unknown, 4391, 6
-noree-query3189.smt2, sat, 34, 8, unknown, 1206, 5
-noree-query3316.smt2, sat, 37, 7, unknown, 4096, 6
-noree-query10629.smt2, sat, 36, 8, unknown, 2004, 6
-noree-query6221.smt2, sat, 67, 8, unknown, 4261, 6
-noree-query3864.smt2, sat, 47, 7, unknown, 1008, 5
-noree-query10634.smt2, sat, 32, 8, unknown, 1984, 6
-noree-query4858.smt2, sat, 53, 8, unknown, 930, 5
-noree-query3336.smt2, sat, 34, 8, unknown, 4072, 6
-noree-query3723.smt2, sat, 68, 8, unknown, 1410, 5
-noree-query5169.smt2, sat, 32, 8, unknown, 1486, 5
-noree-query10675.smt2, sat, 33, 8, unknown, 1923, 6
-noree-query3424.smt2, sat, 46, 8, unknown, 953, 5
-noree-query3449.smt2, sat, 33, 8, unknown, 3189, 6
-noree-query3450.smt2, sat, 119, 11, unknown, 2118, 5
-noree-query3231.smt2, sat, 37, 8, unknown, 1336, 5
-noree-query10608.smt2, sat, 33, 8, unknown, 1579, 6
-noree-query5582.smt2, sat, 34, 8, unknown, 4952, 6
-noree-query10611.smt2, sat, 65, 8, unknown, 1594, 6
-noree-query10112.smt2, sat, 169, 9, unknown, 4421, 6
-noree-query10642.smt2, sat, 42, 8, unknown, 1548, 6
-noree-query4673.smt2, sat, 64, 8, unknown, 3207, 6
-noree-query3574.smt2, sat, 57, 8, unknown, 1142, 5
-noree-query6223.smt2, sat, 36, 8, unknown, 1995, 5
-noree-query7455.smt2, sat, 95, 11, unknown, 1186, 5
-noree-query3111.smt2, sat, 131, 11, unknown, 2391, 5
-noree-query10680.smt2, sat, 33, 8, unknown, 1357, 6
-noree-query3943.smt2, sat, 51, 8, unknown, 1349, 5
-noree-query3577.smt2, sat, 51, 8, unknown, 2657, 6
-noree-query8468.smt2, sat, 54, 8, unknown, 1396, 5
-noree-query10650.smt2, sat, 40, 8, unknown, 1037, 5
-noree-query3323.smt2, sat, 55, 8, unknown, 2398, 5
-noree-query4255.smt2, sat, 36, 8, unknown, 999, 5
-noree-query3309.smt2, sat, 43, 8, unknown, 3403, 6
-noree-query10295.smt2, sat, 59, 8, unknown, 1146, 5
-noree-query3356.smt2, sat, 56, 8, unknown, 1151, 5
-noree-query5512.smt2, sat, 32, 8, unknown, 1474, 5
-noree-query3950.smt2, sat, 44, 7, unknown, 980, 5
-noree-query5423.smt2, sat, 147, 11, unknown, 1553, 5
-noree-query5315.smt2, sat, 52, 8, unknown, 1419, 5
-noree-query3494.smt2, sat, 61, 8, unknown, 1909, 5
-noree-query5100.smt2, sat, 36, 8, unknown, 929, 5
-noree-query3423.smt2, sat, 64, 8, unknown, 2479, 6
-noree-query10657.smt2, sat, 33, 8, unknown, 1390, 6
-noree-query6796.smt2, sat, 44, 8, unknown, 1155, 5
-noree-query9276.smt2, sat, 66, 8, unknown, 2123, 6
-noree-query8917.smt2, sat, 35, 7, unknown, 1162, 5
-noree-query6842.smt2, sat, 55, 8, unknown, 2361, 5
-noree-query10682.smt2, sat, 54, 8, unknown, 1257, 5
-noree-query8654.smt2, sat, 45, 8, unknown, 4446, 6
-noree-query3221.smt2, sat, 32, 8, unknown, 1593, 5
-noree-query8962.smt2, sat, 49, 8, unknown, 3199, 6
-noree-query5196.smt2, sat, 44, 8, unknown, 1592, 5
-noree-query3767.smt2, sat, 54, 8, unknown, 4084, 6
-noree-query3487.smt2, sat, 61, 8, unknown, 963, 5
-noree-query10681.smt2, sat, 49, 8, unknown, 4781, 6
-noree-query5197.smt2, sat, 40, 8, unknown, 1766, 5
-noree-query10669.smt2, sat, 38, 8, unknown, 1314, 6
-noree-query10663.smt2, sat, 37, 8, unknown, 2010, 6
-noree-query3214.smt2, sat, 34, 8, unknown, 3738, 6
-noree-query7904.smt2, sat, 50, 8, unknown, 1786, 5
-noree-query4914.smt2, sat, 49, 8, unknown, 956, 5
-noree-query5108.smt2, sat, 51, 8, unknown, 2785, 6
-noree-query9155.smt2, sat, 115, 11, unknown, 932, 5
-noree-query4871.smt2, sat, 38, 8, unknown, 1132, 6
+noree-query3252.smt2, sat, 41, 8, unsat, 1856, 4, , 
+noree-query9747.smt2, sat, 55, 8, unsat, 4670, 5, , 
+noree-query3465.smt2, sat, 45, 8, unsat, 2970, 5, , 
+noree-query6917.smt2, sat, 36, 8, unsat, 3815, 4, , 
+noree-query4860.smt2, sat, 46, 8, unsat, 3114, 4, , 
+noree-query3712.smt2, sat, 72, 8, unsat, 4282, 4, , 
+noree-query9050.smt2, sat, 51, 8, unsat, 1074, 4, , 
+noree-query3332.smt2, sat, 38, 8, unsat, 2636, 5, , 
+noree-query5700.smt2, sat, 140, 13, unsat, 1561, 4, , 
+noree-query10684.smt2, sat, 40, 8, unsat, 2684, 4, , 
+noree-query8867.smt2, sat, 42, 8, unsat, 1653, 4, , 
+noree-query3591.smt2, sat, 58, 8, unsat, 2103, 5, , 
+noree-query6203.smt2, sat, 31, 8, unsat, 1425, 5, , 
+noree-query8045.smt2, sat, 39, 8, unsat, 1103, 4, , 
+noree-query3516.smt2, sat, 53, 8, unsat, 2522, 5, , 
+noree-query5281.smt2, sat, 32, 8, unsat, 2175, 4, , 
+noree-query10584.smt2, sat, 33, 8, unsat, 2111, 4, , 
+noree-query4443.smt2, sat, 42, 8, unsat, 4230, 4, , 
+noree-query5519.smt2, sat, 41, 8, unsat, 1522, 4, , 
+noree-query3549.smt2, sat, 50, 8, unsat, 2155, 4, , 
+noree-query4685.smt2, sat, 32, 8, unsat, 2935, 4, , 
+noree-query10041.smt2, sat, 145, 9, unsat, 725, 3, , 
+noree-query9416.smt2, sat, 40, 8, unsat, 1319, 4, , 
+noree-query3444.smt2, sat, 58, 8, unsat, 2646, 5, , 
+noree-query5852.smt2, sat, 109, 11, unsat, 2242, 4, , 
+noree-query3189.smt2, sat, 35, 8, unsat, 3985, 4, , 
+noree-query3316.smt2, sat, 38, 7, unsat, 3062, 5, , 
+noree-query10629.smt2, sat, 36, 8, unsat, 2120, 4, , 
+noree-query6221.smt2, sat, 68, 8, unsat, 4137, 4, , 
+noree-query3864.smt2, sat, 48, 7, unsat, 746, 3, , 
+noree-query10634.smt2, sat, 33, 8, unsat, 3806, 4, , 
+noree-query4858.smt2, sat, 55, 8, unsat, 1144, 4, , 
+noree-query3336.smt2, sat, 35, 8, unsat, 4134, 4, , 
+noree-query3723.smt2, sat, 69, 8, unsat, 1554, 5, , 
+noree-query5169.smt2, sat, 33, 8, unsat, 2112, 4, , 
+noree-query10675.smt2, sat, 34, 8, unsat, 1457, 4, , 
+noree-query3424.smt2, sat, 46, 8, unsat, 2800, 5, , 
+noree-query3449.smt2, sat, 35, 8, unsat, 4131, 4, , 
+noree-query3450.smt2, sat, 121, 11, unsat, 2182, 4, , 
+noree-query3231.smt2, sat, 38, 8, unsat, 4154, 4, , 
+noree-query10608.smt2, sat, 33, 8, unsat, 4791, 6, , 
+noree-query5582.smt2, sat, 34, 8, unsat, 2370, 4, , 
+noree-query10611.smt2, sat, 67, 8, unsat, 1557, 5, , 
+noree-query10112.smt2, sat, 170, 9, unsat, 2486, 5, , 
+noree-query10642.smt2, sat, 40, 8, unsat, 1241, 4, , 
+noree-query4673.smt2, sat, 66, 8, unsat, 1425, 4, , 
+noree-query3574.smt2, sat, 56, 8, unsat, 1747, 4, , 
+noree-query6223.smt2, sat, 37, 8, unsat, 1448, 4, , 
+noree-query7455.smt2, sat, 97, 11, unsat, 4049, 4, , 
+noree-query3111.smt2, sat, 133, 11, unsat, 2351, 4, , 
+noree-query10680.smt2, sat, 33, 8, unsat, 2141, 4, , 
+noree-query3943.smt2, sat, 50, 8, unsat, 770, 3, , 
+noree-query3577.smt2, sat, 56, 8, unsat, 2059, 5, , 
+noree-query8468.smt2, sat, 56, 8, unsat, 3932, 4, , 
+noree-query10650.smt2, sat, 40, 8, unsat, 775, 3, , 
+noree-query3323.smt2, sat, 55, 8, unsat, 2013, 4, , 
+noree-query4255.smt2, sat, 37, 8, unsat, 1385, 4, , 
+noree-query3309.smt2, sat, 43, 8, unsat, 1485, 4, , 
+noree-query10295.smt2, sat, 60, 8, unsat, 2002, 4, , 
+noree-query3356.smt2, sat, 56, 8, unsat, 2293, 4, , 
+noree-query5512.smt2, sat, 34, 8, unsat, 2080, 4, , 
+noree-query3950.smt2, sat, 43, 7, unsat, 2576, 4, , 
+noree-query5423.smt2, sat, 149, 11, unsat, 2949, 4, , 
+noree-query5315.smt2, sat, 53, 8, unsat, 3911, 4, , 
+noree-query3494.smt2, sat, 61, 8, unsat, 4203, 4, , 
+noree-query5100.smt2, sat, 40, 8, unsat, 1456, 4, , 
+noree-query3423.smt2, sat, 64, 8, unsat, 2476, 5, , 
+noree-query10657.smt2, sat, 34, 8, unsat, 3422, 5, , 
+noree-query6796.smt2, sat, 45, 8, unsat, 3963, 4, , 
+noree-query9276.smt2, sat, 67, 8, unsat, 2017, 5, , 
+noree-query8917.smt2, sat, 36, 7, unsat, 4016, 4, , 
+noree-query6842.smt2, sat, 58, 8, unsat, 4197, 4, , 
+noree-query10682.smt2, sat, 55, 8, unsat, 2924, 4, , 
+noree-query8654.smt2, sat, 47, 8, unsat, 2877, 4, , 
+noree-query3221.smt2, sat, 34, 8, unsat, 778, 3, , 
+noree-query8962.smt2, sat, 50, 8, unsat, 3114, 4, , 
+noree-query5196.smt2, sat, 44, 8, unsat, 1424, 4, , 
+noree-query3767.smt2, sat, 53, 8, unsat, 2479, 4, , 
+noree-query3487.smt2, sat, 61, 8, unsat, 1680, 4, , 
+noree-query10681.smt2, sat, 50, 8, unsat, 715, 3, , 
+noree-query5197.smt2, sat, 40, 8, unsat, 4117, 4, , 
+noree-query10669.smt2, sat, 37, 8, unsat, 691, 3, , 
+noree-query10663.smt2, sat, 37, 8, unsat, 2144, 4, , 
+noree-query3214.smt2, sat, 37, 8, unsat, 1123, 4, , 
+noree-query7904.smt2, sat, 48, 8, unsat, 4640, 4, , 
+noree-query4914.smt2, sat, 50, 8, unsat, 4236, 4, , 
+noree-query5108.smt2, sat, 52, 8, unsat, 1711, 5, , 
+noree-query9155.smt2, sat, 120, 11, unsat, 1468, 4, , 
+noree-query4871.smt2, sat, 40, 8, unsat, 1263, 4, , 

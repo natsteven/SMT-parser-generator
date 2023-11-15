@@ -92,11 +92,12 @@ public class MainJSON {
             * this create a copy of the graph with the same semantics but assuming the children evaluate oppositely for
             * comprehensive checking of solution options
             */ 
-            if (jB.createCopy){ //jsonBuilder's createCopy checks for predicates with both boolean children
-                File jFile2 = new File(outputDir, file.getName() + ".copy.json");
+            while (jB.createCopy > 0){ //jsonBuilder's createCopy checks for predicates with both boolean children
+                File jFile2 = new File(outputDir, file.getName() + ".copy" + jB.createCopy + ".json");
                 try (PrintWriter j2 = new PrintWriter(jFile2)) {
                     j2.println(jB.getCopyJSON());
                 }
+                jB.createCopy--;
             }
         }
 

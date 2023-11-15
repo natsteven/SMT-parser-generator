@@ -27,7 +27,6 @@ import edu.boisestate.cs.antlrTools.SMTLIBv2StringsParser;
 public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 
     private StringBuilder jBuilder = new StringBuilder();
-    private StringBuilder copyBuilder = new StringBuilder();
     private int nodeCounter = 0;
     private HashSet<String> alphabet = new HashSet<>();
     private Boolean expr = false;
@@ -45,7 +44,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
     private HashMap<Integer, Integer> exprLvlsArgs = new HashMap<>();
     private String currentConcreteConcat = "";
     private Integer reAlls = 0;
-    public boolean createCopy = false;
+    public Integer createCopy = 1;
     private HashMap<String, Node> symbolics = new HashMap<>();
 
     // set of terminals to ignore
@@ -59,51 +58,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         // add("str.to_re");
     }};
         
-    /* 
-    * Node class representing a node for the resulting data flow graph representation
-    * This is essentially analogous to a given terminal and the incoming edges of children
-    * and the parent are figured out based on the parse trees structure
-    */   
-    public class Node{ // arrtibutes could/should be private
-        public Integer id;
-        public String val;
-        public Node parent;
-        public String paramType;
-        public String actualVal;
-        public ArrayList<Node> children = new ArrayList<>();
-
-        //constructor
-        public Node(Integer id, String val, String actualVal, Node parent){
-            this.id = id;
-            this.val = val;
-            this.parent = parent;
-            this.actualVal = actualVal;
-        }
-
-        //This is not used anymore, but it creates a deep copy of the node with an id offset for it and its children
-        public Node(Node node, int offset){
-            this.id = node.id + offset;
-            this.val = node.val;
-            this.actualVal = node.actualVal;
-            ArrayList<Node> copyChildren = new ArrayList<>();
-            for (Node childNode: node.children){
-                Node copyChild = new Node(childNode, offset);
-                copyChildren.add(copyChild);
-            }
-            this.children = copyChildren;
-        }
-
-        //adds a child node to the children array for a node
-        public void addChild(Node node) {
-            children.add(node);
-        }
-
-        //setID, right now Node attributes are public but they probably shouldnt be 
-        public void setID(int num){
-            this.id = num;
-        }
-
-    }
+    
 
     /*
      * Main method for processing a terminal in to a Node, uses information of from various flags set during the walk
@@ -136,7 +91,15 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 Node parent = stack.isEmpty() ? null: stack.pop();
                 if (parent != null){
                     Node letRef = letMaps.get(node.getText());
-                    parent.addChild(letRef.children.get(0));
+                    Node let = letRef.children.get(0);
+                    if (let.actualVal.contains("re.all")){
+                        Node newNode = new Node(getNodeID(), "r" + (symVars.size() + reAlls) + "!:!getStringValue!!", "reall" + reAlls, parent);
+                        reAlls++;
+                        allNodes.remove(let); //otherwise get island of first re.all0
+                        let = newNode;
+                        allNodes.add(let);
+                    }
+                    parent.addChild(let);
                     stack.push(parent);
                 }
                 return;
@@ -436,7 +399,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
              * 
              * smt2 functions not inlcuded with java method equivalent:
              * compareTo() ~= str.< and str.<= (str.< = true when compareTo < 0)
-             * contains() ? str.suffixof and str.prefixof, maybe str.in_re
+             * contains() ? str.suffixof and str.prefixof, maybe str.in_re (literallt str.contains)
              * endsWith() = str.suffixof (reverse?)
              * startsWith() = str.prefixof (reverse?)
              * matches(String regex) = str.in_re
@@ -465,60 +428,69 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
     }  
 
     public String getJSON() {;
-
+        
+        postProcess();
+        
         if (alphabet.isEmpty()) {
             alphabet.add("A");
             alphabet.add("B");
             alphabet.add("C");
         }
+        // if (alphabet.size() == 1){
+        //     if (!alphabet.contains("B")) alphabet.add("B");
+        //     else alphabet.add("A");
+        // }
+        
         jBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + alphabet.size() + 
         ",\n\t\t\"declaration\" : \"" + String.join(",", alphabet) + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
 
-        postProcess();
-
         for (Node node : allNodes) {
             jBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
-            if (node.children!=null){
-                // if (node.children.size()==2){ // checks is internal node
+            if (!node.children.isEmpty()){
+                if (node.children.size()==2){ // checks is internal node
                     
-                //     // setting parameters of children based off precedence/order
-                //     Node child1 = node.children.get(0);
-                //     Node child2 = node.children.get(1);
+                    // setting parameters of children based off precedence/order
+                    // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
+                    //but an emergent property of the semantics of the query
+                    Node child1 = node.children.get(0);
+                    Node child2 = node.children.get(1);
 
-                //     if (child1.id < child2.id){
-                //         child1.paramType = "t";
-                //         child2.paramType = "s1";
-                //     } else {
-                //         child1.paramType = "s1";
-                //         child2.paramType = "t";
-                //     } 
-                //     if (child1.val.startsWith("concat")){
-                //         child1.paramType = "t";
-                //         child2.paramType = "s1";
-                //     } else if (child2.val.startsWith("concat")){
-                //         child1.paramType = "s1";
-                //         child2.paramType = "t";
-                //     }
+                    if (child1.id < child2.id){
+                        child1.paramType = "t";
+                        child2.paramType = "s1";
+                    } else {
+                        child1.paramType = "s1";
+                        child2.paramType = "t";
+                    } 
+                    if (child1.val.startsWith("concat")){
+                        child1.paramType = "t";
+                        child2.paramType = "s1";
+                    } else if (child2.val.startsWith("concat")){
+                        child1.paramType = "s1";
+                        child2.paramType = "t";
+                    }
 
-                //     for (Node childNode : node.children){
-                //     // some tree has a null chilnode in its children array (possibly due to concat manip)
-                //         // if (childNode!=null){
-                //         jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                //         ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
-                //         // }
-                //     }
-                // } else {
-                    String paramType = "t";
-                    int i = 0;
                     for (Node childNode : node.children){
                     // some tree has a null chilnode in its children array (possibly due to concat manip)
                         // if (childNode!=null){
                         jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                        ",\n\t\t\t\t\t\"type\" : \"" + paramType + "\"\n\t\t\t\t},");
+                        ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
                         // }
-                        i++;
-                        paramType = "s" + i;
-                    }                    
+                    }
+                } 
+                // else {
+                    // System.err.println("shouldnt ever be reached");
+                    // String paramType = "t";
+                    // int i = 0;
+                    // for (Node childNode : node.children){
+                    // // some tree has a null chilnode in its children array (possibly due to concat manip)
+                    //     // if (childNode!=null){
+                    //     jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
+                    //     ",\n\t\t\t\t\t\"type\" : \"" + paramType + "\"\n\t\t\t\t},");
+                    //     // }
+                    //     i++;
+                    //     paramType = "s" + i;
+                    // }                    
                 // }
             }
 
@@ -529,14 +501,15 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         }
         jBuilder.deleteCharAt(jBuilder.length() - 1);
         jBuilder.append(" ] }");
-        if (createCopy){
-            addCopy(allNodes);
-        }
         return jBuilder.toString();
     }
 
     private void postProcess(){
-        // convert re.allchar 
+        // convert re.allchar
+        if (alphabet.size() == 1){
+            if (!alphabet.contains("B")) alphabet.add("B");
+            else alphabet.add("A");
+        }
         Random rand = new Random();
         ArrayList<Node> removals = new ArrayList<>();
         ArrayList<Node> addedConcats = new ArrayList<>();
@@ -587,7 +560,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 }
 
                 ArrayList<Node> oldChildren = new ArrayList<>(node.children);
-                // Collections.reverse(oldChildren); thought this needed to happen but it clearly shouldnt given testing
+                Collections.reverse(oldChildren); //thought this needed to happen but it clearly shouldnt given testing <- LIES (?) ... maybe
                 node.children.clear();
                 node.addChild(oldChildren.get(0));
                 stack.push(node);
@@ -619,8 +592,9 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 removals.add(node);
             }
             // remove equals nodes when they are roots and their children are predicates? (defintely an issue here but no 'unknown string operation')
-            else if (node.val.startsWith("equals") && node.children.get(0).val.startsWith("equals")){
-                createCopy = true;
+            // shuoldnt this check that both children are "equals" not just the first
+            else if (node.val.startsWith("equals") && node.children.get(0).val.startsWith("equals")&& node.children.get(1).val.startsWith("equals")){
+                createCopy*=2;
                 if (node.actualVal.equals("false")){
                     if (childrenEquals(node)){
                         switchBool(node.children.get(0));
@@ -629,6 +603,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                 removals.add(node);
             }
         }
+        createCopy--;
         allNodes.removeAll(removals);
         allNodes.addAll(addedConcats);
         assignIDs(allNodes); // putting after combining symvars breaks things
@@ -736,26 +711,44 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         } else { return false;}
     }
 
-    private void addCopy(ArrayList<Node> nodes){
-        // only accounting for equals of two contains
-        for (Node node : nodes){
-            if (node.val.startsWith("contains")){
-                switchBool(node);
+    private void addCopy(ArrayList<Node> nodes, Integer copy){
+        // pretty dumb way to do it but yeah.
+        if (copy %2 != 0){
+            for (Node node : nodes){
+                if (node.val.startsWith("equals")){
+                    switchBool(node);
+                }
             }
+        }
+        else {
+            int i = 0;
+            for (Node node : nodes){
+                if (node.val.startsWith("equals")){
+                    switchBool(node);
+                    i++;
+                }
+                if (i > 1) break;
+            }
+
         }
     }
 
     public String getCopyJSON(){
+
+        StringBuilder copyBuilder = new StringBuilder();
+        addCopy(allNodes, createCopy);
 
         copyBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + alphabet.size() + 
         ",\n\t\t\"declaration\" : \"" + String.join(",", alphabet) + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
 
         for (Node node : allNodes) {
             copyBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
-            if (node.children!=null){
+            // if (node.children!=null){
                 if (node.children.size()==2){
                     
                     // setting parameters of children based off precedence/order
+                    // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
+                    //but an emergent property of the semantics of the query
                     Node child1 = node.children.get(0);
                     Node child2 = node.children.get(1);
 
@@ -774,27 +767,27 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
                         child2.paramType = "t";
                     }
 
+                    // for (Node childNode : node.children){
+                    // some tree has a null chilnode in its children array (possibly due to concat manip)
+                        // if (childNode!=null){
+                        // copyBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
+                        // ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
+                        // }
+                    // }
+                // } else {
+                    // String paramType = "t";
+                    // int i = 0;
                     for (Node childNode : node.children){
                     // some tree has a null chilnode in its children array (possibly due to concat manip)
                         // if (childNode!=null){
                         copyBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
                         ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
                         // }
-                    }
-                } else {
-                    String paramType = "t";
-                    int i = 0;
-                    for (Node childNode : node.children){
-                    // some tree has a null chilnode in its children array (possibly due to concat manip)
-                        // if (childNode!=null){
-                        copyBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                        ",\n\t\t\t\t\t\"type\" : \"" + paramType + "\"\n\t\t\t\t},");
-                        // }
-                        i++;
-                        paramType = "s" + i;
+                        // i++;
+                        // paramType = "s" + i;
                     }                    
                 }
-            }
+            // }
 
             copyBuilder.deleteCharAt(copyBuilder.length() - 1);
             copyBuilder.append("],\n\t\t\t\"sourceConstraints\" : [ ],\n\t\t\t" +
@@ -803,6 +796,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         }
         copyBuilder.deleteCharAt(copyBuilder.length() - 1);
         copyBuilder.append(" ] }");
+        
         return copyBuilder.toString();
     }
 }

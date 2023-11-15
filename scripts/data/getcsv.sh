@@ -56,7 +56,7 @@ do
     log_file="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/scripts/data/inverse_logs/$query.inverse.log"
     cd ~/Documents/string-constraint-counting
     start_time=$(($(date +%s%N)/1000000))
-    timeout "$timeout" java -cp target/string-constraint-solvers-1.0-SNAPSHOT-jar-with-dependencies.jar edu.boisestate.cs.SolveMain "$json_file" -l "$length" -s Inverse > "$log_file" 2>&1
+    timeout "$timeout" java -cp target/string-constraint-solvers-1.0-SNAPSHOT-jar-with-dependencies.jar edu.boisestate.cs.SolveMain "$json_file" -l "$length" -s Inverse -v2 > "$log_file" 2>&1
     exit_s=$?
     end_time=$(($(date +%s%N)/1000000))
     runtime=$((end_time-start_time))
@@ -64,7 +64,7 @@ do
     while [[ $exit_s -eq 124 && $length -ne 0 ]]; do
         length=$(($length-1))
         start_time=$(($(date +%s%N)/1000000))
-        timeout "$timeout" java -cp target/string-constraint-solvers-1.0-SNAPSHOT-jar-with-dependencies.jar edu.boisestate.cs.SolveMain "$json_file" -l "$length" -s Inverse > "$log_file" 2>&1
+        timeout "$timeout" java -cp target/string-constraint-solvers-1.0-SNAPSHOT-jar-with-dependencies.jar edu.boisestate.cs.SolveMain "$json_file" -l "$length" -s Inverse -v2 > "$log_file" 2>&1
         exit_s=$?
         end_time=$(($(date +%s%N)/1000000))
         runtime=$((end_time-start_time))
