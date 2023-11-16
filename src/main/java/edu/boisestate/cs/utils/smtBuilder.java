@@ -20,9 +20,9 @@ public class smtBuilder{
     }
 
     public static String getQuery(ArrayList<Node> nodeGraph) throws Exception{
+        stmts=0; // not sure why this isnt zero after being used but it is so needs to be reset at start
         StringBuilder smtString = new StringBuilder();
         ArrayList<Node> roots = findRoot(nodeGraph);
-        Stack<Node> stringStack = new Stack<>(); // need as concats are reversed compared to queries.
         // ArrayList<String> symbolics = new ArrayList<>();
 
         smtString.append("(assert ");
@@ -34,14 +34,9 @@ public class smtBuilder{
             smtString.append(smtDecode(root));
             Node currentNode = root;
 
-            while (!currentNode.children.isEmpty()){
-                if (currentNode.children.size() == 1){
-                    smtString.append(smtDecode(currentNode));
-                    Node child = currentNode.children.get(0);
-                    smtString.append(smtDecode(child));
-                    currentNode = child;
-                    continue;
-                }
+            //not sure if having concat and substring as stopping criteria will cause issues with deeper statments. i think its handled correctly
+            while (!currentNode.children.isEmpty() && notHandledByDecode(currentNode)){ //concats are handled in the smtDecode method.
+
                 //else 2 children but shuold also make it work for at east 3 (a substring with 2 ints and a string args)
                 Node sourceChild;
                 Node targetChild;
@@ -53,22 +48,12 @@ public class smtBuilder{
                     targetChild = currentNode.children.get(0);
                 }
 
-                if (currentNode.val.contains("concat")){ //concats are reverse order as mentioned above
-                    stringStack.push(sourceChild);
-                    if (!currentNode.parent.val.contains("concat")){
-                        smtString.append("(str.++ "); //no decode necessary as known. This simply handles the first concat in a chain (reducing the rest)
-                        stmts++;
-                    }
-                } else {
-                    smtString.append(smtDecode(targetChild));
-                    smtString.append(smtDecode(sourceChild));
-                }
+                smtString.append(smtDecode(targetChild));
+                smtString.append(smtDecode(sourceChild));
+
                 currentNode = targetChild;
             }
 
-            while (!stringStack.isEmpty()){
-                smtString.append(smtDecode(stringStack.pop()));
-            }
             for (int i=0; i< stmts; i++){
                 smtString.append(")");
             }
@@ -112,6 +97,32 @@ public class smtBuilder{
                 stmts+=2;
             }
             return s;
+        } else if (node.val.contains("concat")){    //in theory this was already taken care of but apparently there something im missing
+            // stmts++;
+            Stack<Node> stringStack = new Stack<>(); // need as concats are reversed compared to queries
+            Node curr = node;
+            Node sourceChild;
+            Node targetChild;
+            String s = "(str.++ ";
+
+            curr = node;
+            while (curr.val.contains("concat")){
+                if (curr.children.get(0).paramType.equals("s1")) {
+                    sourceChild = curr.children.get(0);
+                    targetChild = curr.children.get(1);
+                } else {
+                    sourceChild = curr.children.get(1);
+                    targetChild = curr.children.get(0);
+                }
+                stringStack.push(sourceChild);
+                curr = targetChild;
+            }
+            s += smtDecode(curr);
+            while (!stringStack.isEmpty()){
+                s+= smtDecode(stringStack.pop());
+            }
+            s+= ")";
+            return s;
         }
         // inverse graphs (not from translated smt queries)
         else if (node.val.contains("contains")){
@@ -123,30 +134,52 @@ public class smtBuilder{
                 s = "(not (str.contains ";
                 stmts+=2;
             }
-            return s; // is this converse in smt? no its str.contains t s, where t contains s, but should check that its traversed correctly
+            return s; // is this converse in smt? (yes?) its str.contains t s, where t contains s, but should check that its traversed correctly
         } else if (node.val.contains("isEmpty")){
             String s;
             if (node.actualVal.equals("true")){
-                s = "(= re.none ";
+                s = "(= \"\" ";
                 stmts++;
             } else {
-                s = "(not (= re.none ";
+                s = "(not (= \"\" ";
                 stmts+=2;
             }
-            return s; // potentially not correct ordering / syntax?
+            s+= smtDecode(node.children.get(0));
+            for (int i=0;i<stmts;i++){
+                s+=")";
+            }
+            stmts=0;
+            return s; 
+        // potentially not correct ordering / syntax?
         } else if (node.val.contains("replace")){ // probably going to be an issue with multiple arguments?
             stmts++;
             return "(str.replace_all ";
         } else if (node.val.contains("substring")){
-            stmts++;
-            return "(str.substr ";
-        } else if (node.val.contains("concat")){    //in theory this was already taken care of but apparently there something im missing
-            stmts++;
-            return "(str.++ ";
+            String s = "(str.substr ";
+            Node targ=null; //this is last
+            Node s1=null;
+            Node s2=null;
+            for (Node child : node.children){
+                if (child.paramType.equals("t")) targ = child;
+                if (child.paramType.equals("s1")) s1 = child;
+                if (child.paramType.equals("s2")) s2 = child;
+            }
+
+            //do own smt Decode for the ints
+            s+= s1.actualVal + " "+ s2.actualVal+" " + smtDecode(targ) + ")";
+
+            return s;
         }
 
         throw new Exception("Unsupported Operation: " + node.val);
 
-        // return "";
+
+    }
+
+    private static Boolean notHandledByDecode(Node node){
+        if (node.val.contains("concat")||node.val.contains("substring")||node.val.contains("isEmpty")){
+            return false;
+        }
+        return true;
     }
 }

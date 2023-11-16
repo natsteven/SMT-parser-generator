@@ -49,7 +49,7 @@ public class toNodeGraph { // could have done this without converting from jsonO
             JSONObject source = incoming.getJSONObject(j);
             int source_id = source.getInt("source");
             String type = source.getString("type");
-            children.add(new Node(source_id, type)); //not sure if we really need type, would only be for ordering
+            children.add(new Node(source_id, type)); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
         }
 
         return new Node(id, val, actualVal, children);

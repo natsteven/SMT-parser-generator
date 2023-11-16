@@ -26,6 +26,11 @@ public class MainSMT {
 
             ArrayList<Node> graph = toNodeGraph.makeNodeGraph(json);
             String query = null;
+
+            // for (Node node : graph){
+            //     System.out.println(node.val);
+            // }
+
             try {
                 query = smtBuilder.getQuery(graph);
             } catch (Exception e) {
