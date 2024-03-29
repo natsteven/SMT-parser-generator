@@ -26,9 +26,9 @@ public class toNodeGraph { // could have done this without converting from jsonO
 
             nodeGraph.add(node);
         }
-
+        // smtBuilder.printGraph(nodeGraph, "substring", "BEFORE PROCESS");
         processNodes(nodeGraph);
-
+        // smtBuilder.printGraph(nodeGraph, "substring", "AFTER PROCESS");
         return nodeGraph;
     }
 
@@ -41,14 +41,17 @@ public class toNodeGraph { // could have done this without converting from jsonO
         int id = vertex.getInt("id");
         String actualVal = vertex.getString("actualValue");
         String val = vertex.getString("value");
-
+        // Boolean print = val.contains("substring") ? true : false;
         JSONArray incoming = vertex.getJSONArray("incomingEdges");
         ArrayList<Node> children = new ArrayList<>();
         // ArrayList<Integer> childrenPointers = new ArrayList<>();
+        // if (print) System.out.println("Incoming edges: " + incoming.toString() + " for node " + id);
         for (int j = 0; j < incoming.length() ; j++){
             JSONObject source = incoming.getJSONObject(j);
+            // if (print) System.out.println("Source Object: " + source.toString());
             int source_id = source.getInt("source");
             String type = source.getString("type");
+            // if (print) System.out.println("Source: " + source_id + " Type: " + type);
             children.add(new Node(source_id, type)); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
         }
 
@@ -65,14 +68,18 @@ public class toNodeGraph { // could have done this without converting from jsonO
     private static void processNodes(ArrayList<Node> nodes){
         for (Node node : nodes){
             if (node.children != null){
-                for (int i = 0; i < node.children.size(); i++) { // inplace changing
-                    Node pseudo = node.children.get(i);
+                // if (node.val.contains("substring")) System.out.println("Node " + node.id + " OLD children: " + node.children.toString());
+                ArrayList<Node> realChildren = new ArrayList<>();
+                if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "BEFORE CHILDREN PROCESS");
+                for (Node pseudo : node.children) {
                     Node real = getNode(pseudo.id, nodes);
                     real.parent = node;
                     real.paramType = pseudo.paramType;
-                    node.children.add(i, real);
-                    node.children.remove(pseudo);
+                    realChildren.add(real);
                 }
+                node.children = realChildren;
+                if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "AFTER CHILDREN PROCESS");
+                // if (node.val.contains("substring")) System.out.println("Node " + node.id + " NEW children: " + node.children.toString());
             }
         }
     }

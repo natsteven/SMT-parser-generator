@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainSMT",
+            "request": "launch",
+            "mainClass": "edu.boisestate.cs.utils.MainSMT",
+            "projectName": "GenJSONs",
+            "args": ["transducerQueries"]
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -16,7 +24,7 @@
             "request": "launch",
             "mainClass": "edu.boisestate.cs.MainJSON",
             "projectName": "GenJSONs",
-            "args": "QF_S"
+            "args": ["QF_S"]
         },
         {
             "type": "java",

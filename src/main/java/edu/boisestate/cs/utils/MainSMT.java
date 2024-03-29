@@ -20,28 +20,29 @@ public class MainSMT {
         outputDir.mkdir();
 
         for (File jsonFile : getJSONs(directory)){
-            String outputPath = jsonFile.getAbsolutePath().replace(".json", ".smt").replace(directoryPath,outputDirPath);
+            String outputPath = outputDirPath + "/"+ jsonFile.getName().replace(".json", ".smt");
             File output = new File(outputPath);
             JSONObject json = getJSONobj(jsonFile.getAbsolutePath());
 
             ArrayList<Node> graph = toNodeGraph.makeNodeGraph(json);
             String query = null;
 
-            // for (Node node : graph){
-            //     System.out.println(node.val);
+            // for (Node node : graph) {
+            //     System.out.println(node);
             // }
 
             try {
                 query = smtBuilder.getQuery(graph);
             } catch (Exception e) {
-                System.err.println("Problem with file " + output.getAbsolutePath());
+                System.err.println("Problem getting Query with file " + output.getAbsolutePath());
                 System.err.println(e.getMessage());
+                e.printStackTrace();
                 continue;
             }
             try (PrintWriter j = new PrintWriter(output)) {
                 j.println(query);
             } catch (Exception e) {
-                System.err.println("Problem with file " + output.getAbsolutePath());
+                System.err.println("Problem writing Query with file " + output.getAbsolutePath());
                 e.printStackTrace();
             }
         }

@@ -23,7 +23,8 @@ public class smtBuilder{
         stmts=0; // not sure why this isnt zero after being used but it is so needs to be reset at start
         StringBuilder smtString = new StringBuilder();
         ArrayList<Node> roots = findRoot(nodeGraph);
-        // ArrayList<String> symbolics = new ArrayList<>();
+
+        // printGraph(nodeGraph, "init");
 
         smtString.append("(assert ");
         if (roots.size() > 1){
@@ -47,6 +48,10 @@ public class smtBuilder{
                     sourceChild = currentNode.children.get(1);
                     targetChild = currentNode.children.get(0);
                 }
+                // System.out.println(currentNode);
+                // System.out.println("SOURCE: " + sourceChild + " TARGET: " + targetChild);
+                // printGraph(targetChild.children, "target child");
+                // printGraph(targetChild.children.get(0).children, "target child's children");
 
                 smtString.append(smtDecode(targetChild));
                 smtString.append(smtDecode(sourceChild));
@@ -69,6 +74,9 @@ public class smtBuilder{
         if (roots.size() > 1){
             smtString.append(")");
         }
+        
+        smtString.insert(0,addCustomFuncs());
+
         smtString.insert(0, defStrings);
 
         smtString.append("\n(check-sat)");
@@ -160,15 +168,29 @@ public class smtBuilder{
             Node s1=null;
             Node s2=null;
             for (Node child : node.children){
-                if (child.paramType.equals("t")) targ = child;
-                if (child.paramType.equals("s1")) s1 = child;
-                if (child.paramType.equals("s2")) s2 = child;
+                switch (child.paramType){
+                    case "t":
+                        targ = child;
+                        break;
+                    case "s1":
+                        s1 = child;
+                        break;
+                    case "s2":
+                        s2 = child;
+                        break;
+                }
             }
-
             //do own smt Decode for the ints
-            s+= s1.actualVal + " "+ s2.actualVal+" " + smtDecode(targ) + ")";
-
+            s+=  smtDecode(targ) +" " + s1.actualVal + " "+ s2.actualVal+")";
             return s;
+        } else if (node.val.contains("toLowerCase")){
+            String s = smtDecode(node.children.get(0)); //one child
+            return "(str.toLower " + s + ")";
+            //this is handles by a custom defined function in the header (added at end of building)
+        } else if (node.val.contains("toUpperCase")){
+            String s= smtDecode(node.children.get(0));
+            return "(str.toUpper " + s + ")";
+            //custom defined function
         }
 
         throw new Exception("Unsupported Operation: " + node.val);
@@ -176,10 +198,47 @@ public class smtBuilder{
 
     }
 
+    private static String addCustomFuncs(){
+        String toLower = "(define-fun-rec str.toLower ((x String)) String\n"+
+                "  (ite (= x \"\")\n"+
+                "      \"\"\n"+
+                "      (let ((Head (str.at x 0)))\n"+
+                "        (str.++ \n"+
+                "          (ite (and (<= 65 (str.to_code Head)) \n"+
+                "                     (<= (str.to_code Head) 90))\n"+
+                "               (str.from_code (+ (str.to_code Head) 32))\n"+
+                "               Head)\n"+
+                "          (str.toLower (str.substr x 1 (- (str.len x) 1)))))))\n";
+        String toUpper = "(define-fun-rec str.toUpper ((x String)) String\n"+
+                "  (ite (= x \"\")\n"+
+                "      \"\"\n"+
+                "      (let ((Head (str.at x 0)))\n"+
+                "        (str.++ \n"+
+                "          (ite (and (<= 97 (str.to_code Head)) \n"+
+                "                     (<= (str.to_code Head) 122))\n"+
+                "               (str.from_code (- (str.to_code Head) 32))\n"+
+                "               Head)\n"+
+                "          (str.toUpper (str.substr x 1 (- (str.len x) 1)))))))\n";
+
+        return toLower + toUpper;
+    }
+
     private static Boolean notHandledByDecode(Node node){
-        if (node.val.contains("concat")||node.val.contains("substring")||node.val.contains("isEmpty")){
+        if (node.val.contains("concat")||node.val.contains("substring")||node.val.contains("isEmpty")||node.val.contains("toLowerCase")||node.val.contains("toUpperCase")){
             return false;
         }
         return true;
+    }
+
+    public static void printGraph(ArrayList<Node> nodes, String substr, String msg){
+        if (nodes.isEmpty()) return;
+        if (substr == null) substr = "";
+        if (msg == null) msg = "";
+        System.out.println("NODEGRAPH ------------------------------------" + msg);
+        for (Node node : nodes){
+            if(node.val == null) System.out.println(node);
+            if (node.val !=null && node.val.contains(substr))System.out.println(node);
+        }
+        System.out.println("----------------------------------------------");
     }
 }

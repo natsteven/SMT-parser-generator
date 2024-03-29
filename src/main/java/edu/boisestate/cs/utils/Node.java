@@ -27,7 +27,6 @@ import java.util.ArrayList;
         public Node(Integer source_id, String type){
             this.id = source_id;
             this.paramType = type;
-    
         }
 
         // pseudo constructor without parent
@@ -51,6 +50,14 @@ import java.util.ArrayList;
             this.children = copyChildren;
         }
 
+        //create a copy of a node
+        public Node(Node node){
+            this.id = node.id;
+            this.val = node.val;
+            this.actualVal = node.actualVal;
+            this.children = node.children;
+        }
+
         //adds a child node to the children array for a node
         public void addChild(Node node) {
             children.add(node);
@@ -59,6 +66,15 @@ import java.util.ArrayList;
         //setID, right now Node attributes are public but they probably shouldnt be 
         public void setID(int num){
             this.id = num;
+        }
+
+        @Override
+        public String toString(){
+            String cStr = "";
+            for (Node child : children){
+                cStr += " childid: " + child.id + " type: " + child.paramType + " val: " + child.val;
+            }
+            return "ID: " + id + " type: " + paramType + " value: " + val + " Children: " + cStr; 
         }
 
     }
