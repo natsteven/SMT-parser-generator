@@ -1,0 +1,43 @@
+(declare-fun r3 () String)
+(declare-fun r4 () String)
+(declare-fun r5 () String)
+(declare-fun r6 () String)
+(declare-fun r7 () String)
+(declare-fun r8 () String)
+(declare-fun r9 () String)
+(declare-fun r10 () String)
+(declare-fun r12 () String)
+(declare-fun r11 () String)
+(declare-fun r14 () String)
+(declare-fun r13 () String)
+(declare-fun r16 () String)
+(declare-fun r15 () String)
+(declare-fun r18 () String)
+(declare-fun r17 () String)
+(declare-fun r0 () String)
+(define-fun-rec str.toLower ((x String)) String
+  (ite (= x "")
+      ""
+      (let ((Head (str.at x 0)))
+        (str.++ 
+          (ite (and (<= 65 (str.to_code Head)) 
+                     (<= (str.to_code Head) 90))
+               (str.from_code (+ (str.to_code Head) 32))
+               Head)
+          (str.toLower (str.substr x 1 (- (str.len x) 1)))))))
+(define-fun-rec str.toUpper ((x String)) String
+  (ite (= x "")
+      ""
+      (let ((Head (str.at x 0)))
+        (str.++ 
+          (ite (and (<= 97 (str.to_code Head)) 
+                     (<= (str.to_code Head) 122))
+               (str.from_code (- (str.to_code Head) 32))
+               Head)
+          (str.toUpper (str.substr x 1 (- (str.len x) 1)))))))
+
+(assert (not (= r0 (str.++ r6 (str.++ "BBBC" (str.++ r5 (str.++ "B" (str.++ r4 (str.++ "C" r3 )))))))))
+(assert (= r0 (str.++ r10 (str.++ "ACCB" (str.++ r9 (str.++ "A" (str.++ r8 (str.++ "A" r7 ))))))))
+(assert (not (= r0 (str.++ r14 (str.++ "CCC" (str.++ r13 (str.++ "B" (str.++ r12 (str.++ "B" r11 )))))))))
+(assert (= r0 (str.++ r18 (str.++ "CCC" (str.++ "B" (str.++ r17 (str.++ "C" (str.++ r16 (str.++ "C" r15 )))))))))
+(check-sat)

@@ -1,4 +1,4 @@
-package edu.boisestate.cs.utils;
+package edu.boisestate.cs;
 
 import java.io.File;
 import java.io.FileReader;
@@ -7,6 +7,10 @@ import java.util.ArrayList;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import edu.boisestate.cs.utils.Node;
+import edu.boisestate.cs.utils.smtBuilder;
+import edu.boisestate.cs.utils.toNodeGraph;
 
 public class MainSMT {
     

@@ -8,9 +8,9 @@
             "type": "java",
             "name": "MainSMT",
             "request": "launch",
-            "mainClass": "edu.boisestate.cs.utils.MainSMT",
+            "mainClass": "edu.boisestate.cs.MainSMT",
             "projectName": "GenJSONs",
-            "args": ["transducerQueries"]
+            "args": ["transducerQ"]
         },
         {
             "type": "java",

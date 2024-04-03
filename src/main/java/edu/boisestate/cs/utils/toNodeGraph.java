@@ -1,6 +1,7 @@
 package edu.boisestate.cs.utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -43,7 +44,7 @@ public class toNodeGraph { // could have done this without converting from jsonO
         String val = vertex.getString("value");
         // Boolean print = val.contains("substring") ? true : false;
         JSONArray incoming = vertex.getJSONArray("incomingEdges");
-        ArrayList<Node> children = new ArrayList<>();
+        HashMap<Node, String> children = new HashMap<>();
         // ArrayList<Integer> childrenPointers = new ArrayList<>();
         // if (print) System.out.println("Incoming edges: " + incoming.toString() + " for node " + id);
         for (int j = 0; j < incoming.length() ; j++){
@@ -52,7 +53,7 @@ public class toNodeGraph { // could have done this without converting from jsonO
             int source_id = source.getInt("source");
             String type = source.getString("type");
             // if (print) System.out.println("Source: " + source_id + " Type: " + type);
-            children.add(new Node(source_id, type)); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
+            children.put(new Node(source_id), type); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
         }
 
         return new Node(id, val, actualVal, children);
@@ -69,16 +70,17 @@ public class toNodeGraph { // could have done this without converting from jsonO
         for (Node node : nodes){
             if (node.children != null){
                 // if (node.val.contains("substring")) System.out.println("Node " + node.id + " OLD children: " + node.children.toString());
-                ArrayList<Node> realChildren = new ArrayList<>();
-                if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "BEFORE CHILDREN PROCESS");
-                for (Node pseudo : node.children) {
+                HashMap<Node, String> realChildren = new HashMap<>();
+                // if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "BEFORE CHILDREN PROCESS");
+                for (HashMap.Entry<Node, String> entry : node.children.entrySet()){
+                    Node pseudo = entry.getKey();
+                    String type = entry.getValue();
                     Node real = getNode(pseudo.id, nodes);
                     real.parent = node;
-                    real.paramType = pseudo.paramType;
-                    realChildren.add(real);
+                    realChildren.put(real, type);
                 }
                 node.children = realChildren;
-                if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "AFTER CHILDREN PROCESS");
+                // if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "AFTER CHILDREN PROCESS");
                 // if (node.val.contains("substring")) System.out.println("Node " + node.id + " NEW children: " + node.children.toString());
             }
         }

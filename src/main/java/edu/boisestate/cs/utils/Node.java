@@ -1,6 +1,6 @@
 package edu.boisestate.cs.utils;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 /* 
     * Node class representing a node for the resulting data flow graph representation
@@ -11,9 +11,8 @@ import java.util.ArrayList;
         public Integer id;
         public String val;
         public Node parent;
-        public String paramType;
         public String actualVal;
-        public ArrayList<Node> children = new ArrayList<>();
+        public HashMap<Node, String> children = new HashMap<>(); // children are a Node and source parameter type pair e.g. t, s1, s2
 
         //constructor
         public Node(Integer id, String val, String actualVal, Node parent){
@@ -23,14 +22,13 @@ import java.util.ArrayList;
             this.actualVal = actualVal;
         }
 
-        // psuedo constructor as child place holder
-        public Node(Integer source_id, String type){
+        // // psuedo constructor as child place holder
+        public Node(Integer source_id){
             this.id = source_id;
-            this.paramType = type;
         }
 
         // pseudo constructor without parent
-        public Node(Integer id, String val, String actualVal, ArrayList<Node> children){
+        public Node(Integer id, String val, String actualVal, HashMap<Node, String> children){
             this.id = id;
             this.val = val;
             this.actualVal = actualVal;
@@ -38,17 +36,17 @@ import java.util.ArrayList;
         }
 
         //This is not used anymore, but it creates a deep copy of the node with an id offset for it and its children
-        public Node(Node node, int offset){
-            this.id = node.id + offset;
-            this.val = node.val;
-            this.actualVal = node.actualVal;
-            ArrayList<Node> copyChildren = new ArrayList<>();
-            for (Node childNode: node.children){
-                Node copyChild = new Node(childNode, offset);
-                copyChildren.add(copyChild);
-            }
-            this.children = copyChildren;
-        }
+        // public Node(Node node, int offset){
+        //     this.id = node.id + offset;
+        //     this.val = node.val;
+        //     this.actualVal = node.actualVal;
+        //     ArrayList<Node> copyChildren = new ArrayList<>();
+        //     for (Node childNode: node.children){
+        //         Node copyChild = new Node(childNode, offset);
+        //         copyChildren.add(copyChild);
+        //     }
+        //     this.children = copyChildren;
+        // }
 
         //create a copy of a node
         public Node(Node node){
@@ -58,9 +56,9 @@ import java.util.ArrayList;
             this.children = node.children;
         }
 
-        //adds a child node to the children array for a node
-        public void addChild(Node node) {
-            children.add(node);
+        //adds a child node to the children map
+        public void addChild(Node node, String type) {
+            children.put(node, type);
         }
 
         //setID, right now Node attributes are public but they probably shouldnt be 
@@ -71,10 +69,10 @@ import java.util.ArrayList;
         @Override
         public String toString(){
             String cStr = "";
-            for (Node child : children){
-                cStr += " childid: " + child.id + " type: " + child.paramType + " val: " + child.val;
+            for (Node child : children.keySet()){
+                cStr += " childid: " + child.id + " type: " + children.get(child) + " val: " + child.val;
             }
-            return "ID: " + id + " type: " + paramType + " value: " + val + " Children: " + cStr; 
+            return "ID: " + id + " value: " + val + " Children: " + cStr; 
         }
 
     }
