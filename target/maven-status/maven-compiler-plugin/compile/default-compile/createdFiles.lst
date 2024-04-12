@@ -7,7 +7,6 @@ edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser.class
 edu/boisestate/cs/utils/test.class
 edu/boisestate/cs/MainSMT.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$Cmd_checkSatContext.class
-edu/boisestate/cs/utils/smtBuilder.class
 edu/boisestate/cs/utils/MainDot.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$Cmd_exitContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$StringContext.class
@@ -18,6 +17,7 @@ edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$ReglanContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$FunRegLanContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$ExprContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$Cmd_declareFunContext.class
+edu/boisestate/cs/utils/SmtBuilder.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$CommandContext.class
 edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser$StringTheoryContext.class
 edu/boisestate/cs/utils/MainDot$1.class

@@ -1,6 +1,7 @@
 package edu.boisestate.cs.utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Stack;
@@ -8,12 +9,24 @@ import java.util.Stack;
 /**
  * Traverses a Node Graph to generate a corresponding smt query
  */
-public class smtBuilder{
-    private static HashSet<String> symbolics = new HashSet<>();
-    private static int stmts = 0;
-    private static boolean lower = false, upper = false, delete = false;
+public class SmtBuilder{
+    private HashSet<String> symbolics;
+    private HashMap<String, String> ostr_syms;
+    private int stmts, ost_syms;
+    private boolean lower, upper, delete, ostrich;
 
-    private static ArrayList<Node> findRoot(ArrayList<Node> nodes){
+    public SmtBuilder(boolean ostrich) {
+        this.ostrich = ostrich;
+        this.symbolics = new HashSet<>();
+        this.ostr_syms = new HashMap<>();
+        this.stmts = 0;
+        this.ost_syms = 0;
+        this.lower = false;
+        this.upper = false;
+        this.delete = false;
+    }
+
+    private ArrayList<Node> findRoot(ArrayList<Node> nodes){
         ArrayList<Node> roots = new ArrayList<>();
         for (Node node : nodes){
             if (node.parent == null) roots.add(node);
@@ -21,8 +34,7 @@ public class smtBuilder{
         return roots;
     }
 
-    public static String getQuery(ArrayList<Node> nodeGraph) throws Exception{
-        stmts=0; // not sure why this isnt zero after being used but it is so needs to be reset at start
+    public String getQuery(ArrayList<Node> nodeGraph) throws Exception{
         StringBuilder smtString = new StringBuilder();
         ArrayList<Node> roots = findRoot(nodeGraph);
 
@@ -70,8 +82,11 @@ public class smtBuilder{
                 // printGraph(targetChild.children, "target child");
                 // printGraph(targetChild.children.get(0).children, "target child's children");
                 // System.out.println("TARGET: " + targetChild);
-                smtString.append(smtDecode(targetChild));
+
+                //switched this order for contains but not 100% sure if thats true for every function?
                 smtString.append(smtDecode(sourceChild));
+                smtString.append(smtDecode(targetChild));
+                
 
                 currentNode = targetChild;
             }
@@ -86,21 +101,34 @@ public class smtBuilder{
 
         String defStrings = "";
         for (String symbolic : symbolics){
-            defStrings = defStrings + "(declare-fun " + symbolic + " () String)\n";
+            defStrings+= "(declare-fun " + symbolic + " () String)\n";
         }
-        
-        smtString.insert(0,addCustomFuncs());
+        if (ostrich){
+            for (String sym : ostr_syms.keySet()){
+                defStrings+= "(declare-fun " + sym + " () String)\n";
+            }
+            for (Map.Entry<String, String> entry : ostr_syms.entrySet()){
+                String sym = entry.getKey();
+                String targ = entry.getValue();
+                smtString.insert(0,("(assert (toLower " + targ + " " + sym + "))\n"));
+            }
+        }
 
         smtString.insert(0, defStrings);
 
-        smtString.append("\n(check-sat)");
+        if (!ostrich) smtString.insert(0,addCustomFuncs());
+        else smtString.insert(0,addFuncOstrich());
 
-        symbolics = new HashSet<>();
-        stmts = 0;
+        smtString.insert(0, "(set-option :produce-models true)\n");
+        if (ostrich) smtString.insert(0, "(set-option :parse-transducers true)\n");
+        if ((lower || upper) && !ostrich) smtString.insert(0,"(set-logic ALL)\n");
+        else smtString.insert(0,"(set-logic QF_S)\n");
+        smtString.append("\n(check-sat)\n(get-model)\n(exit)");
+
         return smtString.toString();
     }
     
-    private static String smtDecode(Node node) throws Exception{
+    private String smtDecode(Node node) throws Exception{
         // System.out.println(node);
         if (node.val.contains("init")){
             String s = node.val.split("\"")[1]; //return concrete string
@@ -212,10 +240,21 @@ public class smtBuilder{
                 }
             }
             //do own smt Decode for the ints
-            s+=  smtDecode(targ) +" " + s1.actualVal + " "+ s2.actualVal+")";
+            // semantics are different, for smt it is index, and length of substr, for java it is start and end index
+            Integer length = Integer.parseInt(s2.actualVal) - Integer.parseInt(s1.actualVal);
+            s+=  smtDecode(targ) +" " + s1.actualVal + " "+ length+")";
             return s;
         } else if (node.val.contains("toLowerCase")){
             lower = true;
+            if (ostrich){
+                String sym = "L" + ost_syms++ + " ";
+                String targ = smtDecode(node.children.keySet().iterator().next());
+                if (ostr_syms.containsValue(targ)){ //check value exists.....
+                    return getSym(targ);
+                }
+                ostr_syms.put(sym, targ);
+                return sym;
+            }
             String s = smtDecode(node.children.keySet().iterator().next()); //one child
             return "(str.toLower " + s + ")";
             //this is handles by a custom defined function in the header (added at end of building)
@@ -248,7 +287,16 @@ public class smtBuilder{
 
     }
 
-    private static String addCustomFuncs(){
+    private String getSym(String s){
+        for (String sym : ostr_syms.keySet()){
+            if (ostr_syms.get(sym).equals(s)){
+                return sym;
+            }
+        }
+        return null;
+    }
+
+    private String addCustomFuncs(){
         String toLower = "(define-fun-rec str.toLower ((x String)) String\n"+
                 "  (ite (= x \"\")\n"+
                 "      \"\"\n"+
@@ -279,9 +327,37 @@ public class smtBuilder{
         return ret;
     }
 
+    private String addFuncOstrich(){
+        String toLower = "(define-fun-rec toLower ((x String) (y String)) Bool\n" +
+            "   (or (and (= x \"\") (= y \"\"))\n" +
+            "       (and (not (= x \"\")) (not (= y \"\"))\n" +
+            "           (= (char.code (str.head y))\n" +
+            "               (ite (and (<= 65 (char.code (str.head x)))\n" +
+            "                       (<= (char.code (str.head x)) 90))\n" +
+            "                   (+ (char.code (str.head x)) 32)\n" +
+            "                   (char.code (str.head x))))\n" +
+            "           (toLower (str.tail x) (str.tail y))))\n" +
+        ")\n";
+        String toUpper = "(define-fun-rec toUpper ((x String) (y String)) Bool\n" +
+        "   (or (and (= x \"\") (= y \"\"))\n" +
+        "       (and (not (= x \"\")) (not (= y \"\"))\n" +
+        "           (= (char.code (str.head y))\n" +
+        "               (ite (and (<= 97(char.code (str.head x)))\n" +
+        "                       (<= (char.code (str.head x)) 122))\n" +
+        "                   (- (char.code (str.head x)) 32)\n" +
+        "                   (char.code (str.head x))))\n" +
+        "           (toUpper (str.tail x) (str.tail y))))\n" +
+        ")\n";
+        String del = "(define-fun str.del ((x String) (a Int) (b Int)) String\n"+
+                "  (str.++ (str.substr x 0 a) (str.substr x b (str.len x))))\n";
+        String ret = "";
+        if (lower) ret+=toLower;
+        if (upper) ret+=toUpper;
+        if (delete) ret+=del;
+        return ret;
+    }
+
     private static Boolean notHandledByDecode(Node node){
-        
-        
         if (node.val.contains("concat")||node.val.contains("substring")||node.val.contains("isEmpty")||node.val.contains("toLowerCase")||node.val.contains("toUpperCase")||node.val.contains("delete")){
             return false;
         }
@@ -299,4 +375,5 @@ public class smtBuilder{
         }
         System.out.println("----------------------------------------------");
     }
+
 }

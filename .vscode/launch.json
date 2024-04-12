@@ -10,7 +10,7 @@
             "request": "launch",
             "mainClass": "edu.boisestate.cs.MainSMT",
             "projectName": "GenJSONs",
-            "args": ["transducerQ"]
+            "args": ["benchmarks"]
         },
         {
             "type": "java",

@@ -6,8 +6,8 @@
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2StringsListener.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/utils/test.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2StringsBaseListener.java
-/home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/utils/smtBuilder.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2StringsLexer.java
+/home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/utils/SmtBuilder.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/utils/MainDot.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2StringsParser.java
 /home/nathanael/Documents/SMT_to_JSON/GenJSONs/src/main/java/edu/boisestate/cs/utils/Node.java

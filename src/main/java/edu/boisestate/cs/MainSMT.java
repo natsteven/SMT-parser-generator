@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import edu.boisestate.cs.utils.Node;
-import edu.boisestate.cs.utils.smtBuilder;
+import edu.boisestate.cs.utils.SmtBuilder;
 import edu.boisestate.cs.utils.toNodeGraph;
 
 public class MainSMT {
@@ -30,13 +30,14 @@ public class MainSMT {
 
             ArrayList<Node> graph = toNodeGraph.makeNodeGraph(json);
             String query = null;
+            SmtBuilder builder = new SmtBuilder(true);
 
             // for (Node node : graph) {
             //     System.out.println(node);
             // }
 
             try {
-                query = smtBuilder.getQuery(graph);
+                query = builder.getQuery(graph);
             } catch (Exception e) {
                 System.err.println("Problem getting Query with file " + output.getAbsolutePath());
                 System.err.println(e.getMessage());
