@@ -1,8 +1,6 @@
 (set-logic QF_S)
 (set-option :parse-transducers true)
 ;(set-option :produce-models true)
-
-
 (define-fun-rec toLower ((x String) (y String)) Bool
 	(or (and (= x "") (= y ""))
 		(and (not (= x "")) (not (= y ""))
@@ -26,7 +24,6 @@
 (declare-fun r7L () String)
 (declare-fun r7LL () String)
 (declare-fun r11 () String)
-
 (assert (toLower r10 r10L))
 (assert (toLower r10L r10LL))
 (assert (toLower r9 r9L))

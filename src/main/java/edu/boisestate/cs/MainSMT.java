@@ -24,7 +24,7 @@ public class MainSMT {
         outputDir.mkdir();
 
         for (File jsonFile : getJSONs(directory)){
-            String outputPath = outputDirPath + "/"+ jsonFile.getName().replace(".json", ".smt");
+            String outputPath = outputDirPath + "/"+ jsonFile.getName().replace(".json", ".smt2");
             File output = new File(outputPath);
             JSONObject json = getJSONobj(jsonFile.getAbsolutePath());
 
@@ -58,7 +58,8 @@ public class MainSMT {
         ArrayList<File> files = new ArrayList<File>();
         for (File file : directory.listFiles()){
             if (file.isDirectory()){
-                files.addAll(getJSONs(file));
+                System.out.println("Not processing directory " + file.getAbsolutePath());
+//                files.addAll(getJSONs(file));
             } else {
                 if (file.getName().endsWith(".json")){
                     files.add(file);
