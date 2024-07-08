@@ -16,14 +16,15 @@ public class MainSMT {
     
     public static void main(String[] args){
 
-        if (args.length != 2){
-            System.err.println("Usage: <directory> <ostrich(true|false)>");
+        if (args.length < 1 || args.length > 2) {
+            System.err.println("Usage: <directory> [ostrich(true|false)]");
             System.exit(1);
         }
-        System.out.println("Starting SMT conversion for directory " + args[0] + " with ostrich set to " + args[1] + "...");
 
         String directoryPath = args[0];
-        boolean ostrich = Boolean.parseBoolean(args[1]);
+        boolean ostrich = args.length == 2 && Boolean.parseBoolean(args[1]);
+        System.out.println("Starting SMT conversion for directory " + directoryPath + " with ostrich set to " + ostrich + "...");
+
         File directory = new File(directoryPath);
         String outputDirPath = directoryPath + "_SMT"; //this doesn't actually work the way i might want it to work if pointing to a weird dirctory
         File outputDir = new File(outputDirPath);
