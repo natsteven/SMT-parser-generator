@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.boisestate.cs.AppTest" time="0.025" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.boisestate.cs.AppTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-19-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire/surefirebooter18331425109860716178.jar /home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire 2024-06-27T15-52-42_298-jvmRun1 surefire6341221416845857793tmp surefire_01162645404403642675tmp"/>
+    <property name="sun.java.command" value="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire/surefirebooter14861929653403100466.jar /home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire 2024-07-01T11-17-41_471-jvmRun1 surefire17764561435748777968tmp surefire_013982118903664337184tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/test-classes:/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/classes:/home/nathanael/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/nathanael/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/nathanael/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/nathanael/.m2/repository/org/json/json/20231013/json-20231013.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire/surefirebooter18331425109860716178.jar"/>
+    <property name="surefire.real.class.path" value="/home/nathanael/Documents/SMT_to_JSON/GenJSONs/target/surefire/surefirebooter14861929653403100466.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-Ubuntu-0ubuntu322.04"/>
     <property name="user.name" value="nathanael"/>
@@ -53,5 +53,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="edu.boisestate.cs.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="edu.boisestate.cs.AppTest" time="0.005"/>
 </testsuite>
