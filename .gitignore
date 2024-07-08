@@ -1,4 +1,3 @@
 scripts/data/inverse_logs/
 scripts/testing/inverse_logs/
-target/
-.idea/
+output_QF_S_SMT
