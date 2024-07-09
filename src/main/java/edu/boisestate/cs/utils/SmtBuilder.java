@@ -1,7 +1,5 @@
 package edu.boisestate.cs.utils;
 
-import java.util.*;
-import javax.management.monitor.StringMonitor;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -158,14 +156,13 @@ public class SmtBuilder {
             case "equals":
                 return equalsDecode(node);
             case "concat":
-            case "append":
+//            case "append":
                 return concatDecode(node);
             case "contains":
                 return containsDecode(node);
             case "isEmpty":
                 return isEmptyDecode(node);
             case "replace":
-            case "replaceAll":
                 return replaceDecode(node);
             case "substring":
                 return substringDecode(node);
@@ -183,8 +180,6 @@ public class SmtBuilder {
                 return "(str.len " + smtDecode(node.children.keySet().iterator().next()) + ")";
             case "charAt":
                 return charAtDecode(node);
-            case "trim":
-                return trimDecode(node);
 
         }
         //deal with inputs and concrete strings
@@ -202,25 +197,11 @@ public class SmtBuilder {
         Matcher match = sym.matcher(value);
         // i dont see any reason why this potential overapproximation would be an issue
         if (match.find()) {
-            symbolics.add("sym" + node.id);
-            return "sym" + node.id + " ";
-        }
-        sym = Pattern.compile("\\$c\\d+");
-        match = sym.matcher(value);
-        if (match.find()) { //htmlCleaner01 and iText02
-            symbolics.add("sym" + node.id);
-            return "sym" + node.id + " ";
+            symbolics.add(value);
+            return value + " ";
         }
         System.out.println(" VAL: " + value);
         throw new Exception("Node not handled by smtDecode: " + node);
-    }
-
-    private String trimDecode(Node node) throws Exception {
-        Node targ = null;
-        for (Node child : node.children.keySet()) {
-            targ = child;
-        }
-        return "(str.replace_all " + smtDecode(targ) + " \"\\s\" \"\")";
     }
 
     private String equalsDecode(Node node) {
@@ -241,7 +222,7 @@ public class SmtBuilder {
         Node targetChild = null;
         String s = "(str.++ ";
 
-        while (curr.val.contains("concat") || curr.val.contains("append")) { // if there are stacked concats
+        while (curr.val.contains("concat")) { // if there are stacked concats
             for (Map.Entry<Node, String> entry : curr.children.entrySet()) {
                 Node child = entry.getKey();
                 if (entry.getValue().equals("t")) {
@@ -311,8 +292,6 @@ public class SmtBuilder {
         s += smtDecode(targ) + " " + smtDecode(s1) + " " + smtDecode(s2) + ")";
         return s;
     }
-
-//    private String replaceAll(Node node)
 
     private String substringDecode(Node node) throws Exception {
         String s = "(str.substr ";
@@ -474,14 +453,14 @@ public class SmtBuilder {
     }
 
     private Boolean notHandledByDecode(Node node) {
-        if (node.val.contains("concat") || node.val.contains("substring") || node.val.contains("isEmpty") || node.val.contains("toLowerCase") || node.val.contains("toUpperCase") || node.val.contains("delete") || node.val.contains("charAt") || node.val.contains("valueOf") || node.val.contains("toString") || node.val.contains("length")) {
+        if (node.val.contains("concat") || node.val.contains("substring") || node.val.contains("isEmpty") || node.val.contains("toLowerCase") || node.val.contains("toUpperCase") || node.val.contains("delete")) {
             return false;
         }
         return true;
     }
 
     private String unescape(String s) {
-        return s.replace("\"", "").replace("\\\\","\\"); //might need to add others tbh
+        return s.replace("\"", ""); //might need to add others tbh
     }
 
     public void printGraph(ArrayList<Node> nodes, String substr, String msg) {

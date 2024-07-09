@@ -17,7 +17,11 @@ public class MainSMT {
     
     public static void main(String[] args){
 
+        if (args.length > 2 || args.length < 1){
+            System.err.println("Usage: <directory> <ostrich(bool)>");
+        }
         String directoryPath = args[0];
+        boolean ostrich = args.length != 1 && Boolean.parseBoolean(args[1]); //simpler than ternary i guess
         File directory = new File(directoryPath);
         String outputDirPath = directoryPath + "_SMT"; //this could be better/nice : where the output goes i mean
         File outputDir = new File(outputDirPath);
