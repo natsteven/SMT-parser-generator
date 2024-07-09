@@ -1,5 +1,6 @@
 package edu.boisestate.cs.utils;
 
+import java.util.*;
 import javax.management.monitor.StringMonitor;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,10 +38,21 @@ public class SmtBuilder {
         return roots;
     }
 
-    public String getQuery(ArrayList<Node> nodeGraph) throws Exception {
+    public String getQuery(NodeGraph nodeGraph) throws Exception {
         StringBuilder smtString = new StringBuilder();
-        ArrayList<Node> roots = findRoot(nodeGraph);
+        ArrayList<Node> roots = findRoot(nodeGraph.getNodeGraph());
 
+        // get alphabet, essentially we need to get every character and make a union of their regexes,
+        // then re* that and set all symbolics to be in that language
+        String alph = nodeGraph.getAlphabet();
+        String[] alpha = alph.split(",");
+//        ArrayList<String> alphabet = new ArrayList<>(Arrays.asList(alpha));
+        StringBuilder alphaRegex = new StringBuilder();
+        alphaRegex.append("(define-fun Alphabet () RegLan \n\t(re.* (re.union ");
+        for (String s : alpha) {
+            alphaRegex.append("(str.to_re \"" + s + "\") ");
+        }
+        alphaRegex.append("))\n)\n");
         // printGraph(nodeGraph, "init");
 
         // smtString.append("(assert ");
@@ -101,7 +113,12 @@ public class SmtBuilder {
             stmts = 0;
 
         }
+        // Alphabet! need to ensure all symbolics are in the alphabet so assert str.in_re
+        for (String sym : symbolics) {
+            smtString.insert(0, "\n(assert (str.in_re " + sym + " Alphabet))");
+        }
 
+        // declarations for symbolics
         String defStrings = "";
         for (String symbolic : symbolics) {
             defStrings += "(declare-fun " + symbolic + " () String)\n";
@@ -116,7 +133,7 @@ public class SmtBuilder {
                 smtString.insert(0, ("(assert (toLower " + targ + " " + sym + "))\n"));
             }
         }
-
+        smtString.insert(0, alphaRegex);
         smtString.insert(0, defStrings);
 
         if (!ostrich) smtString.insert(0, addCustomFuncs());
@@ -132,10 +149,8 @@ public class SmtBuilder {
     }
 
     private String smtDecode(Node node) throws Exception {
-//         System.out.println(node);
-        if (node == null) {
-            System.out.println("NULL NODE");
-        }
+        // System.out.println(node);
+
         //get the actual value of the node, operation , symbolic, or concrete
         String value = node.val.split("!!")[0].split("!:!")[0];
         //deal with operations in switch statement

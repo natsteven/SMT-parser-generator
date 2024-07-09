@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import edu.boisestate.cs.utils.NodeGraph;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
@@ -16,27 +17,22 @@ public class MainSMT {
     
     public static void main(String[] args){
 
-        if (args.length < 1 || args.length > 2) {
-            System.err.println("Usage: <directory> [ostrich(true|false)]");
-            System.exit(1);
-        }
-
         String directoryPath = args[0];
-        boolean ostrich = args.length == 2 && Boolean.parseBoolean(args[1]);
-        System.out.println("Starting SMT conversion for directory " + directoryPath + " with ostrich set to " + ostrich + "...");
-
         File directory = new File(directoryPath);
-        String outputDirPath = directoryPath + "_SMT"; //this doesn't actually work the way i might want it to work if pointing to a weird dirctory
+        String outputDirPath = directoryPath + "_SMT"; //this could be better/nice : where the output goes i mean
         File outputDir = new File(outputDirPath);
 
         outputDir.mkdir();
+
+        System.out.println("Converting JSONs in directory: " + directory.getAbsolutePath());
+        if (ostrich) System.out.println("For Ostrich");
 
         for (File jsonFile : getJSONs(directory)){
             String outputPath = outputDirPath + "/"+ jsonFile.getName().replace(".json", ".smt2");
             File output = new File(outputPath);
             JSONObject json = getJSONobj(jsonFile.getAbsolutePath());
 
-            ArrayList<Node> graph = toNodeGraph.makeNodeGraph(json);
+            NodeGraph graph = toNodeGraph.makeGraph(json);
             String query = null;
             SmtBuilder builder = new SmtBuilder(ostrich);
 
