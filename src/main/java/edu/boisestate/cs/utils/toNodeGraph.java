@@ -8,14 +8,12 @@ import org.json.JSONObject;
 
 public class toNodeGraph { // could have done this without converting from jsonObjects to nodes but this seemed like a good idea.
 
-
-
     /**
      * Takes a JSONObject of a whole graph and returns a list of Nodes representing the same graph
      * @param jsonGraph - The full JSONObject generated from the graph's json file
      * @return - return a list of nodes representing the graph
      */
-    public static ArrayList<Node> makeNodeGraph(JSONObject jsonGraph){
+    public static NodeGraph makeGraph(JSONObject jsonGraph){
         ArrayList<Node> nodeGraph = new ArrayList<>();
 
         JSONArray vertices = jsonGraph.getJSONArray("vertices");
@@ -30,7 +28,10 @@ public class toNodeGraph { // could have done this without converting from jsonO
         // smtBuilder.printGraph(nodeGraph, "substring", "BEFORE PROCESS");
         processNodes(nodeGraph);
         // smtBuilder.printGraph(nodeGraph, "substring", "AFTER PROCESS");
-        return nodeGraph;
+        String alpha = jsonGraph.getJSONObject("alphabet").getString("declaration");
+        NodeGraph ret = new NodeGraph(nodeGraph, alpha);
+//        System.out.println("ALPHABET: " + ret.getAlphabet());
+        return ret;
     }
 
     /**

@@ -1,9 +1,4 @@
-QF_S/
-output_QF_S/
-false_negatives/
-slogTest/
-anotherTest/
-inputTests/
 scripts/data/inverse_logs/
 scripts/testing/inverse_logs/
-output_QF_S_SMT
+target/
+.idea/
