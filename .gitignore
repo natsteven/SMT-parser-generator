@@ -5,3 +5,7 @@ QF_S/
 anotherTest
 false_negatives
 inputTests
+old
+output_QF_S
+slogTest
+target
