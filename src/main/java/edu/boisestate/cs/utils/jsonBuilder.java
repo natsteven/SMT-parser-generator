@@ -91,7 +91,7 @@
                  Node parent = stack.isEmpty() ? null: stack.pop();
                  if (parent != null){
                      Node letRef = letMaps.get(node.getText());
-                     Node let = letRef.children.keySet().iterator().next(); /// hacky way to get only child
+                     Node let = letRef.children.get(0); /// hacky way to get only child
                      if (let.actualVal.contains("re.all")){
                          Node newNode = new Node(getNodeID(), "r" + (symVars.size() + reAlls) + "!:!getStringValue!!", "reall" + reAlls, parent);
                          reAlls++;
@@ -129,7 +129,7 @@
 
                  //add current node to children of parent
                  if (parent != null) {
-                     parent.addChild(newNode, "t"); // technically placeholder? maybe?
+                     parent.addChild(newNode); // technically placeholder? maybe?
                      stack.push(parent);
                  }
 
@@ -449,32 +449,32 @@
              if (!node.children.isEmpty()){
                  if (node.children.size()==2){ // checks is internal node
                     
-                     // setting parameters of children based off precedence/order
-                     // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
-                     //but an emergent property of the semantics of the query
-                     Node child1 = node.children.get(0);
-                     Node child2 = node.children.get(1);
-
-                     if (child1.id < child2.id){
-                         child1.paramType = "t";
-                         child2.paramType = "s1";
-                     } else {
-                         child1.paramType = "s1";
-                         child2.paramType = "t";
-                     }
-                     if (child1.val.startsWith("concat")){
-                         child1.paramType = "t";
-                         child2.paramType = "s1";
-                     } else if (child2.val.startsWith("concat")){
-                         child1.paramType = "s1";
-                         child2.paramType = "t";
-                     }
+//                     // setting parameters of children based off precedence/order
+//                     // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
+//                     //but an emergent property of the semantics of the query
+//                     Node child1 = node.children.get(0);
+//                     Node child2 = node.children.get(1);
+//
+//                     if (child1.id < child2.id){
+//                         node.childrenType.put(child1, "t");
+//                         node.childrenType.put(child2, "s1");
+//                     } else {
+//                         node.childrenType.put(child1, "s1");
+//                         node.childrenType.put(child2, "t");
+//                     }
+//                     if (child1.val.startsWith("concat")){
+//                         node.childrenType.put(child1, "t");
+//                         node.childrenType.put(child2, "s1");
+//                     } else if (child2.val.startsWith("concat")){
+//                         node.childrenType.put(child1, "s1");
+//                         node.childrenType.put(child2, "t");
+//                     }
 
                      for (Node childNode : node.children){
                      // some tree has a null chilnode in its children array (possibly due to concat manip)
                          // if (childNode!=null){
                          jBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                         ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
+                         ",\n\t\t\t\t\t\"type\" : \"" + node.childrenType.get(childNode) + "\"\n\t\t\t\t},");
                          // }
                      }
                  }
@@ -634,24 +634,25 @@
          // int prevID = 0;
          // Node prevLeaf = null;
          for( Node node: nodes) {
-             if (node.children.size()==2){ // checks is internal node
-                
+             if (node.children.size()==2) { // checks is internal node
+
                  // setting parameters of children based off precedence/order
                  Node child1 = node.children.get(0);
                  Node child2 = node.children.get(1);
-                 if (child1.id < child2.id){
-                     child1.paramType = "t";
-                     child2.paramType = "s1";
+
+                 if (child1.id < child2.id) {
+                     node.childrenType.put(child1, "t");
+                     node.childrenType.put(child2, "s1");
                  } else {
-                     child1.paramType = "s1";
-                     child2.paramType = "t";
+                     node.childrenType.put(child1, "s1");
+                     node.childrenType.put(child2, "t");
                  }
-                 if (child1.val.startsWith("concat")){
-                     child1.paramType = "t";
-                     child2.paramType = "s1";
-                 } else if (child2.val.startsWith("concat")){
-                     child1.paramType = "s1";
-                     child2.paramType = "t";
+                 if (child1.val.startsWith("concat")) {
+                     node.childrenType.put(child1, "t");
+                     node.childrenType.put(child2, "s1");
+                 } else if (child2.val.startsWith("concat")) {
+                     node.childrenType.put(child1, "s1");
+                     node.childrenType.put(child2, "t");
                  }
              }
          }
@@ -749,23 +750,23 @@
                      // setting parameters of children based off precedence/order
                      // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
                      //but an emergent property of the semantics of the query
-                     Node child1 = node.children.get(0);
-                     Node child2 = node.children.get(1);
-
-                     if (child1.id < child2.id){
-                         child1.paramType = "t";
-                         child2.paramType = "s1";
-                     } else {
-                         child1.paramType = "s1";
-                         child2.paramType = "t";
-                     }
-                     if (child1.val.startsWith("concat")){
-                         child1.paramType = "t";
-                         child2.paramType = "s1";
-                     } else if (child2.val.startsWith("concat")){
-                         child1.paramType = "s1";
-                         child2.paramType = "t";
-                     }
+//                     Node child1 = node.children.get(0);
+//                     Node child2 = node.children.get(1);
+//
+//                     if (child1.id < child2.id){
+//                         node.childrenType.put(child1, "t");
+//                         node.childrenType.put(child2, "s1");
+//                     } else {
+//                         node.childrenType.put(child1, "s1");
+//                         node.childrenType.put(child2, "t");
+//                     }
+//                     if (child1.val.startsWith("concat")){
+//                         node.childrenType.put(child1, "t");
+//                         node.childrenType.put(child2, "s1");
+//                     } else if (child2.val.startsWith("concat")){
+//                         node.childrenType.put(child1, "s1");
+//                         node.childrenType.put(child2, "t");
+//                     }
 
                      // for (Node childNode : node.children){
                      // some tree has a null chilnode in its children array (possibly due to concat manip)
@@ -781,7 +782,7 @@
                      // some tree has a null chilnode in its children array (possibly due to concat manip)
                          // if (childNode!=null){
                          copyBuilder.append(" {\n\t\t\t\t\t\"source\" : " + childNode.id +
-                         ",\n\t\t\t\t\t\"type\" : \"" + childNode.paramType + "\"\n\t\t\t\t},");
+                         ",\n\t\t\t\t\t\"type\" : \"" + node.childrenType.get(childNode) + "\"\n\t\t\t\t},");
                          // }
                          // i++;
                          // paramType = "s" + i;

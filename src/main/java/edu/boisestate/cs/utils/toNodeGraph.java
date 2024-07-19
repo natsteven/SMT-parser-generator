@@ -45,7 +45,8 @@ public class toNodeGraph { // could have done this without converting from jsonO
         String val = vertex.getString("value");
         // Boolean print = val.contains("substring") ? true : false;
         JSONArray incoming = vertex.getJSONArray("incomingEdges");
-        HashMap<Node, String> children = new HashMap<>();
+        HashMap<Node, String> childrenType = new HashMap<>();
+        ArrayList<Node> children = new ArrayList<>();
         // ArrayList<Integer> childrenPointers = new ArrayList<>();
         // if (print) System.out.println("Incoming edges: " + incoming.toString() + " for node " + id);
         for (int j = 0; j < incoming.length() ; j++){
@@ -54,10 +55,12 @@ public class toNodeGraph { // could have done this without converting from jsonO
             int source_id = source.getInt("source");
             String type = source.getString("type");
             // if (print) System.out.println("Source: " + source_id + " Type: " + type);
-            children.put(new Node(source_id), type); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
+            Node newNode = new Node(source_id);
+            childrenType.put(newNode, type); //not sure if we really need type, would only be for ordering-> we do indeed need it for ordering
+            children.add(newNode); //im so sorry this is so bad D:
         }
 
-        return new Node(id, val, actualVal, children);
+        return new Node(id, val, actualVal, childrenType, children);
 
     }
 
@@ -73,14 +76,14 @@ public class toNodeGraph { // could have done this without converting from jsonO
                 // if (node.val.contains("substring")) System.out.println("Node " + node.id + " OLD children: " + node.children.toString());
                 HashMap<Node, String> realChildren = new HashMap<>();
                 // if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "BEFORE CHILDREN PROCESS");
-                for (HashMap.Entry<Node, String> entry : node.children.entrySet()){
+                for (HashMap.Entry<Node, String> entry : node.childrenType.entrySet()){
                     Node pseudo = entry.getKey();
                     String type = entry.getValue();
                     Node real = getNode(pseudo.id, nodes);
                     real.parent = node;
                     realChildren.put(real, type);
                 }
-                node.children = realChildren;
+                node.childrenType = realChildren;
                 // if (node.children.size() > 2) smtBuilder.printGraph(node.children, null, "AFTER CHILDREN PROCESS");
                 // if (node.val.contains("substring")) System.out.println("Node " + node.id + " NEW children: " + node.children.toString());
             }

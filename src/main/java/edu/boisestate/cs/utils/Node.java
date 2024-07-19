@@ -1,5 +1,6 @@
 package edu.boisestate.cs.utils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /* 
@@ -12,7 +13,8 @@ import java.util.HashMap;
         public String val;
         public Node parent;
         public String actualVal;
-        public HashMap<Node, String> children = new HashMap<>(); // children are a Node and source parameter type pair e.g. t, s1, s2
+        public HashMap<Node, String> childrenType = new HashMap<>(); // children are a Node and source parameter type pair e.g. t, s1, s2
+        public ArrayList<Node> children = new ArrayList<>();
 
         //constructor
         public Node(Integer id, String val, String actualVal, Node parent){
@@ -28,10 +30,11 @@ import java.util.HashMap;
         }
 
         // pseudo constructor without parent
-        public Node(Integer id, String val, String actualVal, HashMap<Node, String> children){
+        public Node(Integer id, String val, String actualVal, HashMap<Node, String> childrenType, ArrayList<Node> children){
             this.id = id;
             this.val = val;
             this.actualVal = actualVal;
+            this.childrenType = childrenType;
             this.children = children;
         }
 
@@ -57,8 +60,12 @@ import java.util.HashMap;
         }
 
         //adds a child node to the children map
-        public void addChild(Node node, String type) {
-            children.put(node, type);
+//        public void addChildType(Node node, String type) {
+//            childrenType.put(node, type);
+//        }
+
+        public void addChild(Node node) {
+            children.add(node);
         }
 
         //setID, right now Node attributes are public but they probably shouldnt be 
@@ -69,8 +76,8 @@ import java.util.HashMap;
         @Override
         public String toString(){
             String cStr = "";
-            for (Node child : children.keySet()){
-                cStr += " childid: " + child.id + " type: " + children.get(child) + " val: " + child.val;
+            for (Node child : children){
+                cStr += " childid: " + child.id + " type: " + childrenType.get(child) + " val: " + child.val;
             }
             return "ID: " + id + " value: " + val + " Children: " + cStr; 
         }

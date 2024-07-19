@@ -1,11 +1,9 @@
 package edu.boisestate.cs.utils;
 
-import javax.management.monitor.StringMonitor;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
-import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -67,7 +65,7 @@ public class SmtBuilder {
             Node currentNode = root;
 
             //not sure if having concat and substring as stopping criteria will cause issues with deeper statments. i think its handled correctly
-            while (!currentNode.children.isEmpty() && notHandledByDecode(currentNode)) { //concats are handled in the smtDecode method.
+            while (!currentNode.childrenType.isEmpty() && notHandledByDecode(currentNode)) { //concats are handled in the smtDecode method.
                 // 4/3/24 - so these could and probably should easily be refactored. args != 2 is handled by the specific method so we shuold either just handle
                 // in each method or generalize for any number of children...
 
@@ -76,10 +74,10 @@ public class SmtBuilder {
                 Node sourceChild = null;
                 Node targetChild = null;
 
-                for (Node child : currentNode.children.keySet()) {
-                    if (currentNode.children.get(child).equals("t")) {
+                for (Node child : currentNode.childrenType.keySet()) {
+                    if (currentNode.childrenType.get(child).equals("t")) {
                         sourceChild = child;
-                    } else if (currentNode.children.get(child).equals("s1")) {
+                    } else if (currentNode.childrenType.get(child).equals("s1")) {
                         targetChild = child;
                     }
                 }
@@ -181,7 +179,7 @@ public class SmtBuilder {
             case "toString":
                 return valueOfDecode(node);
             case "length":
-                return "(str.len " + smtDecode(node.children.keySet().iterator().next()) + ")";
+                return "(str.len " + smtDecode(node.childrenType.keySet().iterator().next()) + ")";
             case "charAt":
                 return charAtDecode(node);
             case "trim":
@@ -218,7 +216,7 @@ public class SmtBuilder {
 
     private String trimDecode(Node node) throws Exception {
         Node targ = null;
-        for (Node child : node.children.keySet()) {
+        for (Node child : node.childrenType.keySet()) {
             targ = child;
         }
         return "(str.replace_all " + smtDecode(targ) + " \"\\s\" \"\")";
@@ -243,7 +241,7 @@ public class SmtBuilder {
         String s = "(str.++ ";
 
         while (curr.val.contains("concat") || curr.val.contains("append")) { // if there are stacked concats
-            for (Map.Entry<Node, String> entry : curr.children.entrySet()) {
+            for (Map.Entry<Node, String> entry : curr.childrenType.entrySet()) {
                 Node child = entry.getKey();
                 if (entry.getValue().equals("t")) {
                     sourceChild = child;
@@ -284,7 +282,7 @@ public class SmtBuilder {
             s = "(not (= \"\" ";
             stmts += 2;
         }
-        s += smtDecode(node.children.keySet().iterator().next());
+        s += smtDecode(node.childrenType.keySet().iterator().next());
         for (int i = 0; i < stmts; i++) {
             s += ")";
         }
@@ -296,8 +294,8 @@ public class SmtBuilder {
     private String replaceDecode(Node node) throws Exception { // probably going to be an issue with multiple arguments?
         String s = "(str.replace_all ";
         Node targ = null, s1 = null, s2 = null;
-        for (Node child : node.children.keySet()) {
-            switch (node.children.get(child)) {
+        for (Node child : node.childrenType.keySet()) {
+            switch (node.childrenType.get(child)) {
                 case "t":
                     targ = child;
                     break;
@@ -320,8 +318,8 @@ public class SmtBuilder {
         Node targ = null; //this is last
         Node s1 = null;
         Node s2 = null;
-        for (Node child : node.children.keySet()) {
-            switch (node.children.get(child)) {
+        for (Node child : node.childrenType.keySet()) {
+            switch (node.childrenType.get(child)) {
                 case "t":
                     targ = child;
                     break;
@@ -344,21 +342,21 @@ public class SmtBuilder {
         lower = true;
         if (ostrich) {
             String sym = "L" + ost_syms++ + " ";
-            String targ = smtDecode(node.children.keySet().iterator().next());
+            String targ = smtDecode(node.childrenType.keySet().iterator().next());
             if (ostr_syms.containsValue(targ)) { //check value exists.....
                 return getSym(targ);
             }
             ostr_syms.put(sym, targ);
             return sym;
         }
-        String s = smtDecode(node.children.keySet().iterator().next()); //one child
+        String s = smtDecode(node.childrenType.keySet().iterator().next()); //one child
         return "(str.toLower " + s + ")";
         //this is handles by a custom defined function in the header (added at end of building)
     }
 
     private String toUpperDecode(Node node) throws Exception {
         upper = true;
-        String s = smtDecode(node.children.keySet().iterator().next());
+        String s = smtDecode(node.childrenType.keySet().iterator().next());
         return "(str.toUpper " + s + ")";
         //custom defined function
     }
@@ -366,8 +364,8 @@ public class SmtBuilder {
     private String deleteDecode(Node node) throws Exception {
         delete = true;
         Node targ = null, s1 = null, s2 = null;
-        for (Node child : node.children.keySet()) {
-            switch (node.children.get(child)) {
+        for (Node child : node.childrenType.keySet()) {
+            switch (node.childrenType.get(child)) {
                 case "t":
                     targ = child;
                     break;
@@ -386,8 +384,8 @@ public class SmtBuilder {
         String s = "(str.at ";
         Node targ = null;
         Node s1 = null;
-        for (Node child : node.children.keySet()) {
-            switch (node.children.get(child)) {
+        for (Node child : node.childrenType.keySet()) {
+            switch (node.childrenType.get(child)) {
                 case "t":
                     targ = child;
                     break;
@@ -401,7 +399,7 @@ public class SmtBuilder {
     }
 
     private String valueOfDecode(Node node) throws Exception {
-        return smtDecode(node.children.keySet().iterator().next());
+        return smtDecode(node.childrenType.keySet().iterator().next());
     }
 
     private String getSym(String s) {
