@@ -160,6 +160,11 @@
                          stack.push(parent);
                          return;
                      }
+                     if (actualVal.equals("re.all")){
+                         actualVal = "re.all" + reAlls++;
+                         symVars.add(actualVal);
+                         nodeVal = javaEncode(actualVal);
+                     }
                      if (symVars.contains(actualVal)){
                          if (!symbolics.containsKey(actualVal)){
                              Node newNode = new Node(getNodeID(), nodeVal, actualVal, parent);
@@ -393,6 +398,8 @@
                     return "re.*"; //assumption this is followed by re.allchar
              case "re.allchar":
                  return "re.allchar";
+             case "re.all":
+                 return "re.all"; //note that re.alls are handle in the below first branch, this is before that
              default:
                  if (symVars.contains(text)) {
                      text = "r" + symVars.indexOf(text) + "!:!getStringValue!!";

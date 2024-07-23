@@ -1,0 +1,865 @@
+{
+	"alphabet" : {
+		"size" : 4,
+		"declaration" : "a,b,c,d"
+	},
+	"vertices" : [
+		{
+			"num" : 0,
+			"actualValue" : "B",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 0,
+			"value" : "r0!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "d",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 1,
+			"value" : "\"d\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "C",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 2,
+			"value" : "r2!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "cabcaadccccdbcbcb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 3,
+			"value" : "\"cabcaadccccdbcbcb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 3,
+					"type" : "s1"
+				}, {
+					"source" : 63,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 64,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "bddcdbacddbdaaabdcaaccccbaadbacabcaadccccdbcbcb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 4,
+			"value" : "\"bddcdbacddbdaaabdcaaccccbaadbacabcaadccccdbcbcb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 64,
+					"type" : "t"
+				}, {
+					"source" : 4,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 65,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "abbaaabcdabbdbbcddb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 5,
+			"value" : "\"abbaaabcdabbdbbcddb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "ddddaaa",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 6,
+			"value" : "\"ddddaaa\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 6,
+					"type" : "s1"
+				}, {
+					"source" : 36,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 46,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "abbaaabcdabbdbbc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 7,
+			"value" : "\"abbaaabcdabbdbbc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "D",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 8,
+			"value" : "r3!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "babadaddaaccabaabddddaaa",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 9,
+			"value" : "\"babadaddaaccabaabddddaaa\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 9,
+					"type" : "s1"
+				}, {
+					"source" : 37,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 47,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 46,
+					"type" : "t"
+				}, {
+					"source" : 47,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 48,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "bcaaaabbaadbcccaacbcbadadaacdaccdbdbdaccaaaccbc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 10,
+			"value" : "\"bcaaaabbaadbcccaacbcbadadaacdaccdbdbdaccaaaccbc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "bcaaaabbaadbcccaacbcbadadaacda",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 11,
+			"value" : "\"bcaaaabbaadbcccaacbcbadadaacda\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "A",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 12,
+			"value" : "r1!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "bdbdaccaaaccbc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 13,
+			"value" : "\"bdbdaccaaaccbc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 13,
+					"type" : "s1"
+				}, {
+					"source" : 38,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 49,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 10,
+					"type" : "s1"
+				}, {
+					"source" : 49,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 50,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "dadaabaabacadabcdabbdcaacddcaddcda",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 14,
+			"value" : "\"dadaabaabacadabcdabbdcaacddcaddcda\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "dabddccaca",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 15,
+			"value" : "\"dabddccaca\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 15,
+					"type" : "s1"
+				}, {
+					"source" : 39,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 51,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "dadaabaabacadabcdabbdcaacddcaddcda",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 16,
+			"value" : "\"dadaabaabacadabcdabbdcaacddcaddcda\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "dabddccaca",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 17,
+			"value" : "\"dabddccaca\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 17,
+					"type" : "s1"
+				}, {
+					"source" : 40,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 52,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 51,
+					"type" : "t"
+				}, {
+					"source" : 52,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 53,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "dabcaabbccdbddbddbbbbacaddbdcacabacddddcaadcabb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 18,
+			"value" : "\"dabcaabbccdbddbddbbbbacaddbdcacabacddddcaadcabb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "dabcaabb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 19,
+			"value" : "\"dabcaabb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "bddbddbbbbacaddbdcacabacddddcaadcabb",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 20,
+			"value" : "\"bddbddbbbbacaddbdcacabacddddcaadcabb\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 20,
+					"type" : "s1"
+				}, {
+					"source" : 41,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 54,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 18,
+					"type" : "s1"
+				}, {
+					"source" : 54,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 55,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "bbdaadbcababdbaabbccaaabbaabbbaccbdaa",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 21,
+			"value" : "\"bbdaadbcababdbaabbccaaabbaabbbaccbdaa\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "bbcdadc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 22,
+			"value" : "\"bbcdadc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 22,
+					"type" : "s1"
+				}, {
+					"source" : 42,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 56,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "bbdaadbcababdbaabbccaaabbaabbbaccbdaa",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 23,
+			"value" : "\"bbdaadbcababdbaabbccaaabbaabbbaccbdaa\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "bbcdadc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 24,
+			"value" : "\"bbcdadc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 24,
+					"type" : "s1"
+				}, {
+					"source" : 43,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 57,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 56,
+					"type" : "t"
+				}, {
+					"source" : 57,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 58,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "aacbbbaccccabcbaaabaacccaabcdacbadacdaadcbdc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 25,
+			"value" : "\"aacbbbaccccabcbaaabaacccaabcdacbadacdaadcbdc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 25,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 33,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "aacbbbaccccabcbaaabaacccaabcdacbadacdaadcbdcccd",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 26,
+			"value" : "\"aacbbbaccccabcbaaabaacccaabcdacbadacdaadcbdcccd\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 33,
+					"type" : "t"
+				}, {
+					"source" : 26,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 34,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "bcdcbcbdbaddabdbbcbbaaddaadbcdbacdbbaccdabcaaab",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 27,
+			"value" : "\"bcdcbcbdbaddabdbbcbbaaddaadbcdbacdbbaccdabcaaab\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "bcdcbcbdbaddabdbbcbbaaddaadbcdbacdbba",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 28,
+			"value" : "\"bcdcbcbdbaddabdbbcbbaaddaadbcdbacdbba\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "abcaaab",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 29,
+			"value" : "\"abcaaab\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 29,
+					"type" : "s1"
+				}, {
+					"source" : 44,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 59,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 27,
+					"type" : "s1"
+				}, {
+					"source" : 59,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 60,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "adccbcacbaaabbbbbcdbdaadcdccdcaacdaccbacabdbcdc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 30,
+			"value" : "\"adccbcacbaaabbbbbcdbdaadcdccdcaacdaccbacabdbcdc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "adccbcacbaaabbbbbcdbdaadcd",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 31,
+			"value" : "\"adccbcacbaaabbbbbcdbdaadcd\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "caacdaccbacabdbcdc",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 32,
+			"value" : "\"caacdaccbacabdbcdc\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 32,
+					"type" : "s1"
+				}, {
+					"source" : 45,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 61,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 30,
+					"type" : "s1"
+				}, {
+					"source" : 61,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 62,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 2,
+					"type" : "s1"
+				}, {
+					"source" : 35,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 63,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 1,
+					"type" : "s1"
+				}, {
+					"source" : 0,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 35,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 0,
+					"type" : "t"
+				}, {
+					"source" : 5,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 36,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 8,
+					"type" : "s1"
+				}, {
+					"source" : 7,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 37,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "s1"
+				}, {
+					"source" : 11,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 38,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 14,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 39,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 16,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 40,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 19,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 41,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 21,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 42,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 23,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 43,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 28,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 44,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "t"
+				}, {
+					"source" : 31,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767844193,
+			"type" : 0,
+			"id" : 45,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		} ] }

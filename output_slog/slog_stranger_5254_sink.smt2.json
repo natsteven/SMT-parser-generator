@@ -1,0 +1,329 @@
+{
+	"alphabet" : {
+		"size" : 51,
+		"declaration" : "\\, ,%,&,',-,0,1,2,3,4,5,8,:,;,=,>,C,I,L,M,P,R,S,T,U,_,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,v,w,x,y"
+	},
+	"vertices" : [
+		{
+			"num" : 0,
+			"actualValue" : "literal_1",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 0,
+			"value" : "r1!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : " _table width='100%' height='85%' border=0 cellspacing=0 cellpadding=0 align='center' class='y'>____  _tr>____   _td align='right' height=50 valign='middle'>_b>Username:&nbsp;__b>__td>____   _td>_input type=text name='username' maxlength=15 width=18>__td>____  __tr>____  _tr>____   _td align='right' height=45 valign='middle'>_b>Password:&nbsp;__b>__td>____   _td>_input type=password name='password' maxlength=15 width=18>__td>____  __tr>____  _tr>____   _td>&nbsp;__td>____   _td align='center' height=45>_input type=submit value='Login' onClick='document_login_login_value=1;'>__td>______  __tr>____ __table>___   _input type='hidden' name='page' value='",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 1,
+			"value" : "\" _table width='100%' height='85%' border=0 cellspacing=0 cellpadding=0 align='center' class='y'>____  _tr>____   _td align='right' height=50 valign='middle'>_b>Username:&nbsp;__b>__td>____   _td>_input type=text name='username' maxlength=15 width=18>__td>____  __tr>____  _tr>____   _td align='right' height=45 valign='middle'>_b>Password:&nbsp;__b>__td>____   _td>_input type=password name='password' maxlength=15 width=18>__td>____  __tr>____  _tr>____   _td>&nbsp;__td>____   _td align='center' height=45>_input type=submit value='Login' onClick='document_login_login_value=1;'>__td>______  __tr>____ __table>___   _input type='hidden' name='page' value='\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 0,
+					"type" : "t"
+				}, {
+					"source" : 1,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 13,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_3",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 2,
+			"value" : "r2!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "sigmaStar_0",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 3,
+			"value" : "r0!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 3,
+					"type" : "s1"
+				}, {
+					"source" : 0,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 14,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 2,
+					"type" : "s1"
+				}, {
+					"source" : 14,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 15,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "literal_4",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 4,
+			"value" : "r3!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : ">___   _input type=hidden' name='login'>___  __form>___ __div>_____td>____   __tr>__   _tr>____   _td width='50%' align='right' valign='top'>____div class='messageboxcenter'>___ _table border=0 cellpadding=0 cellspacing=0 class='y'>___ _tr>___  _td align='center' valign='middle'>_____br>_____img src='__images_school_jpg' style='padding-left: 30px; padding-top: 20px;' width='233' height='111' align='center' valign='middle' _>___  __td>___ __tr>___ __table>_____div>__   __td>______td width='50%' align='left' valign='top'>___ _div class='messageboxcenter'>___  _h2 class='message'>Today's Message__h2> _br>___   ",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 5,
+			"value" : "\">___   _input type=hidden' name='login'>___  __form>___ __div>_____td>____   __tr>__   _tr>____   _td width='50%' align='right' valign='top'>____div class='messageboxcenter'>___ _table border=0 cellpadding=0 cellspacing=0 class='y'>___ _tr>___  _td align='center' valign='middle'>_____br>_____img src='__images_school_jpg' style='padding-left: 30px; padding-top: 20px;' width='233' height='111' align='center' valign='middle' _>___  __td>___ __tr>___ __table>_____div>__   __td>______td width='50%' align='left' valign='top'>___ _div class='messageboxcenter'>___  _h2 class='message'>Today's Message__h2> _br>___   \"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 4,
+					"type" : "t"
+				}, {
+					"source" : 5,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 16,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_5",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 6,
+			"value" : "r4!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 4,
+					"type" : "s1"
+				}, {
+					"source" : 2,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 17,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 6,
+					"type" : "s1"
+				}, {
+					"source" : 17,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 18,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "literal_6",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 7,
+			"value" : "r5!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "___ __div>_____td>____   __tr>__  __table>__ __td>____  __tr>__ __table>____td>",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 8,
+			"value" : "\"___ __div>_____td>____   __tr>__  __table>__ __td>____  __tr>__ __table>____td>\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 7,
+					"type" : "t"
+				}, {
+					"source" : 8,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 19,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_7",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 9,
+			"value" : "r6!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 7,
+					"type" : "s1"
+				}, {
+					"source" : 6,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 20,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 9,
+					"type" : "s1"
+				}, {
+					"source" : 20,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 21,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "re.all0",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 10,
+			"value" : "r7!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "\\\\_SCRIPT",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 11,
+			"value" : "\"\\\\_SCRIPT\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "re.all1",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 12,
+			"value" : "r8!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "re.++",
+			"incomingEdges" :[
+				 {
+					"source" : 12,
+					"type" : "s1"
+				}, {
+					"source" : 22,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 23,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 9,
+					"type" : "s1"
+				}, {
+					"source" : 23,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 24,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "re.++",
+			"incomingEdges" :[
+				 {
+					"source" : 11,
+					"type" : "s1"
+				}, {
+					"source" : 10,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559339,
+			"type" : 0,
+			"id" : 22,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		} ] }

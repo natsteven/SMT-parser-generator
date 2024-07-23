@@ -1,0 +1,381 @@
+{
+	"alphabet" : {
+		"size" : 54,
+		"declaration" : "\\, ,!,&,',(,),-,0,1,2,4,5,;,=,>,A,C,I,J,N,O,P,R,S,T,U,_,a,b,c,d,e,f,g,h,i,k,l,m,n,o,p,r,s,t,u,v,w,x,y,z,{,}"
+	},
+	"vertices" : [
+		{
+			"num" : 0,
+			"actualValue" : "literal_2",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 0,
+			"value" : "r2!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "_script language='JavaScript'>__ _!--__ function validate()__ {__  if(document_adduser_password_value == document_adduser_password2_value && document_adduser_password_value != '')__  {__   document_adduser_submit();__  }__  else__  {__   alert('Passwords do not match!');__   document_adduser_password_value = '';__   document_adduser_password2_value = '';__   document_adduser_password_select();__  }__ }__ -->__ __script>____ _h1>Add New User__h1>____  _form name='adduser' action='__index_php' method='POST'>__  _br>_br>_br>__  _table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='450'>__   _tr class='header'>____th>Username__th>____th>Password__th>____th>Confirm Password__th>____th>Type__th>__   __tr>__   _tr class='even'>____td>_input type='text' name='username' maxlength='15' size='15' _>__td>____td>_input type='password' name='password' maxlength='15' size='15' _>__td>____td>_input type='password' name='password2' maxlength='15' size='15' _>__td>____td>___ _select name='type'>___  _option value='Admin'>Admin__option>___  _option value='Teacher'>Teacher__option>__      _option value='Substitute'>Substitute__option>___  _option value='Student'>Student__option>___  _option value='Parent'>Parent__option>___ __select>_____td>__   __tr>__   __table>____   _br>____   _table cellpadding='0' border='0' align='center' width='450'>__   _tr>__   _td>_input type='button' value='Add User' onClick='document_adduser_adduser_value=1;document_adduser_page2_value=10;validate();'> _input type='button' value='Cancel' onClick='document_adduser_page2_value=10;document_adduser_submit();'>__td>__   __tr>__   __table>____  _input type='hidden' name='adduser' value=''>__  _input type='hidden' name='page2' value='",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 1,
+			"value" : "\"_script language='JavaScript'>__ _!--__ function validate()__ {__  if(document_adduser_password_value == document_adduser_password2_value && document_adduser_password_value != '')__  {__   document_adduser_submit();__  }__  else__  {__   alert('Passwords do not match!');__   document_adduser_password_value = '';__   document_adduser_password2_value = '';__   document_adduser_password_select();__  }__ }__ -->__ __script>____ _h1>Add New User__h1>____  _form name='adduser' action='__index_php' method='POST'>__  _br>_br>_br>__  _table cellspacing='0' cellpadding='5' class='dynamiclist' align='center' width='450'>__   _tr class='header'>____th>Username__th>____th>Password__th>____th>Confirm Password__th>____th>Type__th>__   __tr>__   _tr class='even'>____td>_input type='text' name='username' maxlength='15' size='15' _>__td>____td>_input type='password' name='password' maxlength='15' size='15' _>__td>____td>_input type='password' name='password2' maxlength='15' size='15' _>__td>____td>___ _select name='type'>___  _option value='Admin'>Admin__option>___  _option value='Teacher'>Teacher__option>__      _option value='Substitute'>Substitute__option>___  _option value='Student'>Student__option>___  _option value='Parent'>Parent__option>___ __select>_____td>__   __tr>__   __table>____   _br>____   _table cellpadding='0' border='0' align='center' width='450'>__   _tr>__   _td>_input type='button' value='Add User' onClick='document_adduser_adduser_value=1;document_adduser_page2_value=10;validate();'> _input type='button' value='Cancel' onClick='document_adduser_page2_value=10;document_adduser_submit();'>__td>__   __tr>__   __table>____  _input type='hidden' name='adduser' value=''>__  _input type='hidden' name='page2' value='\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 0,
+					"type" : "t"
+				}, {
+					"source" : 1,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 15,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_3",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 2,
+			"value" : "r3!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "sigmaStar_1",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 3,
+			"value" : "r1!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 3,
+					"type" : "s1"
+				}, {
+					"source" : 0,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 16,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 2,
+					"type" : "s1"
+				}, {
+					"source" : 16,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 17,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "literal_4",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 4,
+			"value" : "r4!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : ">__  _input type=hidden' name='logout'>__  _input type='hidden' name='page' value='",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 5,
+			"value" : "\">__  _input type=hidden' name='logout'>__  _input type='hidden' name='page' value='\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 4,
+					"type" : "t"
+				}, {
+					"source" : 5,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 18,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_5",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 6,
+			"value" : "r5!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 4,
+					"type" : "s1"
+				}, {
+					"source" : 2,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 19,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 6,
+					"type" : "s1"
+				}, {
+					"source" : 19,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 20,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_6",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 7,
+			"value" : "r6!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "sigmaStar_0",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 8,
+			"value" : "r0!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 8,
+					"type" : "s1"
+				}, {
+					"source" : 6,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 21,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 7,
+					"type" : "s1"
+				}, {
+					"source" : 21,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 22,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "literal_7",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 9,
+			"value" : "r7!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : ">____ __form>____ _table width=520' border=0 cellspacing=0 cellpadding=0 height=1>__  _tr>__   _td valign='top'>___&nbsp;__   __td>__  __tr>__ __table>__ ",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 10,
+			"value" : "\">____ __form>____ _table width=520' border=0 cellspacing=0 cellpadding=0 height=1>__  _tr>__   _td valign='top'>___&nbsp;__   __td>__  __tr>__ __table>__ \"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 9,
+					"type" : "t"
+				}, {
+					"source" : 10,
+					"type" : "s1"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 23,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "x_8",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 11,
+			"value" : "r8!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "str.++",
+			"incomingEdges" :[
+				 {
+					"source" : 9,
+					"type" : "s1"
+				}, {
+					"source" : 7,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 24,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 11,
+					"type" : "s1"
+				}, {
+					"source" : 24,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 25,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "re.all0",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 12,
+			"value" : "r9!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "\\\\_SCRIPT",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 13,
+			"value" : "\"\\\\_SCRIPT\"!:!<init>"
+		},{
+			"num" : 0,
+			"actualValue" : "re.all1",
+			"incomingEdges" :[
+			],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 14,
+			"value" : "r10!:!getStringValue!!"
+		},{
+			"num" : 0,
+			"actualValue" : "re.++",
+			"incomingEdges" :[
+				 {
+					"source" : 14,
+					"type" : "s1"
+				}, {
+					"source" : 26,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 27,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "true",
+			"incomingEdges" :[
+				 {
+					"source" : 11,
+					"type" : "s1"
+				}, {
+					"source" : 27,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 28,
+			"value" : "equals!!Ljava/lang/Object;!:!0"
+		},{
+			"num" : 0,
+			"actualValue" : "re.++",
+			"incomingEdges" :[
+				 {
+					"source" : 13,
+					"type" : "s1"
+				}, {
+					"source" : 12,
+					"type" : "t"
+				}],
+			"sourceConstraints" : [ ],
+			"timeStamp" : 1721767559802,
+			"type" : 0,
+			"id" : 26,
+			"value" : "concat!!Ljava/lang/String;!:!0"
+		} ] }
