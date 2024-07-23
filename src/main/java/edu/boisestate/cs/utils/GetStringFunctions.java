@@ -6,6 +6,7 @@ import org.json.JSONTokener;
 
 import java.io.FileReader;
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class GetStringFunctions {
 
@@ -14,10 +15,20 @@ public class GetStringFunctions {
             System.out.println("Usage: <file>");
             System.exit(1);
         }
-//        if (args[0].contains("copy")){
-//            System.exit(0);
-//        }
-        JSONObject json = getJSONobj(args[0]);
+        if (args[0].contains("json")){
+            String[] path = args[0].split("/");
+            String file = path[path.length - 1].replace(".json", "").replace(".smt2","");
+            functionsFromJSON(getJSONobj(args[0]), file);
+        } else if (args[0].contains("smt2")){
+            functionsFromSMT(args[0]);
+        }
+        else {
+            System.out.println("Usage: <file>");
+            System.exit(1);
+        }
+    }
+
+    public static void functionsFromJSON(JSONObject json, String filename){
         JSONArray nodes = json.getJSONArray("vertices");
 
         HashSet<String> functions = new HashSet<>();
@@ -31,10 +42,51 @@ public class GetStringFunctions {
             }
 
         }
-        String[] path = args[0].split("/");
-        String file = path[path.length - 1].replace(".json", "").replace(".smt2","");
-        System.out.print(file + ": ");
 
+        printFunctions(filename, functions);
+
+    }
+
+    public static void functionsFromSMT(String filepath){
+        String[] path = filepath.split("/");
+        String filename = path[path.length - 1].replace(".smt2","");
+
+        HashSet<String> functions = new HashSet<>();
+
+        try (Scanner scanner = new Scanner(new FileReader(filepath))) {
+            boolean assertFound = false;
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                // are simple method for parsing kind of requires we skip header/preamble
+                if (assertFound) {
+                    functions.addAll(getFuncFromSMTString(line));
+                } else if (line.startsWith("(assert")) {
+                    assertFound = true;
+                    functions.addAll(getFuncFromSMTString(line));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        printFunctions(filename, functions);
+
+    }
+
+    public static HashSet<String> getFuncFromSMTString(String line){
+        HashSet<String> functions = new HashSet<>();
+        String[] tokens = line.split("\\s+");
+        for (String token : tokens) {
+            if (token.contains("str.") || token.contains("re.")) {
+                token=token.replace("(", "").replace(")","").replace(",","");
+                functions.add(token);
+            }
+        }
+        return functions;
+    }
+
+    public static void printFunctions(String filename, HashSet<String> functions){
+        System.out.print(filename + ": ");
         for (String function : functions) {
             System.out.print(function + ", ");
         }

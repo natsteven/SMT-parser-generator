@@ -13,12 +13,12 @@ output=$2
 rm "$output" 2>/dev/null
 
 # Count the total number of relevant JSON files
-total_files=$(find "$directory" -name "*.json" | grep -v "copy" | wc -l)
+total_files=$(find "$directory" \( -name "*.json" -o -name "*.smt2" \) | grep -v "copy" | wc -l)
 processed_files=0
 
 echo "Processing $total_files files..."
 
-find "$directory" -name "*.json" | while read -r file; do
+find "$directory" \( -name "*.json" -o -name "*.smt2" \) | while read -r file; do
   if [[ "$file" == *"copy"* ]]; then
     continue
   fi
