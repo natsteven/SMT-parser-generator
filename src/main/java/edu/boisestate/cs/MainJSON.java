@@ -21,10 +21,12 @@
      public static void main(String[] args) {
 
          String projectRoot = System.getProperty("project.basedir");
-
          File inputDir = new File(projectRoot, args[0]);
-         File outputRoot = new File(projectRoot, "output_" + args[0]);
-         outputRoot.mkdir();
+         File outputRoot = new File(projectRoot, "output_" + inputDir.getName());
+         if (!outputRoot.exists() && !outputRoot.mkdir()){
+             System.err.println("Issue making output directory: " + outputRoot);
+             System.exit(0);
+         }
          processQueries(inputDir, outputRoot);
 
      }
@@ -57,7 +59,7 @@
 
              //initialize parser, walker, and listener(jsonBuilder)
 
-             // System.out.println(file.getName());// if you want to debug
+              System.out.println(file.getName());// if you want to debug
              CharStream input = CharStreams.fromFileName(file.getAbsolutePath());
              SMTLIBv2StringsLexer lexer = new SMTLIBv2StringsLexer(input);
              CommonTokenStream tokens = new CommonTokenStream(lexer);

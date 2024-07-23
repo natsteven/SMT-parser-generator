@@ -387,9 +387,19 @@
                  return "replaceAll!!Ljava/lang/String;Ljava/lang/String;!:!0";
              case "str.replace":
                  return "replaceFirst!!Ljava/lang/String;Ljava/lang/String;!:0";
+             case "str.to_re":
+                 return "str.to_re";
+             case "re.*":
+                    return "re.*"; //assumption this is followed by re.allchar
+             case "re.allchar":
+                 return "re.allchar";
              default:
                  if (symVars.contains(text)) {
                      text = "r" + symVars.indexOf(text) + "!:!getStringValue!!";
+                 } else if (!lets.contains(text) && (text.contains("str.") || text.contains("re."))){
+                     System.err.print("Unknown string operation: " + text);
+//                     new Exception("Unknown string operation: " + text).printStackTrace();
+                     System.exit(0);
                  }
                  return text;
 
