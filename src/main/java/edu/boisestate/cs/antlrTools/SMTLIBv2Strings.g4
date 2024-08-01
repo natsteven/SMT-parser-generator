@@ -11,6 +11,7 @@ CMD_declarefun: 'declare-fun';
 CMD_declareconst: 'declare-const';
 CMD_setinfo: 'set-info';
 CMD_setlogic: 'set-logic';
+CMD_getmodel: 'get-model';
 CMD_exit: 'exit';
 
 // Assignment and Assertion
@@ -109,6 +110,8 @@ script: command+ stringTheory+ command+;
 
 cmd_checkSat: CMD_checksat;
 
+cmd_getModel: CMD_getmodel;
+
 cmd_declareFun
     : CMD_declarefun VAR ParOpen ParClose SymbolicType
     ;
@@ -129,6 +132,7 @@ cmd_setLogic
 
 command
     : ParOpen cmd_checkSat ParClose
+    | ParOpen cmd_getModel ParClose
     | ParOpen cmd_declareFun ParClose
     | ParOpen cmd_declareConst ParClose
     | ParOpen cmd_exit ParClose

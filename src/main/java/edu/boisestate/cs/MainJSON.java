@@ -59,7 +59,7 @@
 
              //initialize parser, walker, and listener(jsonBuilder)
 
-              System.out.println(file.getName());// if you want to debug
+//              System.out.println(file.getName());// if you want to debug
              CharStream input = CharStreams.fromFileName(file.getAbsolutePath());
              SMTLIBv2StringsLexer lexer = new SMTLIBv2StringsLexer(input);
              CommonTokenStream tokens = new CommonTokenStream(lexer);

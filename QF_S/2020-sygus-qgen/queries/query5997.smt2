@@ -13,4 +13,5 @@ Target solver: CVC4
 (declare-fun x () String)
 (assert (let ((_let_0 (re.* re.allchar ))) (let ((_let_1 (str.to_re (str.++ "B" (str.++ "B" "B"))))) (let ((_let_2 (str.in_re x (re.++ _let_0 re.allchar  _let_0 (str.to_re (str.++ "B" (str.++ "B" (str.++ "B" "A")))) _let_0 re.allchar  _let_0)))) (and (not (= _let_2 (str.in_re x (re.++ _let_0 re.allchar  _let_0 _let_1 _let_0 (re.++ re.allchar  re.allchar ) _let_0)))) (not (= _let_2 (str.in_re x (re.++ _let_0 re.allchar  _let_0 _let_1 _let_0 (str.to_re "A") _let_0)))))))))
 (check-sat)
+(get-model)
 (exit)

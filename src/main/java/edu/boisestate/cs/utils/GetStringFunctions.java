@@ -57,7 +57,7 @@ public class GetStringFunctions {
             boolean assertFound = false;
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                // are simple method for parsing kind of requires we skip header/preamble
+                // are simple.smt2 method for parsing kind of requires we skip header/preamble
                 if (assertFound) {
                     functions.addAll(getFuncFromSMTString(line));
                 } else if (line.startsWith("(assert")) {

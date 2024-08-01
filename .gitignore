@@ -1,6 +1,6 @@
 scripts/data/inverse_logs/
 scripts/testing/inverse_logs/
-output_QF_S_SMT
+output_*
 anotherTest
 false_negatives
 inputTests

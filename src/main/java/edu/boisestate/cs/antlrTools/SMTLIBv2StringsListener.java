@@ -1,5 +1,5 @@
 package edu.boisestate.cs.antlrTools;
-// Generated from SMTLIBv2Strings.g4 by ANTLR 4.13.0
+// Generated from src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2Strings.g4 by ANTLR 4.13.0
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -27,6 +27,16 @@ public interface SMTLIBv2StringsListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCmd_checkSat(SMTLIBv2StringsParser.Cmd_checkSatContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#cmd_getModel}.
+	 * @param ctx the parse tree
+	 */
+	void enterCmd_getModel(SMTLIBv2StringsParser.Cmd_getModelContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SMTLIBv2StringsParser#cmd_getModel}.
+	 * @param ctx the parse tree
+	 */
+	void exitCmd_getModel(SMTLIBv2StringsParser.Cmd_getModelContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#cmd_declareFun}.
 	 * @param ctx the parse tree
