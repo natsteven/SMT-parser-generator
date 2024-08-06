@@ -1,0 +1,6 @@
+lyndon-schuetzenberg-1.smt2
+noodles-unsat-7.smt2
+noodles-unsat-5.smt2
+lyndon-schuetzenberg-3.smt2
+cloud-service-query-1.smt2
+parikh.smt2

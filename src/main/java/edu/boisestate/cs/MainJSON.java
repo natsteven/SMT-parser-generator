@@ -56,7 +56,7 @@
       */
      private static void processFile(File file, File outputDir){
          try {
-
+            System.out.println("Processing file: " + file.getName());
              //initialize parser, walker, and listener(jsonBuilder)
 
 //              System.out.println(file.getName());// if you want to debug

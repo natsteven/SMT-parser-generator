@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -76,10 +77,24 @@ public class GetStringFunctions {
     public static HashSet<String> getFuncFromSMTString(String line){
         HashSet<String> functions = new HashSet<>();
         String[] tokens = line.split("\\s+");
+        ArrayList<String> funcs = new ArrayList<>();
         for (String token : tokens) {
             if (token.contains("str.") || token.contains("re.")) {
                 token=token.replace("(", "").replace(")","").replace(",","");
-                functions.add(token);
+                funcs.add(token);
+            }
+        }
+        for (int i = 0; i < funcs.size(); i++) {
+            String tok = funcs.get(i);
+            if (!tok.equals("re.*")) {
+                functions.add(tok);
+            } else {
+                if (funcs.get(i+1).equals("re.allchar")) {
+                    functions.add("re.all");
+                    i++; // skip processsing that re.allchar
+                } else {
+                    functions.add(tok);
+                }
             }
         }
         return functions;

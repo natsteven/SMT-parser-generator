@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+
+java -cp target/GenJSONs-1.0-SNAPSHOT-jar-with-dependencies.jar edu.boisestate.cs.MainSMT $1

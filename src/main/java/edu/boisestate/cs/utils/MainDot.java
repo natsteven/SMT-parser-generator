@@ -75,7 +75,7 @@ public class MainDot {
                         dot.println(dListener.getDotRepresentation());
                     }
                     
-                    //run process using dot package to create png visualization (need dot installed, not included in dependencies of this project)
+                    //smtRun process using dot package to create png visualization (need dot installed, not included in dependencies of this project)
                     ProcessBuilder pb = new ProcessBuilder("dot", "-Tpng", "-o", dotFile.getAbsolutePath() + ".png", "-y", dotFile.getAbsolutePath());
                     try {
                         Process p = pb.start(); // Start the process.

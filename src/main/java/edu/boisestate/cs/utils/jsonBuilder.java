@@ -395,7 +395,10 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
             default:
                 if (symVars.contains(text)) {
                     text = "r" + symVars.indexOf(text) + "!:!getStringValue!!";
-                } else if (!lets.contains(text) && (text.contains("str.") || text.contains("re."))) {
+                } else if (text.startsWith("\"") && text.endsWith("\"")) {
+                    // leave text as is/ concrete processing done next
+                }
+                else if (!lets.contains(text) && (text.contains("str.") || text.contains("re."))) {
                     System.err.print("Unknown string operation: " + text);
 //                     new Exception("Unknown string operation: " + text).printStackTrace();
                     System.exit(0);
@@ -440,7 +443,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         ;
 
         postProcess();
-        expandAlphabet();
+//        alphabet.add("\\u0000-\\uffff");
 //         if (alphabet.isEmpty()) {
 //             alphabet.add("A");
 //             alphabet.add("B");
@@ -451,8 +454,8 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         //     else alphabet.add("A");
         // }
 
-        jBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + alphabet.size() +
-                ",\n\t\t\"declaration\" : \"" + printAlphabet() + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
+        jBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + "95" +
+                ",\n\t\t\"declaration\" : \"" + " -~" + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
 
         for (Node node : allNodes) {
             jBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
@@ -514,14 +517,14 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         return jBuilder.toString();
     }
 
-    private String printAlphabet() {
-        StringBuilder alphabetString = new StringBuilder();
-        for (String letter : alphabet) {
-            alphabetString.append(escaped(letter)).append(",");
-        }
-        alphabetString.deleteCharAt(alphabetString.length() - 1);
-        return alphabetString.toString();
-    }
+//    private String printAlphabet() {
+//        StringBuilder alphabetString = new StringBuilder();
+//        for (String letter : alphabet) {
+//            alphabetString.append(escaped(letter)).append(",");
+//        }
+//        alphabetString.deleteCharAt(alphabetString.length() - 1);
+//        return alphabetString.toString();
+//    }
 
     private void postProcess() {
         // convert re.allchar
@@ -758,8 +761,8 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         StringBuilder copyBuilder = new StringBuilder();
         addCopy(allNodes, createCopy);
 
-        copyBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + alphabet.size() +
-                ",\n\t\t\"declaration\" : \"" + printAlphabet() + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
+        copyBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + "95" +
+                ",\n\t\t\"declaration\" : \"" + " -~" + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
 
         for (Node node : allNodes) {
             copyBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
@@ -820,12 +823,12 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
         return copyBuilder.toString();
     }
 
-    private void expandAlphabet() {
-        String alpha = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
-        String num = "0,1,2,3,4,5,6,7,8,9";
-        String special = "!,$,%,&,*,+,-,.,/,<,=,>,?,@,^,_,`,|,~,(,),{,},[,],:,;,',,\",\\, ,\n,\r,\t";
-        alphabet.addAll(Arrays.asList(alpha.split(",")));
-        alphabet.addAll(Arrays.asList(num.split(",")));
-        alphabet.addAll(Arrays.asList(special.split(",")));
-    }
+//    private void expandAlphabet() {
+//        String alpha = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+//        String num = "0,1,2,3,4,5,6,7,8,9";
+//        String special = "!,$,%,&,*,+,-,.,/,<,=,>,?,@,^,_,`,|,~,(,),{,},[,],:,;,',,\",\\, ,\n,\r,\t";
+//        alphabet.addAll(Arrays.asList(alpha.split(",")));
+//        alphabet.addAll(Arrays.asList(num.split(",")));
+//        alphabet.addAll(Arrays.asList(special.split(",")));
+//    }
 }
