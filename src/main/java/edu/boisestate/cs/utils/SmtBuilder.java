@@ -15,11 +15,13 @@ public class SmtBuilder {
     private HashMap<String, String> ostr_syms;
     private int stmts, ost_syms;
     private boolean lower, upper, delete, ostrich;
+    private HashMap<String, Integer> lengthLimits;
 
     public SmtBuilder(boolean ostrich) {
         this.ostrich = ostrich;
         this.symbolics = new HashSet<>();
         this.ostr_syms = new HashMap<>();
+        this.lengthLimits = new HashMap<>();
         this.stmts = 0;
         this.ost_syms = 0;
         this.lower = false;
@@ -110,6 +112,11 @@ public class SmtBuilder {
             stmts = 0;
 
         }
+
+        for (String limit : lengthLimits.keySet()) {
+            smtString.insert(0, "(assert (<= " + lengthLimits.get(limit) + " (str.len " + limit + ")))\n");
+        }
+
         // Alphabet! need to ensure all symbolics are in the alphabet so assert str.in_re
         for (String sym : symbolics) {
             smtString.insert(0, "\n(assert (str.in_re " + sym + " Alphabet))");
@@ -219,6 +226,10 @@ public class SmtBuilder {
         for (Node child : node.childrenType.keySet()) {
             targ = child;
         }
+        //TODO: this is incomplete, should only remove leading and trailing
+        // would have to search and compare codepoint for first and final no whitespace
+        // then call substring....
+        // i dont think there are any benches we are running that use trim?
         return "(str.replace_all " + smtDecode(targ) + " \"\\s\" \"\")";
     }
 
@@ -333,8 +344,11 @@ public class SmtBuilder {
         }
         //do own smt Decode for the ints
         // semantics are different, for smt it is index, and length of substr, for java it is start and end index
-        Integer length = Integer.parseInt(s2.actualVal) - Integer.parseInt(s1.actualVal);
-        s += smtDecode(targ) + " " + s1.actualVal + " " + length + ")";
+        Integer endIndex = Integer.parseInt(s2.actualVal);
+        Integer length = endIndex - Integer.parseInt(s1.actualVal);
+        String limitString = smtDecode(targ);
+        lengthLimits.put(limitString, endIndex);
+        s += limitString + " " + s1.actualVal + " " + length + ")";
         return s;
     }
 
@@ -377,7 +391,9 @@ public class SmtBuilder {
                     break;
             }
         }
-        return "(str.del " + smtDecode(targ) + " " + s1.actualVal + " " + s2.actualVal + ")";
+        String limitString = smtDecode(targ);
+        lengthLimits.put(limitString, Integer.parseInt(s2.actualVal));
+        return "(str.del " + limitString + " " + s1.actualVal + " " + s2.actualVal + ")";
     }
 
     private String charAtDecode(Node node) throws Exception {
