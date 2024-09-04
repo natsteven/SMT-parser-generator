@@ -391,9 +391,10 @@ public class SmtBuilder {
                     break;
             }
         }
+        int length = Integer.parseInt(s2.actualVal) - Integer.parseInt(s1.actualVal);
         String limitString = smtDecode(targ);
         lengthLimits.put(limitString, Integer.parseInt(s2.actualVal));
-        return "(str.del " + limitString + " " + s1.actualVal + " " + s2.actualVal + ")";
+        return "(str.del " + limitString + " " + s1.actualVal + " " + length + ")";
     }
 
     private String charAtDecode(Node node) throws Exception {

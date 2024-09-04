@@ -28,7 +28,7 @@ public class MainDot {
     
     private static void processQueries(File dir) {
         //create directory for dot files
-        File outputDir = new File("dots_" + dir);
+        File outputDir = new File("dots_" + dir.getName());
         outputDir.mkdir();
 
         //iterate through smt2 files in directory recursively
