@@ -145,8 +145,9 @@ public class SmtBuilder {
 
         smtString.insert(0, "(set-option :produce-models true)\n");
         if (ostrich) smtString.insert(0, "(set-option :parse-transducers true)\n");
-        if ((lower || upper) && !ostrich) smtString.insert(0, "(set-logic ALL)\n");
-        else smtString.insert(0, "(set-logic QF_S)\n");
+//        if ((lower || upper) && !ostrich)
+        smtString.insert(0, "(set-logic ALL)\n");
+//        else smtString.insert(0, "(set-logic QF_S)\n");
         smtString.append("\n(check-sat)\n(get-model)\n(exit)");
 
         return smtString.toString();
