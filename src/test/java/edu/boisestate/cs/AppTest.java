@@ -17,4 +17,15 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    // just for debugging purposes
+    @Test
+    public void testMain() {
+        String[] args = {"/home/nat/Repos/string-constraint-counting/src/test/java/edu/boisestate/cs"};
+//		utils.MainDot.main(args);
+        MainJSON.main(args);
+
+
+        assertTrue(true); // Placeholder assertion
+    }
 }

@@ -28,6 +28,7 @@ StrInRE: 'str.in_re';
 LTE: 'str.<=';
 Prefix: 'str.prefixof';
 Suffix: 'str.suffixof';
+Contains: 'str.contains';
 
 //Operations
 StringConcat: 'str.++';
@@ -35,6 +36,7 @@ StringReplace: 'str.replace';
 StringReplaceAll: 'str.replace_all';
 StringReplaceRE: 'str.replace_re';
 StringReplaceREAll: 'str.replace_re_all';
+StringAt: 'str.at';
 
 REfromString: 'str.to_re';
 REConcat: 're.++';
@@ -166,6 +168,7 @@ funString: StringConcat string string+
     | StringReplaceAll string string string
     | StringReplaceRE string reglan string
     | StringReplaceREAll string reglan string
+    | StringAt string Int
     ;
 
 funRegLan: REfromString string
@@ -187,6 +190,7 @@ fun: LT string string
     | LTE string string
     | Prefix string string
     | Suffix string string
+    | Contains string string
     | VAR
     ;
 

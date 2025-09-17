@@ -1,0 +1,23 @@
+graph {
+	n0[label="script"];
+	n1 -- n0;
+	n1 [label="command"];
+	n2 -- n1;
+	n2 [label="("];
+	n3 -- null;
+	n3 [label="declare-const"];
+	n4 -- null;
+	n4 [label="s1_1"];
+	n5 -- null;
+	n5 [label="String"];
+	n6 -- n1;
+	n6 [label=")"];
+	n7 -- n0;
+	n7 [label="stringTheory"];
+	n8 -- n7;
+	n8 [label="("];
+	n9 -- n7;
+	n9 [label="assert"];
+	n10 -- n7;
+	n10 [label="expr"];
+}

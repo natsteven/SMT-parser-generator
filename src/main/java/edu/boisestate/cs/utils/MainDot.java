@@ -21,7 +21,7 @@ import java.io.*;
 public class MainDot {
     
     public static void main(String[] args) {
-        File dir = new File(args[0]);
+        File dir = new File("/home/nat/Repos/string-constraint-counting/src/test/java/edu/boisestate/cs");
         processQueries(dir);
 
     }
