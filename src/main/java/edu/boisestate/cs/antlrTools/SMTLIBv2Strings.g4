@@ -2,6 +2,7 @@ grammar SMTLIBv2Strings;
 
 // Lexer Rules Start
 
+Comment: ';' ~[\r\n]* -> skip;
 ParOpen: '(';
 ParClose: ')';
 
@@ -12,6 +13,7 @@ CMD_declareconst: 'declare-const';
 CMD_setinfo: 'set-info';
 CMD_setlogic: 'set-logic';
 CMD_getmodel: 'get-model';
+CMD_getvalue: 'get-value';
 CMD_exit: 'exit';
 
 // Assignment and Assertion
@@ -114,6 +116,8 @@ cmd_checkSat: CMD_checksat;
 
 cmd_getModel: CMD_getmodel;
 
+cmd_getValue: CMD_getvalue;
+
 cmd_declareFun
     : CMD_declarefun VAR ParOpen ParClose SymbolicType
     ;
@@ -135,6 +139,7 @@ cmd_setLogic
 command
     : ParOpen cmd_checkSat ParClose
     | ParOpen cmd_getModel ParClose
+    | ParOpen cmd_getValue ParOpen VAR+ ParClose ParClose
     | ParOpen cmd_declareFun ParClose
     | ParOpen cmd_declareConst ParClose
     | ParOpen cmd_exit ParClose

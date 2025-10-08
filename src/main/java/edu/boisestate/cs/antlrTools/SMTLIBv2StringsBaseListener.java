@@ -53,6 +53,18 @@ public class SMTLIBv2StringsBaseListener implements SMTLIBv2StringsListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCmd_getValue(SMTLIBv2StringsParser.Cmd_getValueContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCmd_getValue(SMTLIBv2StringsParser.Cmd_getValueContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterCmd_declareFun(SMTLIBv2StringsParser.Cmd_declareFunContext ctx) { }
 	/**
 	 * {@inheritDoc}

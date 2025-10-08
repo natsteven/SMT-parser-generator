@@ -89,7 +89,7 @@ public class GetStringFunctions {
             if (!tok.equals("re.*")) {
                 functions.add(tok);
             } else {
-                if (funcs.get(i+1).equals("re.allchar")) {
+                if (funcs.size() > i+1 && funcs.get(i+1).equals("re.allchar")) {
                     functions.add("re.all");
                     i++; // skip processsing that re.allchar
                 } else {

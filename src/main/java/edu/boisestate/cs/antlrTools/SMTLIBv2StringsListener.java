@@ -38,6 +38,16 @@ public interface SMTLIBv2StringsListener extends ParseTreeListener {
 	 */
 	void exitCmd_getModel(SMTLIBv2StringsParser.Cmd_getModelContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#cmd_getValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterCmd_getValue(SMTLIBv2StringsParser.Cmd_getValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SMTLIBv2StringsParser#cmd_getValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitCmd_getValue(SMTLIBv2StringsParser.Cmd_getValueContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#cmd_declareFun}.
 	 * @param ctx the parse tree
 	 */

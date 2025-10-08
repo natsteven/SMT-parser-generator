@@ -21,10 +21,10 @@ public class AppTest
     // just for debugging purposes
     @Test
     public void testMain() {
-        String[] args = {"/home/nat/Repos/string-constraint-counting/src/test/java/edu/boisestate/cs"};
+        String[] args = {"/home/nat/Repos/string-constraint-counting/graphs/real/cleaned"};
 //		utils.MainDot.main(args);
-        MainJSON.main(args);
-
+//        MainJSON.main(args);
+		MainSMT.main(args);
 
         assertTrue(true); // Placeholder assertion
     }
