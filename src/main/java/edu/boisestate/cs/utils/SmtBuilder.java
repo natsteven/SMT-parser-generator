@@ -123,7 +123,7 @@ public class SmtBuilder {
 			for (String sym : symbolics) {
 				def.append("(declare-fun ");
 				def.append(sym);
-				def.append(" String)\n");
+				def.append(" () String)\n");
 			}
 			defStrings = def.toString();
 		}
@@ -164,7 +164,8 @@ public class SmtBuilder {
             case "toString":
                 return valueOfDecode(node);
             case "length":
-                return "(str.len " + smtDecode(node.childrenType.keySet().iterator().next()) + ")";
+				///  ignore for the new real jsons?
+                return smtDecode(node.childrenType.keySet().iterator().next());
             case "charAt":
                 return charAtDecode(node);
             case "trim":
@@ -190,7 +191,7 @@ public class SmtBuilder {
             symbolics.add("sym" + node.id);
             return "sym" + node.id + " ";
         }
-        sym = Pattern.compile("\\$c\\d+");
+        sym = Pattern.compile("\\$(c|r)\\d+");
         match = sym.matcher(value);
         if (match.find()) { //htmlCleaner01 and iText02
             symbolics.add("sym" + node.id);
@@ -214,7 +215,8 @@ public class SmtBuilder {
 			}
 		}
 		String limit = smtDecode(targ);
-		return "(= (str.len " + limit + ") " + s1.actualVal + ")";
+		lengthLimits.put(limit, Integer.parseInt(s1.actualVal));
+		return limit;
 	}
 
 	// smt trim translation borrowed from SPF z3translator from ucsb.cs.vlab

@@ -1,7 +1,7 @@
 {
 	"alphabet" : {
-		"size" : 26,
-		"declaration" : "\\,C,I,P,R,S,T,_, ,c,d,$,e,(,h,),i,+,l,n,o,1,r,s,;,="
+		"size" : 95,
+		"declaration" : "C,I,P,R,S,T,\,_, ,c,d,$,e,(,h,),i,+,l,n,o,1,r,s,;,="
 	},
 	"vertices" : [
 		{
@@ -10,7 +10,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 0,
 			"value" : "r11!:!getStringValue!!"
@@ -20,7 +20,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 1,
 			"value" : "r0!:!getStringValue!!"
@@ -30,7 +30,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 2,
 			"value" : "\"__(\\\\d+)__\"!:!<init>"
@@ -40,7 +40,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 3,
 			"value" : "\"_$1_\"!:!<init>"
@@ -48,9 +48,18 @@
 			"num" : 0,
 			"actualValue" : "str.replace",
 			"incomingEdges" :[
-			],
+				 {
+					"source" : 1,
+					"type" : "null"
+				}, {
+					"source" : 2,
+					"type" : "null"
+				}, {
+					"source" : 3,
+					"type" : "null"
+				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 14,
 			"value" : "replaceFirst!!Ljava/lang/String;Ljava/lang/String;!:0"
@@ -66,7 +75,7 @@
 					"type" : "s1"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 15,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -76,7 +85,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 4,
 			"value" : "r7!:!getStringValue!!"
@@ -86,7 +95,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 5,
 			"value" : "\"    \"!:!<init>"
@@ -102,7 +111,7 @@
 					"type" : "s1"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 16,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -112,7 +121,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 6,
 			"value" : "r8!:!getStringValue!!"
@@ -122,7 +131,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 7,
 			"value" : "r6!:!getStringValue!!"
@@ -138,7 +147,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 17,
 			"value" : "concat!!Ljava/lang/String;!:!0"
@@ -154,7 +163,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 18,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -164,7 +173,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 8,
 			"value" : "r9!:!getStringValue!!"
@@ -174,7 +183,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 9,
 			"value" : "\"_score__children = score_children;\\\\n\"!:!<init>"
@@ -190,7 +199,7 @@
 					"type" : "s1"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 19,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -200,7 +209,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 10,
 			"value" : "r10!:!getStringValue!!"
@@ -216,7 +225,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 20,
 			"value" : "concat!!Ljava/lang/String;!:!0"
@@ -232,7 +241,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 21,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -242,7 +251,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 11,
 			"value" : "r12!:!getStringValue!!"
@@ -252,7 +261,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 12,
 			"value" : "\"\\\\_SCRIPT\"!:!<init>"
@@ -262,7 +271,7 @@
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 13,
 			"value" : "r13!:!getStringValue!!"
@@ -278,7 +287,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 23,
 			"value" : "concat!!Ljava/lang/String;!:!0"
@@ -294,7 +303,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 24,
 			"value" : "equals!!Ljava/lang/Object;!:!0"
@@ -310,7 +319,7 @@
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1721767559859,
+			"timeStamp" : 1760381841079,
 			"type" : 0,
 			"id" : 22,
 			"value" : "concat!!Ljava/lang/String;!:!0"

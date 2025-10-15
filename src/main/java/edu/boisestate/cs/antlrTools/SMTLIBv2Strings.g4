@@ -39,6 +39,9 @@ StringReplaceAll: 'str.replace_all';
 StringReplaceRE: 'str.replace_re';
 StringReplaceREAll: 'str.replace_re_all';
 StringAt: 'str.at';
+StringSubStr: 'str.substr';
+StringLength: 'str.len';
+StringIndexOf: 'str.indexof';
 
 REfromString: 'str.to_re';
 REConcat: 're.++';
@@ -174,6 +177,10 @@ funString: StringConcat string string+
     | StringReplaceRE string reglan string
     | StringReplaceREAll string reglan string
     | StringAt string Int
+    | StringSubStr string Int Int
+//    | StringSubstr string Int
+    | StringLength string
+    | StringIndexOf string string
     ;
 
 funRegLan: REfromString string

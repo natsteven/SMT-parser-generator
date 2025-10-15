@@ -451,23 +451,30 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 
 		postProcess();
 //        alphabet.add("\\u0000-\\uffff");
-//         if (alphabet.isEmpty()) {
-//             alphabet.add("A");
-//             alphabet.add("B");
-//             alphabet.add("C");
-//         }
-		// if (alphabet.size() == 1){
-		//     if (!alphabet.contains("B")) alphabet.add("B");
-		//     else alphabet.add("A");
-		// }
+         if (alphabet.isEmpty()) {
+             alphabet.add("A");
+             alphabet.add("B");
+             alphabet.add("C");
+         }
+		 if (alphabet.size() == 1){
+		     if (!alphabet.contains("B")) alphabet.add("B");
+		     else alphabet.add("A");
+		 }
+		 StringBuilder alph = new StringBuilder();
+		 for (String s : alphabet) {
+		     alph.append(s);
+			 alph.append(",");
+		 }
+		 alph.deleteCharAt(alph.length() - 1);
+
 
 		jBuilder.append("{\n\t\"alphabet\" : {\n\t\t\"size\" : " + "95" +
-				",\n\t\t\"declaration\" : \"" + " -~" + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
+				",\n\t\t\"declaration\" : \"" + alph + "\"\n\t},\n\t\"vertices\" : [\n\t\t");
 
 		for (Node node : allNodes) {
 			jBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
 			if (!node.children.isEmpty()) {
-				if (node.children.size() == 2) { // checks is internal node
+//				if (node.children.size() == 2) { // checks is internal node
 
 //                     // setting parameters of children based off precedence/order
 //                     // essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
@@ -497,7 +504,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 								",\n\t\t\t\t\t\"type\" : \"" + node.childrenType.get(childNode) + "\"\n\t\t\t\t},");
 						// }
 					}
-				}
+//				}
 				// else {
 				// System.err.println("shouldnt ever be reached");
 				// String paramType = "t";
@@ -544,9 +551,11 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 		ArrayList<Node> addedConcats = new ArrayList<>();
 		for (Node node : allNodes) {
 			if (node.actualVal.equals("re.allchar")) {
-				String replacement = alphabet.toArray()[rand.nextInt(alphabet.size())].toString();
-				node.val = "\"" + replacement + "\"!:!<init>"; // sets as random char from alphabet
-				node.actualVal = replacement;
+				// needs to set as symbolic with length == 1
+//				String replacement = alphabet.toArray()[rand.nextInt(alphabet.size())].toString();
+//				node.val = "\"" + replacement + "\"!:!<init>"; // sets as random char from alphabet
+//				node.actualVal = replacement;
+
 			}
 			// get rid of str.to_re
 			else if (node.actualVal.equals("str.to_re")) {
@@ -682,6 +691,14 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 					node.childrenType.put(child1, "s1");
 					node.childrenType.put(child2, "t");
 				}
+			} else if (node.children.size() == 3) {
+				Node child1 = node.children.get(0);
+				Node child2 = node.children.get(1);
+				Node child3 = node.children.get(2);
+
+				node.childrenType.put(child1, "t");
+				node.childrenType.put(child2, "s1");
+				node.childrenType.put(child3, "s2");
 			}
 		}
 		for (Node node : nodes) {
@@ -773,8 +790,8 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 
 		for (Node node : allNodes) {
 			copyBuilder.append("{\n\t\t\t\"num\" : 0,\n\t\t\t\"actualValue\" : \"" + escaped(node.actualVal) + "\",\n\t\t\t\"incomingEdges\" :[\n\t\t\t\t");
-			// if (node.children!=null){
-			if (node.children.size() == 2) {
+			 if (node.children.isEmpty()){
+//			if (node.children.size() == 2) {
 
 				// setting parameters of children based off precedence/order
 				// essentially this needs to be done dynamically for each node because the type isnt an inherent attribute of the child
