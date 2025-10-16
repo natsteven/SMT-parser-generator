@@ -1,0 +1,4 @@
+mathParser01: trim, valueOf, equals, replace, replaceAll, charAt, 
+iText02: setLength, equals, toString, append, 
+htmlCleaner01: contains, equals, toLowerCase, length, toString, append, charAt, 
+naturalCLI01: equals, substring, 

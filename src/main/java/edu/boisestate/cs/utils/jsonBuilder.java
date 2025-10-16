@@ -597,7 +597,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 				}
 
 				ArrayList<Node> oldChildren = new ArrayList<>(node.children);
-				Collections.reverse(oldChildren); //thought this needed to happen but it clearly shouldnt given testing <- LIES (?) ... maybe
+//				Collections.reverse(oldChildren); //thought this needed to happen but it clearly shouldnt given testing <- LIES (?) ... maybe
 				node.children.clear();
 				node.addChild(oldChildren.get(0));
 				stack.push(node);
@@ -677,20 +677,20 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 				Node child1 = node.children.get(0);
 				Node child2 = node.children.get(1);
 
-				if (child1.id < child2.id) {
+//				if (child1.id < child2.id) {
 					node.childrenType.put(child1, "t");
 					node.childrenType.put(child2, "s1");
-				} else {
-					node.childrenType.put(child1, "s1");
-					node.childrenType.put(child2, "t");
-				}
-				if (child1.val.startsWith("concat")) {
-					node.childrenType.put(child1, "t");
-					node.childrenType.put(child2, "s1");
-				} else if (child2.val.startsWith("concat")) {
-					node.childrenType.put(child1, "s1");
-					node.childrenType.put(child2, "t");
-				}
+//				} else {
+//					node.childrenType.put(child1, "s1");
+//					node.childrenType.put(child2, "t");
+//				}
+//				if (child1.val.startsWith("concat")) {
+//					node.childrenType.put(child1, "t");
+//					node.childrenType.put(child2, "s1");
+//				} else if (child2.val.startsWith("concat")) {
+//					node.childrenType.put(child1, "s1");
+//					node.childrenType.put(child2, "t");
+//				}
 			} else if (node.children.size() == 3) {
 				Node child1 = node.children.get(0);
 				Node child2 = node.children.get(1);
