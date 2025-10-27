@@ -21,7 +21,7 @@ public class AppTest
     // just for debugging purposes
     @Test
     public void testMain() {
-//        String[] args = {"/home/nat/Repos/smt-bench/benchmarks/smt/rna-unsat"};
+//        String[] args = {"q-test/test.smt2", "output.json"};
 //		utils.MainDot.main(args);
 //        MainJSON.main(args);
 //		MainSMT.main(args);

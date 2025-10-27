@@ -407,8 +407,7 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 					// leave text as is/ concrete processing done next
 				} else if (!lets.contains(text) && (text.contains("str.") || text.contains("re."))) {
 					System.err.print("Unknown string operation: " + text);
-//                     new Exception("Unknown string operation: " + text).printStackTrace();
-					System.exit(0);
+					throw new RuntimeException("Unknown string operation: " + text);
 				}
 				return text;
 
