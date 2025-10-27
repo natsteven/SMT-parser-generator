@@ -17,10 +17,25 @@
  import java.io.*;
 
  public class MainJSON {
+	 private String output_path;
 
      public static void main(String[] args) {
 
-         String projectRoot = System.getProperty("project.basedir");
+		 if (args.length < 1 || args.length > 2) {
+			 System.err.println("Usage: <file or directory path> [optional: output path]");
+			 System.exit(1);
+		 }
+
+		 File input = new File(args[0]);
+		 File output = new File(args[1]);
+		 if (input.isDirectory()) {
+			System.out.println("Processing directory: " + input.getAbsolutePath());
+			output.mkdir();
+			processDirectory(input);
+		 } else if (input.isFile()) {
+			System.out.println("Processing file: " + input.getAbsolutePath());
+			processFile(input, )
+		 }
          File inputDir = new File(projectRoot, args[0]);
          File outputRoot = new File(projectRoot, "output_" + inputDir.getName());
          if (!outputRoot.exists() && !outputRoot.mkdir()){
