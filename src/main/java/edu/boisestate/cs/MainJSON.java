@@ -91,6 +91,8 @@ public class MainJSON {
 				j.println(jB.getJSON());
 			}
 
+			System.out.println("Output written to: " + output.getAbsolutePath());
+
 			// TODO: refactor this horrible code (handle disjuncts better)
 			/*
 			 * creates a copy of the .json file with certain predicate true false values flipped for logical equivalency
