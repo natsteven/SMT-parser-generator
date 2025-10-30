@@ -1,5 +1,5 @@
 package edu.boisestate.cs.antlrTools;
-// Generated from src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2Strings.g4 by ANTLR 4.13.0
+// Generated from SMTLIBv2Strings.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -185,6 +185,18 @@ public class SMTLIBv2StringsBaseListener implements SMTLIBv2StringsListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterFunInt(SMTLIBv2StringsParser.FunIntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunInt(SMTLIBv2StringsParser.FunIntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterFunRegLan(SMTLIBv2StringsParser.FunRegLanContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -216,6 +228,18 @@ public class SMTLIBv2StringsBaseListener implements SMTLIBv2StringsListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitString(SMTLIBv2StringsParser.StringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInt(SMTLIBv2StringsParser.IntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInt(SMTLIBv2StringsParser.IntContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

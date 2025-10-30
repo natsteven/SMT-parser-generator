@@ -400,6 +400,8 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 				return "re.allchar";
 			case "re.all":
 				return "re.all"; //note that re.alls are handle in the below first branch, this is before that
+			case "str.len":
+				return "length!!!:!0";
 			default:
 				if (symVars.contains(text)) {
 					text = "r" + symVars.indexOf(text) + "!:!getStringValue!!";
@@ -670,7 +672,10 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 		// int prevID = 0;
 		// Node prevLeaf = null;
 		for (Node node : nodes) {
-			if (node.children.size() == 2) { // checks is internal node
+			if (node.children.size() == 1) {
+				Node child = node.children.get(0);
+				node.childrenType.put(child, "t");
+			} else if (node.children.size() == 2) { // checks is internal node
 
 				// setting parameters of children based off precedence/order
 				Node child1 = node.children.get(0);

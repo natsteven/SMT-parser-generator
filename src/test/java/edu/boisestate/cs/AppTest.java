@@ -21,9 +21,9 @@ public class AppTest
     // just for debugging purposes
     @Test
     public void testMain() {
-//        String[] args = {"q-test/test.smt2", "output.json"};
+        String[] args = {"../string-constraint-counting/src/test/resources/in/smt-input.smt2", "output.json"};
 //		utils.MainDot.main(args);
-//        MainJSON.main(args);
+        MainJSON.main(args);
 //		MainSMT.main(args);
 
         assertTrue(true); // Placeholder assertion

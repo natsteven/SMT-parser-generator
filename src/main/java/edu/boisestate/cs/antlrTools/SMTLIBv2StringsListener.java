@@ -1,5 +1,5 @@
 package edu.boisestate.cs.antlrTools;
-// Generated from src/main/java/edu/boisestate/cs/antlrTools/SMTLIBv2Strings.g4 by ANTLR 4.13.0
+// Generated from SMTLIBv2Strings.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -148,6 +148,16 @@ public interface SMTLIBv2StringsListener extends ParseTreeListener {
 	 */
 	void exitFunString(SMTLIBv2StringsParser.FunStringContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#funInt}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunInt(SMTLIBv2StringsParser.FunIntContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SMTLIBv2StringsParser#funInt}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunInt(SMTLIBv2StringsParser.FunIntContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#funRegLan}.
 	 * @param ctx the parse tree
 	 */
@@ -177,6 +187,16 @@ public interface SMTLIBv2StringsListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitString(SMTLIBv2StringsParser.StringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#int}.
+	 * @param ctx the parse tree
+	 */
+	void enterInt(SMTLIBv2StringsParser.IntContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SMTLIBv2StringsParser#int}.
+	 * @param ctx the parse tree
+	 */
+	void exitInt(SMTLIBv2StringsParser.IntContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SMTLIBv2StringsParser#reglan}.
 	 * @param ctx the parse tree

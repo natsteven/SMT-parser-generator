@@ -164,12 +164,14 @@ expr: ParOpen Let ParOpen ParOpen VAR expr ParClose ParClose expr ParClose
     | ParOpen Equals string expr ParClose
     | ParOpen Equals expr string ParClose
     | ParOpen Equals string string ParClose
-
+    | ParOpen Equals expr int ParClose
+    | ParOpen Equals int expr ParClose
     | ParOpen Or expr expr+ ParClose
     | ParOpen funString ParClose
     | ParOpen funRegLan ParClose
+    | ParOpen funInt ParClose
     | ParOpen fun ParClose
-    // | string //potentially only needed for equals as well when comparing strings
+//     | string //potentially only needed for equals as well when comparing strings
     ;
 funString: StringConcat string string+
     | StringReplace string string string
@@ -179,7 +181,9 @@ funString: StringConcat string string+
     | StringAt string Int
     | StringSubStr string Int Int
 //    | StringSubstr string Int
-    | StringLength string
+    ;
+
+funInt: StringLength string
     | StringIndexOf string string
     ;
 
@@ -209,6 +213,10 @@ fun: LT string string
 string: String
     | VAR
     | ParOpen funString ParClose
+    ;
+
+int: Int
+    | ParOpen funInt ParClose
     ;
 
 reglan: REConst
