@@ -1,82 +1,69 @@
 {
 	"alphabet" : {
 		"size" : 95,
-		"declaration" : "A,B,C"
+		"declaration" : "B,c"
 	},
 	"vertices" : [
 		{
 			"num" : 0,
-			"actualValue" : "s1_18",
+			"actualValue" : "string1",
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077014,
+			"timeStamp" : 1762916147363,
 			"type" : 0,
 			"id" : 0,
 			"value" : "r0!:!getStringValue!!"
 		},{
 			"num" : 0,
-			"actualValue" : "s2_19",
+			"actualValue" : "string0",
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077014,
+			"timeStamp" : 1762916147363,
 			"type" : 0,
 			"id" : 1,
 			"value" : "r1!:!getStringValue!!"
 		},{
 			"num" : 0,
-			"actualValue" : "true",
+			"actualValue" : "false",
 			"incomingEdges" :[
 				 {
 					"source" : 0,
-					"type" : "t"
+					"type" : "s1"
 				}, {
 					"source" : 1,
-					"type" : "s1"
-				}],
-			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077014,
-			"type" : 0,
-			"id" : 3,
-			"value" : "contains!!Ljava/lang/CharSequence;!:!0"
-		},{
-			"num" : 0,
-			"actualValue" : "str.len",
-			"incomingEdges" :[
-				 {
-					"source" : 1,
 					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077014,
+			"timeStamp" : 1762916147363,
 			"type" : 0,
-			"id" : 4,
-			"value" : "length!!!:!0"
+			"id" : 3,
+			"value" : "startsWith!!Ljava/lang/String;!:!0"
 		},{
 			"num" : 0,
-			"actualValue" : "0",
+			"actualValue" : "c",
 			"incomingEdges" :[
 			],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077015,
+			"timeStamp" : 1762916147363,
 			"type" : 0,
 			"id" : 2,
-			"value" : "0"
+			"value" : "\"c\"!:!<init>"
 		},{
 			"num" : 0,
 			"actualValue" : "false",
 			"incomingEdges" :[
 				 {
-					"source" : 4,
-					"type" : "t"
-				}, {
 					"source" : 2,
 					"type" : "s1"
+				}, {
+					"source" : 0,
+					"type" : "t"
 				}],
 			"sourceConstraints" : [ ],
-			"timeStamp" : 1761853077015,
+			"timeStamp" : 1762916147364,
 			"type" : 0,
-			"id" : 5,
-			"value" : "equals!!Ljava/lang/Object;!:!0"
+			"id" : 4,
+			"value" : "endsWith!!Ljava/lang/String;!:!0"
 		} ] }

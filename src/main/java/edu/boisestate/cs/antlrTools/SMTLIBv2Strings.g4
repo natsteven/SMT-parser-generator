@@ -113,7 +113,7 @@ fragment WhiteSpaceChar
 
 // Parser Rules Start
 
-script: command+ stringTheory+ command+;
+script: command+ stringTheory+ command*;
 
 cmd_checkSat: CMD_checksat;
 
@@ -171,15 +171,16 @@ expr: ParOpen Let ParOpen ParOpen VAR expr ParClose ParClose expr ParClose
     | ParOpen funRegLan ParClose
     | ParOpen funInt ParClose
     | ParOpen fun ParClose
-//     | string //potentially only needed for equals as well when comparing strings
+    | string //potentially only needed for equals as well when comparing strings
+    | int
     ;
 funString: StringConcat string string+
     | StringReplace string string string
     | StringReplaceAll string string string
     | StringReplaceRE string reglan string
     | StringReplaceREAll string reglan string
-    | StringAt string Int
-    | StringSubStr string Int Int
+    | StringAt string int
+    | StringSubStr string int int
 //    | StringSubstr string Int
     ;
 
