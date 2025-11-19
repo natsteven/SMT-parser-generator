@@ -684,6 +684,11 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 //				if (child1.id < child2.id) {
 					node.childrenType.put(child1, "t");
 					node.childrenType.put(child2, "s1");
+					if (node.val.startsWith("startsWith") || node.val.startsWith("endsWith")) {
+						// need to swap for correct semantics
+						node.childrenType.put(child1, "s1");
+						node.childrenType.put(child2, "t");
+					}
 //				} else {
 //					node.childrenType.put(child1, "s1");
 //					node.childrenType.put(child2, "t");
