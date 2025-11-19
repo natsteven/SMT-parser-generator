@@ -109,6 +109,7 @@ public class MainJSON {
 //			}
 		} catch (RuntimeException re) {
 			System.err.println("Problem with file " + file.getAbsolutePath());
+			System.exit(1);
 		} catch (Exception e) {
 			System.err.println("Problem with file " + file.getAbsolutePath());
 			e.printStackTrace();
