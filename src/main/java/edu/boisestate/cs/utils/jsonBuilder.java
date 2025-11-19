@@ -402,6 +402,8 @@ public class jsonBuilder extends SMTLIBv2StringsBaseListener {
 				return "re.all"; //note that re.alls are handle in the below first branch, this is before that
 			case "str.len":
 				return "length!!!:!0";
+			case "str.indexof":
+				return "indexOf!!Ljava/lang/String;I!:!0";
 			default:
 				if (symVars.contains(text)) {
 					text = "r" + symVars.indexOf(text) + "!:!getStringValue!!";
